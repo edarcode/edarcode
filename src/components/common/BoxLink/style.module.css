@@ -1,0 +1,20 @@
+.box {
+	padding: 8px;
+	transition: background-color 0.3s ease;
+	display: flex;
+	gap: 8px;
+}
+.box:hover {
+	background-color: var(--blue);
+}
+
+.box__img {
+	width: 30px;
+	filter: invert(1);
+}
+
+.box__img,
+.box__text {
+	display: flex;
+	align-items: center;
+}
