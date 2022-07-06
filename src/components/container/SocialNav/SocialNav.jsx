@@ -11,7 +11,7 @@ import css from "./style.module.css";
 export default function SocialNav() {
 	return (
 		<nav className={css.social}>
-			<BoxLink a path={github} img="/github.svg" color="hsl(0, 0%, 13%)" />
+			<BoxLink a path={github} img="/github.svg" color="black" />
 			<BoxLink a path={linkedin} img="/linkedin.svg" color="royalblue" />
 			<BoxLink a path={youtube} img="/youtube.svg" color="red" />
 			<BoxLink a path={instagram} img="/instagram.svg" color="magenta" />

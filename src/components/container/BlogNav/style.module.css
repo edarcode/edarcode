@@ -1,0 +1,6 @@
+.blog {
+	display: flex;
+}
+.blog__link {
+	color: royalblue;
+}
