@@ -1,0 +1,14 @@
+.footer {
+	background-color: var(--violet);
+	padding: 20px;
+}
+.footer__created {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	place-content: center;
+	place-items: center;
+	gap: 7px;
+}
+.footer__react {
+	width: 30px;
+}
