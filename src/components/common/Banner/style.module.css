@@ -1,0 +1,24 @@
+.banner {
+	display: grid;
+	gap: 5px;
+	justify-items: center;
+}
+.banner__img {
+	caret-color: transparent;
+	width: 300px;
+	transition: transform 0.8s ease;
+}
+.banner__img:hover {
+	transform: scale(1.1);
+}
+.banner__name {
+	display: flex;
+	gap: 1px;
+}
+.banner__char {
+	transition: transform 0.2s ease;
+}
+.banner__char:hover {
+	transform: translateY(-8px);
+	color: var(--blue);
+}
