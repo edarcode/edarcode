@@ -7,8 +7,10 @@ import css from "./style.module.css";
 export default function Header() {
 	return (
 		<header className={css.header}>
-			<MainNav />
-			<SocialNav />
+			<div className={css["header__mainnav-social"]}>
+				<MainNav className={css.header__mainnav} />
+				<SocialNav className={css.header__social} />
+			</div>
 			<BlogNav />
 			<Banner />
 		</header>

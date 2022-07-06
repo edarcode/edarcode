@@ -3,7 +3,7 @@
 	transition: background-color 0.3s ease;
 	display: flex;
 	justify-content: center;
-	gap: 8px;
+	gap: 3px;
 }
 .box:hover {
 	background-color: currentColor;

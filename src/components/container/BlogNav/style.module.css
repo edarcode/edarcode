@@ -1,7 +1,10 @@
 .blog {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
+	background-color: var(--mediumBlack);
 }
 .blog__link {
 	color: royalblue;
+	padding: 10px;
 }

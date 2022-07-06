@@ -2,10 +2,11 @@ import { CSS, HTML, javascript, terminal } from "../../../constants/path";
 import BoxLink from "../../common/BoxLink/BoxLink";
 import css from "./style.module.css";
 
-export default function MainNav() {
+export default function MainNav({ className }) {
 	return (
-		<nav className={css.mainnav}>
+		<nav className={`${css.mainnav} ${className}`}>
 			<BoxLink
+				className={css.mainnav__link}
 				path={HTML}
 				text="HTML"
 				img={"/html.svg"}
@@ -13,16 +14,18 @@ export default function MainNav() {
 			/>
 			<BoxLink path={CSS} text="CSS" img={"/css.svg"} color="royalblue" />
 			<BoxLink
+				className={css.mainnav__link}
 				path={javascript}
 				text="javascript"
 				img={"/js.svg"}
 				color="hsl(60, 100%, 30%)"
 			/>
 			<BoxLink
+				className={css.mainnav__link}
 				path={terminal}
 				text="terminal"
 				img={"/terminal.svg"}
-				color="hsl(0, 0%, 7%)"
+				color="black"
 			/>
 		</nav>
 	);
