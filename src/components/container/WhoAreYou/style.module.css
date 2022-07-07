@@ -1,0 +1,42 @@
+.who {
+	text-align: center;
+	padding: 15px;
+	display: grid;
+	place-items: center;
+}
+.who__title {
+	font-size: 2.5rem;
+}
+.who__quote,
+.who__text,
+.who__title {
+	padding: 8px;
+}
+.who__edarcode {
+	color: var(--violet);
+}
+
+.who__text {
+	text-align: left;
+	max-width: 310px;
+}
+.who__love {
+	display: inline-block;
+	background-color: var(--violet);
+	padding: 2px;
+	transition: transform 0.3s ease;
+	transform: rotate(-3deg);
+}
+.who__love:hover {
+	transform: scale(1.2);
+}
+@media screen and (min-width: 768px) {
+	.who__text {
+		max-width: 700px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.who__text {
+		max-width: 900px;
+	}
+}
