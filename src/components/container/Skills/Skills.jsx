@@ -22,6 +22,10 @@ const skills = [
 		name: "redux"
 	},
 	{
+		src: "/node.svg",
+		name: "nodejs"
+	},
+	{
 		src: "/pgsql.svg",
 		name: "postgress"
 	},

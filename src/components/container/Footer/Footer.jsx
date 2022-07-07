@@ -8,6 +8,17 @@ export default function Footer() {
 				<img className={css.footer__react} src="/react.svg" alt="react" />
 				React
 			</div>
+			<span>
+				🎵 Inspired by&nbsp;
+				<a
+					href="https://manz.dev/"
+					target="__blank"
+					className={css["footer__link-manz"]}
+				>
+					manz.dev 🍕
+				</a>
+				<img className={css.footer__manz} src="/manz.png" alt="manz" />
+			</span>
 		</footer>
 	);
 }
