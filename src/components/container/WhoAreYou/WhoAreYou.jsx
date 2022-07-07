@@ -14,10 +14,9 @@ export default function WhoAreYou() {
 				y muchas otras tecnologías.
 			</p>
 			<p className={css.who__text}>
-				Estoy en la búsqueda de mi primer empleo, estoy preparado con ganas de
-				explotar todas las habilidades que he adquirido con nuevos retos.
-				Aprendo rápido y soy bastante dedicado cuando se trata de programar, me
-				gusta trabajar en equipo, enseñar, crear contenido...
+				Preparado y con ganas de explotar todas mis habilidades. Aprendo rápido
+				y soy bastante dedicado cuando se trata de programar, me gusta trabajar
+				en equipo, enseñar, crear contenido...
 				<strong className={css.who__love}>¡Amo programar!😊</strong>
 			</p>
 		</div>

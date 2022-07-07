@@ -1,0 +1,26 @@
+.skills {
+	padding: 15px;
+	display: grid;
+	gap: 15px;
+}
+.skills__title {
+	font-size: 1.9rem;
+	text-align: center;
+}
+.skills__items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 25px;
+}
+.skills__item {
+	display: grid;
+	place-items: center;
+	gap: 3px;
+}
+.skills__img {
+	transition: transform 0.3s ease;
+	width: 45px;
+}
+.skills__img:hover {
+	transform: scale(1.1);
+}
