@@ -1,0 +1,38 @@
+.project {
+	--border: 3px;
+	display: grid;
+	gap: 15px;
+	width: 310px;
+	background-color: var(--mediumBlack);
+	padding: 15px;
+	border-radius: var(--border);
+	min-height: 300px;
+	max-height: 450px;
+}
+.project__picture {
+	overflow: hidden;
+	min-height: 250px;
+	height: 270px;
+}
+.project__picture:hover {
+	overflow: visible;
+}
+.project__img {
+	border-radius: var(--border);
+	transition: transform 0.4s ease;
+	caret-color: transparent;
+}
+.project__img:hover {
+	transform: scale(1.5);
+	position: relative;
+	z-index: 10;
+}
+
+.project__name {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+.project__text {
+	font-size: 1.6rem;
+	overflow: auto auto;
+}

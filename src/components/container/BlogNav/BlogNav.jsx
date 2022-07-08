@@ -3,6 +3,7 @@ import {
 	FAQ,
 	help,
 	home,
+	projects,
 	setup,
 	softhware,
 	streams
@@ -14,6 +15,7 @@ export default function BlogNav() {
 	return (
 		<nav className={css.blog}>
 			<BoxLink path={home} text="Inicio" className={css.blog__link} />
+			<BoxLink path={projects} text="Proyectos" className={css.blog__link} />
 			<BoxLink path={streams} text="Streams" className={css.blog__link} />
 			<BoxLink path={help} text="Ayuda" className={css.blog__link} />
 			<BoxLink path={assets} text="Asests" className={css.blog__link} />

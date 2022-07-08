@@ -9,3 +9,4 @@ export const assets = "/assets";
 export const setup = "/setup";
 export const FAQ = "/faq";
 export const softhware = "/softhware";
+export const projects = "/projects";

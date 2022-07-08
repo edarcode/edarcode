@@ -1,4 +1,3 @@
-import Banner from "../../common/Banner/Banner";
 import BlogNav from "../BlogNav/BlogNav";
 import MainNav from "../MainNav/MainNav";
 import SocialNav from "../SocialNav/SocialNav";
@@ -12,7 +11,6 @@ export default function Header() {
 				<SocialNav className={css.header__social} />
 			</div>
 			<BlogNav />
-			<Banner />
 		</header>
 	);
 }
