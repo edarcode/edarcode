@@ -3,6 +3,7 @@ import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
 import { home, projects } from "../constants/path";
 import Home from "../views/Home/Home";
+import NotFound from "../views/NotFound/NotFound";
 import Projects from "../views/Projects/Projects";
 import css from "./style.module.css";
 
@@ -13,6 +14,7 @@ function App() {
 			<Routes>
 				<Route path={home} element={<Home />} />
 				<Route path={projects} element={<Projects />} />
+				<Route path="/*" element={<NotFound />} />
 			</Routes>
 			<Footer />
 		</div>
