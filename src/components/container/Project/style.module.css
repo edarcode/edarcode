@@ -19,15 +19,16 @@
 }
 .project__img {
 	border-radius: var(--border);
-	transition: transform 0.4s ease;
+	transition: transform 0.5s ease;
 	caret-color: transparent;
 }
-.project__img:hover {
-	transform: scale(1.5);
-	position: relative;
-	z-index: 10;
+@media screen and (min-width: 1280px) {
+	.project__img:hover {
+		transform: scale(1.5);
+		position: relative;
+		z-index: 10;
+	}
 }
-
 .project__name {
 	font-size: 2rem;
 	text-transform: uppercase;
