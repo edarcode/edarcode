@@ -3,7 +3,7 @@ export const HTML = "/html";
 export const CSS = "/css";
 /* --------------------VISTA JAVASCRIPT-----------start----------------- */
 export const javascript = "/javascript";
-export const consoleJs = `${javascript}/console`;
+export const consoleJs = `${javascript}/consola`;
 export const functionalityJs = `${javascript}/funcionalidad`;
 export const conceptsJs = `${javascript}/conceptos`;
 export const ecmascript = `${javascript}/ecmascript`;

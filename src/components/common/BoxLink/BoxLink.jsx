@@ -29,11 +29,23 @@ export default function BoxLink({ text, img, color, path, a, className }) {
 			className={`${css.box} ${className}`}
 			ref={link}
 			style={
-				(pathname === path && { backgroundColor: color || "var(--blue)" }) || {}
+				(comparePath(pathname, path) && {
+					backgroundColor: color || "var(--blue)"
+				}) ||
+				{}
 			}
 		>
 			{img && <img className={css.box__img} src={img} alt={img} />}
 			{text && <span className={css.box__text}>{text}</span>}
 		</Link>
 	);
+}
+function comparePath(pathname, path) {
+	if (path === "/") return pathname === path;
+	let newPathname = "";
+	for (let i = 0; i < path.length; i++) {
+		const element = pathname[i];
+		newPathname = newPathname + element;
+	}
+	return path === newPathname;
 }
