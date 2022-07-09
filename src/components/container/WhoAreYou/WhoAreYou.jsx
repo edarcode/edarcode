@@ -16,7 +16,7 @@ export default function WhoAreYou() {
 			<p className={css.who__text}>
 				Preparado y con ganas de explotar todas sus habilidades. Aprende rápido
 				y es bastante dedicado cuando se trata de programar, le gusta trabajar
-				en equipo, crear contenido...{" "}
+				en equipo, crear contenido y sobre todo{" "}
 				<strong className={css.who__love}>¡Ama programar!😊</strong>
 			</p>
 		</div>

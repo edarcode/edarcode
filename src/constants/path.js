@@ -3,6 +3,7 @@ export const HTML = "/html";
 export const CSS = "/css";
 /* --------------------VISTA JAVASCRIPT-----------start----------------- */
 export const javascript = "/javascript";
+export const consoleJs = `${javascript}/console`;
 export const functionalityJs = `${javascript}/funcionalidad`;
 export const conceptsJs = `${javascript}/conceptos`;
 export const ecmascript = `${javascript}/ecmascript`;
@@ -31,7 +32,6 @@ export const datesJs = `${javascript}/fechas`;
 export const multimediaJS = `${javascript}/multimedia`;
 export const asyncJs = `${javascript}/async`;
 export const reqHttpJs = `${javascript}/request`;
-export const consoleJs = `${javascript}/console`;
 export const streams = "/streams";
 export const terminal = "/terminal";
 export const help = "/help";
