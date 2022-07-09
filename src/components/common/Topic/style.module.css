@@ -1,0 +1,11 @@
+.topic {
+	display: inline-block;
+	background-color: var(--blue);
+	padding: 5px;
+}
+.topic:hover {
+	background: var(--gray);
+}
+.topic--active {
+	background-color: var(--white);
+}
