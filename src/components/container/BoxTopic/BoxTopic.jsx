@@ -14,7 +14,10 @@ export default function BoxTopic({ name, subTopics }) {
 		<>
 			<div className={css.topic} onClick={handleClickIsCollapse}>
 				<h6 className={css.topic__name}>{name}</h6>
-				<AiOutlineArrowRight className={css.topic__arrow} />
+				<AiOutlineArrowRight
+					className={css.topic__arrow}
+					style={(isCollapseNav && { transform: "rotate(90deg)" }) || {}}
+				/>
 			</div>
 			{isCollapseNav && <SubTopicsNav subTopics={subTopics} />}
 		</>

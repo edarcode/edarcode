@@ -15,6 +15,7 @@
 	color: var(--blue);
 	width: 18px;
 	height: 18px;
+	transition: transform 0.3s ease;
 }
 .topic__name {
 	font-size: 1.6rem;
