@@ -1,15 +1,18 @@
-import { Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { isActiveLink } from "../../../utils/isActiveLink";
 import css from "./style.module.css";
 
+const color = "var(--blue)";
+
 export default function TopicLink({ path, name }) {
-	const { pathname } = useLocation();
 	return (
-		<Link
+		<NavLink
 			to={path}
 			className={css.topic}
-			style={(pathname === path && { backgroundColor: "var(--blue)" }) || {}}
+			style={({ isActive }) => isActiveLink({ isActive, color })}
+			end
 		>
 			{name}
-		</Link>
+		</NavLink>
 	);
 }
