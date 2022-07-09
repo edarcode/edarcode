@@ -1,8 +1,8 @@
 .topic {
 	display: grid;
-	gap: 5px;
 	grid-auto-flow: column;
-	place-items: center;
+	grid-template-columns: 1fr auto;
+	gap: 5px;
 	cursor: pointer;
 	background-color: var(--black);
 	padding: 5px;
