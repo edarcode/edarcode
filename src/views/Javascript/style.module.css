@@ -1,6 +1,19 @@
 .javascript {
-	display: grid;
-	grid-template-columns: 260px 1fr;
+	position: relative;
+	padding: 15px;
+}
+.javascript__fabar {
+	position: absolute;
+	top: -35px;
+	left: 5px;
+	z-index: 10;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	transition: transform 0.3s ease;
+}
+.javascript__fabar:hover {
+	transform: scale(1.1);
 }
 .javascript__menu {
 	background-color: var(--darkViolet);
@@ -8,4 +21,27 @@
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+	width: 96%;
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 10;
+}
+.javascript__menu--hidden {
+	display: none;
+}
+@media screen and (min-width: 1280px) {
+	.javascript {
+		display: grid;
+		grid-template-columns: 260px 1fr;
+		padding: 0;
+	}
+	.javascript__menu {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transform: translateX(0);
+	}
 }

@@ -1,12 +1,35 @@
+import { useState } from "react";
+import { CgCloseO } from "react-icons/cg";
+import { FaBars } from "react-icons/fa";
 import { Outlet } from "react-router-dom";
 import BoxTopic from "../../components/container/BoxTopic/BoxTopic";
 import { javascript } from "../../data/javascript";
 import css from "./style.module.css";
 
 export default function Javascript() {
+	const [isCollapseMenu, setIsCollapseMenu] = useState(true);
+	const handleClickCollapseMenu = e => {
+		setIsCollapseMenu(isCollapseMenu => !isCollapseMenu);
+	};
 	return (
 		<main className={css.javascript}>
-			<div className={css.javascript__menu}>
+			{(!isCollapseMenu && (
+				<FaBars
+					className={css.javascript__fabar}
+					onClick={handleClickCollapseMenu}
+				/>
+			)) || (
+				<CgCloseO
+					className={css.javascript__fabar}
+					onClick={handleClickCollapseMenu}
+				/>
+			)}
+			<div
+				className={
+					(isCollapseMenu && css.javascript__menu) ||
+					`${css.javascript__menu} ${css["javascript__menu--hidden"]}`
+				}
+			>
 				{javascript.map(item => (
 					<BoxTopic key={item.name} {...item} />
 				))}
