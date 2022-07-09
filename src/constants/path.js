@@ -38,7 +38,15 @@ export const modulesECMAScript = `${featuresJs}/modulesecmascript`;
 export const dynamicImport = `${featuresJs}/import`;
 /* --------------------VISTA FEATURES-----------end----------------- */
 
+/* --------------------VISTA FEATURES-----------start----------------- */
 export const domJs = `${javascript}/dom`;
+export const selectDomElements = `${domJs}/selectdom`;
+export const createDomElements = `${domJs}/createdom`;
+export const insertDomElements = `${domJs}/insertdom`;
+export const apiClassListJs = `${domJs}/classlist`;
+export const browseDomElements = `${domJs}/browsedom`;
+/* --------------------VISTA FEATURES-----------end----------------- */
+
 export const datesJs = `${javascript}/fechas`;
 export const multimediaJS = `${javascript}/multimedia`;
 export const asyncJs = `${javascript}/async`;

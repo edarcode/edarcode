@@ -1,12 +1,15 @@
 import { Route, Routes } from "react-router-dom";
+import ApiClassListJs from "../components/container/ApiClassListJs/ApiClassListJs";
 import ArrayFunctions from "../components/container/ArrayFunctions/ArrayFunctions";
 import AsyncJavascript from "../components/container/AsyncJavascript/AsyncJavascript";
+import BrowseDomElements from "../components/container/BrowseDomElements/BrowseDomElements";
 import Class from "../components/container/Class/Class";
 import ClassInheritance from "../components/container/ClassInheritance/ClassInheritance";
 import Comments from "../components/container/Comments/Comments";
 import ConceptsJs from "../components/container/ConceptsJs/ConceptsJs";
 import ConsoleJs from "../components/container/ConsoleJs/ConsoleJs";
 import ControlStructures from "../components/container/ControlStructures/ControlStructuresJs";
+import CreateDomElements from "../components/container/CreateDomElements/CreateDomElements";
 import DataTypes from "../components/container/DataTypes/DataTypes";
 import DatesJavascript from "../components/container/DatesJavascript/DatesJavascript";
 import DomJavascript from "../components/container/DomJavascript/DomJavascript";
@@ -21,6 +24,7 @@ import Functions from "../components/container/Functions/Functions";
 import FundamentalsJavascript from "../components/container/FundamentalsJavascript/FundamentalsJavascript";
 import Header from "../components/container/Header/Header";
 import Indentation from "../components/container/Indentation/Indentation";
+import InsertDomElements from "../components/container/InsertDomElements/InsertDomElements";
 import IntroJavascript from "../components/container/IntroJavascript/IntroJavascript";
 import Json from "../components/container/Json/Json";
 import Loops from "../components/container/Loops/Loops";
@@ -33,18 +37,23 @@ import Number from "../components/container/Number/Number";
 import Objects from "../components/container/Objects/Objects";
 import RegExp from "../components/container/RegExp/RegExp";
 import RequestHTTPJavascript from "../components/container/RequestHTTPJavascript/RequestHTTPJavascript";
+import SelectDomElements from "../components/container/SelectDomElements/SelectDomElements";
 import String from "../components/container/String/String";
 import TypeArray from "../components/container/TypeArray/TypeArray";
 import Variables from "../components/container/Variables/Variables";
+import WhatIsDom from "../components/container/WhatIsDom/WhatIsDom";
 import WhatIsJs from "../components/container/WhatIsJs/WhatIsJs";
 import {
+	apiClassListJs,
 	asyncJs,
+	browseDomElements,
 	clases,
 	classInheritance,
 	comments,
 	conceptsJs,
 	consoleJs,
 	controlStructures,
+	createDomElements,
 	datesJs,
 	domJs,
 	dynamicImport,
@@ -56,6 +65,7 @@ import {
 	functions,
 	fundamentalsJs,
 	indentation,
+	insertDomElements,
 	javascript,
 	json,
 	loops,
@@ -69,6 +79,7 @@ import {
 	projects,
 	regExp,
 	reqHttpJs,
+	selectDomElements,
 	string,
 	typeArray,
 	variables
@@ -121,7 +132,14 @@ function App() {
 						<Route path={modulesECMAScript} element={<ModulesECMAScript />} />
 						<Route path={dynamicImport} element={<DynamicImport />} />
 					</Route>
-					<Route path={domJs} element={<DomJavascript />} />
+					<Route path={domJs} element={<DomJavascript />}>
+						<Route index element={<WhatIsDom />} />
+						<Route path={selectDomElements} element={<SelectDomElements />} />
+						<Route path={createDomElements} element={<CreateDomElements />} />
+						<Route path={insertDomElements} element={<InsertDomElements />} />
+						<Route path={apiClassListJs} element={<ApiClassListJs />} />
+						<Route path={browseDomElements} element={<BrowseDomElements />} />
+					</Route>
 					<Route path={datesJs} element={<DatesJavascript />} />
 					<Route path={multimediaJS} element={<MultimediaJavascript />} />
 					<Route path={asyncJs} element={<AsyncJavascript />} />
