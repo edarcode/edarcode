@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import css from "./style.module.css";
 
-export default function Topic({ path, text }) {
+export default function TopicLink({ path, name }) {
 	return (
 		<Link to={path} className={css.topic}>
-			{text}
+			{name}
 		</Link>
 	);
 }

@@ -1,0 +1,11 @@
+.javascript {
+	display: grid;
+	grid-template-columns: 270px 1fr;
+}
+.javascript__menu {
+	background-color: var(--darkViolet);
+	padding: 7px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}

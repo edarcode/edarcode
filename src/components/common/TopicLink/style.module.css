@@ -1,0 +1,12 @@
+.topic {
+	background-color: var(--fullViolet);
+	padding: 6px;
+	transition: background-color 0.4s ease;
+	border-radius: 3px;
+}
+.topic:hover {
+	background-color: var(--black);
+}
+.topic--active {
+	background-color: var(--white);
+}

@@ -1,0 +1,21 @@
+.topic {
+	display: grid;
+	gap: 5px;
+	grid-auto-flow: column;
+	place-items: center;
+	cursor: pointer;
+	background-color: var(--black);
+	padding: 5px;
+	transition: transform 0.5s ease;
+}
+.topic:hover {
+	transform: scale(1.05);
+}
+.topic__arrow {
+	color: var(--blue);
+	width: 18px;
+	height: 18px;
+}
+.topic__name {
+	font-size: 1.6rem;
+}

@@ -4,8 +4,10 @@
 	--mediumBlack: hsl(0, 0%, 7%);
 	--fullBlack: hsl(0, 0%, 0%);
 	--blue: royalblue;
-	--violet: hsl(266, 45%, 40%);
+	--violet: hsl(260, 50%, 35%);
+	--fullViolet: hsl(255, 60%, 40%);
 	--red: red;
 	--orange: hsl(25, 100%, 50%);
 	--gray: gray;
+	--darkViolet: #222233;
 }

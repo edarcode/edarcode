@@ -20,7 +20,7 @@ export const introJs = {
 			path: javascript
 		},
 		{
-			name: "Consola js?",
+			name: "Consola js",
 			path: consoleJs
 		},
 		{
