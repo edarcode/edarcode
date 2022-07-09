@@ -15,7 +15,7 @@ export const namingConventions = `${javascript}/convenciones`;
 export const functions = `${javascript}/funciones`;
 /* --------------------VISTA JAVASCRIPT-----------end----------------- */
 
-/* --------------------VISTA FUNDAMENTALS-----------end----------------- */
+/* --------------------VISTA FUNDAMENTALS-----------start----------------- */
 export const fundamentalsJs = `${javascript}/fundamentos`;
 export const variables = `${fundamentalsJs}/variables`;
 export const number = `${fundamentalsJs}/number`;
@@ -26,7 +26,18 @@ export const methods = `${fundamentalsJs}/metodos`;
 export const typeArray = `${fundamentalsJs}/array`;
 /* --------------------VISTA FUNDAMENTALS-----------end----------------- */
 
+/* --------------------VISTA FEATURES-----------start----------------- */
 export const featuresJs = `${javascript}/caracteristicas`;
+export const eventsJs = `${featuresJs}/eventos`;
+export const regExp = `${featuresJs}/regexp`;
+export const json = `${featuresJs}/json`;
+export const clases = `${featuresJs}/clases`;
+export const classInheritance = `${featuresJs}/herencia`;
+export const eslint = `${featuresJs}/eslint`;
+export const modulesECMAScript = `${featuresJs}/modulesecmascript`;
+export const dynamicImport = `${featuresJs}/import`;
+/* --------------------VISTA FEATURES-----------end----------------- */
+
 export const domJs = `${javascript}/dom`;
 export const datesJs = `${javascript}/fechas`;
 export const multimediaJS = `${javascript}/multimedia`;
