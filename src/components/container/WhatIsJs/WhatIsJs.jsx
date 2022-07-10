@@ -28,7 +28,11 @@ export default function WhatIsJs() {
 					nosotros.
 				</p>
 				<p>Para comprenderlo, veamos el siguiente ejemplo:</p>
-				<img src="/javascript/numbers.png" alt="ejemplo" />
+				<img
+					className={css.article__img}
+					src="/javascript/numbers.png"
+					alt="ejemplo"
+				/>
 				<p>
 					Imaginemos que toca crear una lista de números del 1 al 100. Hacerlo
 					solamente con HTML sería fastidioso, ya que tendríamos que copiar y
