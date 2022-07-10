@@ -10,7 +10,7 @@
 }
 @font-face {
 	font-family: "Blinker";
-	src: local("Blinker"), url("/fonts/Blinker/Blinker.ttf");
+	src: local("Blinker"), url("/fonts/Blinker/Blinker-SemiBold.ttf");
 }
 body {
 	background-color: var(--black);
