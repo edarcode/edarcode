@@ -35,14 +35,16 @@ export default function WhatIsJs() {
 				/>
 				<p>
 					Imaginemos que toca crear una lista de números del 1 al 100. Hacerlo
-					solamente con HTML sería fastidioso, ya que tendríamos que copiar y
-					pegar como tontos 100 veces el <span> &#60;p&#62;</span> 😪. Con
-					Javascript, podemos decirle al navegador que escriba el primer párrafo
+					solamente con <strong>HTML</strong> sería fastidioso, ya que
+					tendríamos que copiar y pegar como tontos 100 veces el{" "}
+					<span> &#60;p&#62;</span> 😪. Con Javascript, podemos decirle al
+					navegador que escriba el primer párrafo
 					<span> &#60;p&#62;</span>, y luego que lo repita tantas veces como
 					necesitemos y además que en cada render <span> &#60;p&#62;</span> vaya
-					sumándo uno al número que tenemos dentro del <span> &#60;p&#62;</span>
-					. Y todo con un par de líneas de code 😎, mientras que con HTML ¿para
-					qué te digo? tú ya lo sabes sería un martirio 😂.
+					sumándo uno al número que tenemos dentro <span> &#60;p&#62;</span>. Y
+					todo con un par de líneas de code 😎, mientras que con{" "}
+					<strong>HTML</strong> ¿para qué te digo? tú ya lo sabes sería un
+					martirio 😂.
 				</p>
 			</section>
 			<section className={css.article__requirements}>
