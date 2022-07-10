@@ -24,7 +24,7 @@ export default function Javascript() {
 					onClick={handleClickCollapseMenu}
 				/>
 			)}
-			<div
+			<aside
 				className={
 					(isCollapseMenu && css.javascript__menu) ||
 					`${css.javascript__menu} ${css["javascript__menu--hidden"]}`
@@ -33,8 +33,10 @@ export default function Javascript() {
 				{javascript.map(item => (
 					<BoxTopic key={item.name} {...item} />
 				))}
-			</div>
-			<Outlet />
+			</aside>
+			<section className={css.javascript__outlet}>
+				<Outlet />
+			</section>
 		</main>
 	);
 }

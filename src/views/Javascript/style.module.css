@@ -2,6 +2,9 @@
 	position: relative;
 	padding: 15px;
 }
+.javascript__outlet {
+	padding: 10px;
+}
 .javascript__fabar {
 	position: absolute;
 	top: -35px;
@@ -34,7 +37,7 @@
 @media screen and (min-width: 1280px) {
 	.javascript {
 		display: grid;
-		grid-template-columns: 260px 1fr;
+		grid-template-columns: minmax(260px, auto) 1fr;
 		padding: 0;
 	}
 	.javascript__menu {
@@ -43,5 +46,8 @@
 		left: 0;
 		width: 100%;
 		transform: translateX(0);
+	}
+	.javascript__outlet {
+		padding: 25px 40px;
 	}
 }

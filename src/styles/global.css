@@ -1,7 +1,35 @@
+@font-face {
+	font-family: "Montserrat";
+	src: local("Montserrat"),
+		url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+	font-family: "Press_Start_2P";
+	src: local("Press_Start_2P"),
+		url("/fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+}
+@font-face {
+	font-family: "Blinker";
+	src: local("Blinker"), url("/fonts/Blinker/Blinker.ttf");
+}
 body {
 	background-color: var(--black);
 	color: var(--white);
-	font-family: sans-serif;
+	font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+	font-family: "Blinker", sans-serif;
+}
+em {
+	font-family: "Press_Start_2P", cursive;
+	font-style: normal;
 }
 
 @media screen and (min-width: 1280px) {
