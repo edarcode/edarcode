@@ -1,6 +1,6 @@
 .footer {
 	background-color: var(--violet);
-	padding: 5px;
+	padding: 10px;
 	display: grid;
 	place-items: center;
 	gap: 15px;
