@@ -66,8 +66,9 @@ export default function ConsoleJs() {
 					No te preocupes estos si se dan a querer, no como los mios 🤬
 				</p>
 				<p>
-					Para mostrar el resultado por la consola Javascript hemos utilizado la
-					función console.log, pero existen varias más:
+					Para mostrar el resultado por la <strong>Consola Javascript</strong>{" "}
+					hemos utilizado la función <strong>console.log</strong>, pero existen
+					varias más:
 				</p>
 				<table className={css.article__table}>
 					<thead>
