@@ -116,26 +116,28 @@ export default function ConsoleJs() {
 				<h2>Aplicar varios datos</h2>
 				<p>
 					En el ejemplo anterior, hemos escrito un solo dato por cada línea (un
-					texto o una operación numérica), pero console.log() y sus funciones
-					hermanas permiten añadir varios datos en una misma línea, separándolo
-					por comas. <strong>Chusmiemos</strong>
+					texto o una operación numérica), pero <strong>console.log()</strong> y
+					sus funciones hermanas permiten añadir varios datos en una misma
+					línea, separándolo por comas. <strong>Chusmiemos</strong>
 				</p>
 				<img src="/console/hola_sr.png" alt="hola mi señor" />
 			</section>
 			<section className={css["article__apply-css"]}>
 				<h2>Aplicar estilos en la consola </h2>
 				<p>
-					Aunque no es muy práctico y sólo por que podemos y nos da la gana 😋
-					apliquemos estilos CSS en la consola Javascript haciendo uso de{" "}
-					<strong>%c</strong>, que se reemplazará por los estilos indicados:
+					Aunque no es muy práctico y sólo porque podemos y nos da la gana 😋
+					apliquemos estilos CSS en la <strong>Consola Javascript</strong>{" "}
+					haciendo uso de <strong>%c</strong>, que se reemplazará por los
+					estilos indicados:
 				</p>
 				<img src="/console/hola_edarcode.png" alt="hola edarcode" />
 				<p>
-					Recalcar que al escribir en consola podemos obviar el console.log() y
-					escribir directamente la información, pero si queremos mostrar algo
-					por consola desde nuestra <strong>página web</strong> o{" "}
-					<strong>app</strong>, es absolutamente necesario escribir
-					console.log() (o cualquiera de sus hermanitos) en nuestro código. 👀
+					Recalcar que al escribir en consola podemos obviar el{" "}
+					<strong>console.log()</strong> y escribir directamente la información,
+					pero si queremos mostrar algo por consola desde nuestra{" "}
+					<strong>página web</strong> o <strong>app</strong>, es absolutamente
+					necesario escribir <strong>console.log()</strong> (o cualquiera de sus
+					hermanitos) en nuestro código. 👀
 				</p>
 			</section>
 		</article>
