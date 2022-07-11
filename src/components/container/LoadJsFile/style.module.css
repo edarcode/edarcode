@@ -17,7 +17,8 @@
 .article__header,
 .article__inline,
 .article__external,
-.article__location {
+.article__location,
+.article__footer {
 	display: grid;
 	gap: 20px;
 }

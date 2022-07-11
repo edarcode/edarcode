@@ -151,19 +151,20 @@ export default function LoadJsFile() {
 						colocarlo justito antes de cerrar el{" "}
 						<strong>&#60;/body&#62;</strong> es lo más adecuado. Esta opción es
 						equivalente a usar el atributo <strong>defer</strong> en la etiqueta{" "}
-						<strong>&#60;script&#62;</strong>
+						<strong>&#60;script&#62;</strong> (Lo habitual).
 					</li>
 				</ul>
 				<img src="/functionality/defer.png" alt="indexjs" />
 			</section>
-			<footer>
+			<footer className={css.article__footer}>
 				<p className={css.article__quote}>
 					Lo sé tanta parla para 1 linea de code 😂, pero así es la vida y todos
 					esos detallitos que fui contandote es importante saberlos. Y ¡ey!
 					traté de hacerlo lo mas divertido posible para ti y para mi, que me
 					moriría del aburrimiento si escribiera los articulos de otra manera
-					😁. <br /> Nos vemos en el siguiente 😜.
+					😁.
 				</p>
+				<p className={css.article__quote}>Nos vemos en el siguiente 😜.</p>
 			</footer>
 		</article>
 	);
