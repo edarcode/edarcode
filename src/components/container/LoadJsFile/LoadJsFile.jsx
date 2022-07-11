@@ -48,11 +48,10 @@ export default function LoadJsFile() {
 					Esta forma de incluir <strong>Javascript</strong> (inline) es
 					fastidiosisisisima <strong>💭 Activemos modo imaginación 💭</strong>{" "}
 					Imaginemos que tenemos <strong>10 webs</strong> y necesitamos usar el
-					mismo code js para todas, además, imagina que el{" "}
+					mismo <strong>code js</strong> para todas, además, imagina que el{" "}
 					<strong>Code js tiene 50 lineas</strong>, tendremos que volver a
 					escribir como tontos <strong>50 lineas de code js 10 veces</strong>, y
-					eso da mas pereza que levantarse a las ⏰ 4:00 am a sacar la basura
-					😪.
+					eso da mas pereza que los lunes 😪.
 				</p>
 			</section>
 			<section className={css.article__external}>
