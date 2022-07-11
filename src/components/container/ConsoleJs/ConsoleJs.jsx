@@ -23,6 +23,13 @@ export default function ConsoleJs() {
 					src="/console/inspect.png"
 					alt="inspeccionar"
 				/>
+				<p className={css.article__quote}>
+					Es posible que el panel te salga en otro lugar, busca los puntitos
+					(optiones) para moverlo donde te sea más cómodo, en mi caso salen
+					debajo de mi foto de perfil (al fondo a la derecha 🤣, ¡mentira! en la
+					parte superior derecha 🔍), solo es clickear (ni idea si esa palabra
+					existe 😂, bueno digamos cliquear 🧐) en fin es muy intuitivo 😁.
+				</p>
 				<img
 					className={css.article__img}
 					src="/console/console.png"
