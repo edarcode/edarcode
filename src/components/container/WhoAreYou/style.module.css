@@ -20,15 +20,20 @@
 	text-align: left;
 	max-width: 310px;
 }
-.who__love {
+.who__love,
+.who__tipazo {
 	display: inline-block;
 	background-color: var(--violet);
 	padding: 2px;
 	transition: transform 0.3s ease;
 	transform: rotate(-3deg);
 }
-.who__love:hover {
+.who__love:hover,
+.who__tipazo:hover {
 	transform: scale(1.2);
+}
+.who__tipazo {
+	background-color: var(--blue);
 }
 @media screen and (min-width: 768px) {
 	.who__text {

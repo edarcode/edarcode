@@ -19,6 +19,7 @@ export default function WhoAreYou() {
 				en equipo, crear contenido y sobre todo{" "}
 				<strong className={css.who__love}>¡Ama programar!😊</strong>
 			</p>
+			<span className={css.who__tipazo}>Todo un tipazo 😂</span>
 		</div>
 	);
 }
