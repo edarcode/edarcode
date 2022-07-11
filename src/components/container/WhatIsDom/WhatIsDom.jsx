@@ -15,7 +15,7 @@ export default function WhatIsDom() {
 				<p>
 					Con Javascript podemos poner el <strong>DOM</strong> patas arriba de
 					forma dinámica 🤭; ya sea añadiendo, modificando, eliminando
-					etiquetas, cambiando sus atributos, cambiando el contenido, etc...
+					etiquetas, cambiando sus atributos, su contenido, etc...
 				</p>
 				<p>
 					Al estar &quot;amparados&quot; por un lenguaje de programación, todas
@@ -35,11 +35,11 @@ export default function WhatIsDom() {
 				</p>
 				<ul>
 					<li>
-						<strong>Element:</strong> es la representación genérica de una
-						etiqueta <strong>HTMLElement</strong>.
+						<strong>Element:</strong> Representación genérica de una etiqueta{" "}
+						<strong>HTMLElement</strong>.
 					</li>
 					<li>
-						<strong>Node:</strong> es una unidad más básica, la cuál puede ser{" "}
+						<strong>Node:</strong> Es una unidad más básica, la cuál puede ser{" "}
 						<strong>Element</strong> o un <strong>Nodo de texto</strong>.
 					</li>
 				</ul>
