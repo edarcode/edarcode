@@ -120,7 +120,8 @@ export default function LoadJsFile() {
 								<strong>DURANTE</strong> el dibujado de la página
 							</td>
 							<td>
-								Web Dibujada hasta donde está la etiqueta &#60;script&#62;
+								Web Dibujada hasta donde está la etiqueta{" "}
+								<strong>&#60;script&#62;</strong>
 							</td>
 						</tr>
 						<tr>
