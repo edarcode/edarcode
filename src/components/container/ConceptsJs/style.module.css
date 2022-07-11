@@ -1,0 +1,26 @@
+.article {
+	display: grid;
+	gap: 30px;
+}
+.article strong {
+	/* background-color: ; */
+	background-color: var(--softBlack);
+	color: var(--pink);
+	padding: 2px;
+	border-radius: 3px;
+}
+.article__title {
+	font-size: 4rem;
+}
+.article__glossary,
+.article__list {
+	display: grid;
+	gap: 20px;
+}
+.article__quote {
+	padding: 10px;
+	background-color: var(--darkViolet);
+	border-radius: 3px;
+	display: inline-block;
+	justify-self: start;
+}
