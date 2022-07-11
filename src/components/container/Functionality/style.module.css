@@ -1,0 +1,44 @@
+.article {
+	display: grid;
+	gap: 30px;
+}
+.article strong {
+	background-color: var(--violet);
+	padding: 1px;
+	border-radius: 3px;
+}
+.article img {
+	caret-color: transparent;
+}
+.article__quote {
+	background-color: var(--darkViolet);
+	padding: 10px;
+}
+.article__header,
+.article__inline,
+.article__external,
+.article__location {
+	display: grid;
+	gap: 20px;
+}
+.article__table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	border: 3px solid purple;
+	caret-color: transparent;
+}
+.article__table th {
+	background-color: var(--blue);
+}
+@media screen and (min-width: 768px) {
+	.article__table th:nth-child(1) {
+		width: 13%;
+	}
+}
+
+.article__table th,
+.article__table td {
+	padding: 15px;
+	border: 3px solid purple;
+}
