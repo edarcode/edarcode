@@ -19,7 +19,6 @@ import ESLint from "../components/container/ESLint/ESLint";
 import EventsJs from "../components/container/EventsJs/EventsJs";
 import FeaturesJs from "../components/container/FeaturesJs/FeaturesJs";
 import Footer from "../components/container/Footer/Footer";
-import Functionality from "../components/container/Functionality/Functionality";
 import Functions from "../components/container/Functions/Functions";
 import FundamentalsJavascript from "../components/container/FundamentalsJavascript/FundamentalsJavascript";
 import Header from "../components/container/Header/Header";
@@ -27,6 +26,7 @@ import Indentation from "../components/container/Indentation/Indentation";
 import InsertDomElements from "../components/container/InsertDomElements/InsertDomElements";
 import IntroJavascript from "../components/container/IntroJavascript/IntroJavascript";
 import Json from "../components/container/Json/Json";
+import LoadJsFile from "../components/container/LoadJsFile/LoadJsFile";
 import Loops from "../components/container/Loops/Loops";
 import Math from "../components/container/Math/Math";
 import Methods from "../components/container/Methods/Methods";
@@ -61,13 +61,13 @@ import {
 	eslint,
 	eventsJs,
 	featuresJs,
-	functionalityJs,
 	functions,
 	fundamentalsJs,
 	indentation,
 	insertDomElements,
 	javascript,
 	json,
+	loadJsFile,
 	loops,
 	math,
 	methods,
@@ -101,7 +101,7 @@ function App() {
 					<Route element={<IntroJavascript />}>
 						<Route index element={<WhatIsJs />} />
 						<Route path={consoleJs} element={<ConsoleJs />} />
-						<Route path={functionalityJs} element={<Functionality />} />
+						<Route path={loadJsFile} element={<LoadJsFile />} />
 						<Route path={conceptsJs} element={<ConceptsJs />} />
 						<Route path={ecmascript} element={<ECMAScript />} />
 						<Route path={comments} element={<Comments />} />

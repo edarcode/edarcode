@@ -4,7 +4,7 @@ export const CSS = "/css";
 /* --------------------VISTA JAVASCRIPT-----------start----------------- */
 export const javascript = "/javascript";
 export const consoleJs = `${javascript}/consola`;
-export const functionalityJs = `${javascript}/funcionalidad`;
+export const loadJsFile = `${javascript}/cargarjs`;
 export const conceptsJs = `${javascript}/conceptos`;
 export const ecmascript = `${javascript}/ecmascript`;
 export const comments = `${javascript}/comentarios`;

@@ -4,10 +4,10 @@ import {
 	consoleJs,
 	controlStructures,
 	ecmascript,
-	functionalityJs,
 	functions,
 	indentation,
 	javascript,
+	loadJsFile,
 	loops,
 	namingConventions
 } from "../constants/path";
@@ -24,8 +24,8 @@ export const introJs = {
 			path: consoleJs
 		},
 		{
-			name: "¿Cómo funciona js?",
-			path: functionalityJs
+			name: "¿Cómo cargar un archivo js?",
+			path: loadJsFile
 		},
 		{
 			name: "Conceptos básicos",

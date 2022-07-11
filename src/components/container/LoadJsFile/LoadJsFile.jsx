@@ -1,6 +1,6 @@
 import css from "./style.module.css";
 
-export default function Functionality() {
+export default function LoadJsFile() {
 	return (
 		<article className={css.article}>
 			<header className={css.article__header}>
@@ -99,7 +99,7 @@ export default function Functionality() {
 					<thead>
 						<tr>
 							<th>Ubicación</th>
-							<th>¿Como descarga el .js?</th>
+							<th>¿Cómo descarga el .js?</th>
 							<th>Estado de la web</th>
 						</tr>
 					</thead>
@@ -126,7 +126,7 @@ export default function Functionality() {
 						</tr>
 						<tr>
 							<td>
-								Antesito del <strong>&#60;/body&#62;</strong>
+								Antesito de cerrar <strong>&#60;/body&#62;</strong>
 							</td>
 							<td>
 								<strong>DESPUÉS</strong> de dibujar la web
@@ -158,7 +158,7 @@ export default function Functionality() {
 			</section>
 			<footer>
 				<p className={css.article__quote}>
-					Lo se tanta parla para 1 linea de code 😂, pero así es la vida y todos
+					Lo sé tanta parla para 1 linea de code 😂, pero así es la vida y todos
 					esos detallitos que fui contandote es importante saberlos. Y ¡ey!
 					traté de hacerlo lo mas divertido posible para ti y para mi, que me
 					moriría del aburrimiento si escribiera los articulos de otra manera
