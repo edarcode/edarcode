@@ -34,6 +34,7 @@
 }
 .who__tipazo {
 	background-color: var(--blue);
+	font-family: "Blinker";
 }
 @media screen and (min-width: 768px) {
 	.who__text {
