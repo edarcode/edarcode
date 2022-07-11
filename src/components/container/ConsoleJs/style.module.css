@@ -43,6 +43,7 @@
 	width: 100%;
 	border-collapse: collapse;
 	border: 3px solid purple;
+	caret-color: transparent;
 }
 .article__table th:nth-child(1) {
 	border: 3px solid purple;
