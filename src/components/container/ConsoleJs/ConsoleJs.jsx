@@ -57,9 +57,9 @@ export default function ConsoleJs() {
 				</p>
 				<p>
 					¿Complicado verdad 🤣? bueno acepto que no soy muy bueno en
-					matemáticas 😅, pero tengo a mi <strong>esclavo</strong>, y es un
-					experto en operaciones como estas y además sé como ordenarle que
-					multiplique por mi, es decir vamos a programar 😎.
+					matemáticas 😅, pero tengo a mi <strong>sirviente</strong> que es un
+					experto en operaciones como estas y además sé cómo ordenarle que
+					multiplique por mí, es decir, vamos a programar 😎.
 				</p>
 				<img src="/console/multi.png" alt="multiplicación" />
 				<p className={css.article__quote}>
