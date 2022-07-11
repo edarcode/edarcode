@@ -15,9 +15,9 @@ export default function Footer() {
 				<img className={css.footer__manz} src="/manz.png" alt="manz" />
 			</span> */}
 			<div className={css.footer__created}>
-				Creado con
+				☕ Creado con
 				<img className={css.footer__react} src="/react.svg" alt="react" />
-				React
+				👑 React 👑
 			</div>
 		</footer>
 	);
