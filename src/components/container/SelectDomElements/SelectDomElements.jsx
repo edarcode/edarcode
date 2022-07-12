@@ -57,13 +57,12 @@ export default function SelectDomElements() {
 					</tbody>
 				</table>
 				<p className={css.article__alert}>
-					<strong>¡👀 Ojo al Ojo 👀!</strong> Aunque hago referencia a que los
-					métodos devuelven un
-					<strong>[ ]</strong>, realmente devuelven un tipo de dato{" "}
-					<strong>HTMLCollection</strong> o <strong>NodeList</strong>, aunque
-					actúan de forma muy similar a un <strong>[ ]</strong>, no son arrays,
-					y por lo tanto pueden carecer de algunos métodos, por ejemplo
-					.forEach() o .map().
+					<strong>¡👀 Ojo al Ojo👀!</strong> Aunque hago referencia a que los
+					métodos devuelven un <strong>array</strong>, realmente devuelven un
+					tipo de dato <strong>HTMLCollection</strong> o{" "}
+					<strong>NodeList</strong>, aunque actúan de forma muy similar a un{" "}
+					<strong>[ ]</strong>, no son arrays, y por lo tanto pueden carecer de
+					algunos métodos, por ejemplo .forEach() o .map().
 				</p>
 			</section>
 			<section className={css.article__modern}>
