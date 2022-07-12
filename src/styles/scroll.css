@@ -3,8 +3,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar:vertical {
-	width: 5px;
-	background-color: var(--violet);
+	width: 6px;
+	background-color: var(--mediumBlack);
 }
 
 body::-webkit-scrollbar-thumb {
