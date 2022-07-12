@@ -75,6 +75,10 @@
 	.article__table {
 		font-size: 1.6rem;
 	}
+	.article__table th,
+	.article__table td {
+		padding: 20px;
+	}
 	.article__table th:nth-child(1) {
 		width: 40%;
 	}
