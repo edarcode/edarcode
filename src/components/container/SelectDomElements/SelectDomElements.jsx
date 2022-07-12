@@ -57,8 +57,8 @@ export default function SelectDomElements() {
 					</tbody>
 				</table>
 				<p className={css.article__alert}>
-					¡👀 OJO al OJO 👀! Aunque hago referencia a que los métodos devuelven
-					un
+					<strong>¡👀 Ojo al Ojo 👀!</strong> Aunque hago referencia a que los
+					métodos devuelven un
 					<strong>[ ]</strong>, realmente devuelven un tipo de dato{" "}
 					<strong>HTMLCollection</strong> o <strong>NodeList</strong>, aunque
 					actúan de forma muy similar a un <strong>[ ]</strong>, no son arrays,
