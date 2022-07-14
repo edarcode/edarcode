@@ -1,5 +1,12 @@
 export const projects = [
 	{
+		name: "player mp3",
+		text: "Reproductor mp3 hecho con FULL js vanilla",
+		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1657793442/apps/mp3_s2xuyx.png",
+		link: "https://player-mp3.vercel.app/",
+		video: ""
+	},
+	{
 		name: "rick and morty",
 		text: "Buscador de personajes, puede agg a favoritos o eliminar. Landing con sliders",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1657240356/apps/rick_zehkc3.png",
@@ -13,6 +20,7 @@ export const projects = [
 		link: "https://edar-ecommerce.vercel.app/",
 		video: ""
 	},
+
 	{
 		name: "gusakafe",
 		text: "App en tiempo real, el cliente ocupa una mesa, crea un pedido y los chef atienden la orden",
