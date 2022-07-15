@@ -19,7 +19,16 @@ export default function WhoAreYou() {
 				en equipo, crear contenido y sobre todo{" "}
 				<strong className={css.who__love}>¡Ama programar!😊</strong>
 			</p>
-			<span className={css.who__tipazo}>Todo un tipazo 😎</span>
+			<div className={css["who__container-cv-tipazo"]}>
+				<span className={css.who__tipazo}>Todo un tipazo 😎</span>
+				<a
+					className={css.who__cv}
+					href="/personal/cv.pdf"
+					download="cv_edarcode.pdf"
+				>
+					Descargar su cv 😚
+				</a>
+			</div>
 		</div>
 	);
 }

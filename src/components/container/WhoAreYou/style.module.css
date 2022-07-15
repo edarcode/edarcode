@@ -2,6 +2,7 @@
 	text-align: center;
 	padding: 15px;
 	display: grid;
+	gap: 10px;
 	place-items: center;
 }
 .who__title {
@@ -32,9 +33,21 @@
 .who__tipazo:hover {
 	transform: scale(1.2);
 }
+.who__container-cv-tipazo {
+	display: flex;
+	gap: 8px;
+}
 .who__tipazo {
 	background-color: var(--blue);
 	font-family: "Blinker";
+	padding: 5px;
+}
+.who__cv {
+	padding: 6px;
+	background-color: var(--softViolet);
+}
+.who__cv:active {
+	transform: scale(0.9);
 }
 @media screen and (min-width: 768px) {
 	.who__text {
