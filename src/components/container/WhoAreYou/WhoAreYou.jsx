@@ -26,7 +26,7 @@ export default function WhoAreYou() {
 					href="/personal/cv.pdf"
 					download="cv_edarcode.pdf"
 				>
-					Descargar su cv 😚
+					Descarga su cv 😚
 				</a>
 			</div>
 		</div>
