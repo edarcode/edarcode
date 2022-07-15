@@ -25,7 +25,7 @@ export const projects = [
 		name: "gusakafe",
 		text: "App en tiempo real, el cliente ocupa una mesa, crea un pedido y los chef atienden la orden",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1657231239/apps/gusakafe_gfamju.png",
-		link: "pedding",
+		link: "https://gusakafe.vercel.app/",
 		video: ""
 	}
 ];
