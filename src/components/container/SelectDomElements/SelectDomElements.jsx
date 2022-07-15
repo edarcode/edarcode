@@ -139,7 +139,7 @@ export default function SelectDomElements() {
 					otros que si que podemos aplicar a los <strong>arrays</strong>.
 				</p>
 				<p>
-					En JavaScript moderno, una de las formas de convertir un{" "}
+					En Javascript moderno, una de las formas de convertir un{" "}
 					<strong>NodeList</strong> a un <strong>Array</strong> es usando el
 					método <strong>Array.from()</strong>, este método es{" "}
 					<strong>Rechulo 😎</strong> y hace mas cositas, dale un 👀 luego.
