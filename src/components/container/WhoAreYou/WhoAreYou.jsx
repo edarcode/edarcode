@@ -29,7 +29,7 @@ export default function WhoAreYou() {
 				</a>
 			</div>
 			<p className={css["who__free-time"]}>
-				En su tiempo libre se junta con <strong>amantes del code</strong> y{" "}
+				En su tiempo libre se junta con <strong>amantes del code</strong> a{" "}
 				<img
 					className={css["who__img-videogame"]}
 					src="/svgs/videogame.svg"
