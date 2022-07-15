@@ -46,6 +46,11 @@
 	padding: 6px;
 	background-color: var(--softViolet);
 }
+.who__tipazo,
+.who__cv,
+.who__love {
+	border-radius: 3px;
+}
 .who__cv:active {
 	transform: scale(0.8);
 }
