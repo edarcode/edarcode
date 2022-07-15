@@ -58,4 +58,4 @@ export const assets = "/assets";
 export const setup = "/setup";
 export const FAQ = "/faq";
 export const software = "/software";
-export const projects = "/projectos";
+export const projects = "/proyectos";
