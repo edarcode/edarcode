@@ -4,8 +4,7 @@ export default function WhoAreYou() {
 	return (
 		<div className={css.who}>
 			<h1 className={css.who__title}>
-				¿QUIÉN ES{" "}
-				<strong className={css.who__edarcode}>&#x22;EDARCODE&#x22;</strong>
+				¿QUIÉN ES <strong>&#x22;EDARCODE&#x22;</strong>
 				🧐?
 			</h1>
 			<p className={css.who__quote}>
@@ -29,6 +28,15 @@ export default function WhoAreYou() {
 					Descarga su cv 😚
 				</a>
 			</div>
+			<p className={css["who__free-time"]}>
+				En su tiempo libre se junta con amantes del <strong>Code</strong> a{" "}
+				<img
+					className={css["who__img-videogame"]}
+					src="/svgs/videogame.svg"
+					alt=""
+				/>{" "}
+				online
+			</p>
 		</div>
 	);
 }
