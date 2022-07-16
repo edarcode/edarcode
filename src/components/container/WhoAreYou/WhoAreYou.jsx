@@ -35,7 +35,7 @@ export default function WhoAreYou() {
 					src="/svgs/videogame.svg"
 					alt=""
 				/>{" "}
-				online
+				en linea
 			</p>
 		</div>
 	);
