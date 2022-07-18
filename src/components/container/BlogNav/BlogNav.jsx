@@ -18,7 +18,7 @@ export default function BlogNav() {
 			<BoxLink path={projects} text="Proyectos" className={css.blog__link} />
 			<BoxLink path={streams} text="Streams" className={css.blog__link} />
 			<BoxLink path={help} text="Ayuda" className={css.blog__link} />
-			<BoxLink path={assets} text="Asests" className={css.blog__link} />
+			<BoxLink path={assets} text="Assets" className={css.blog__link} />
 			<BoxLink path={setup} text="Setup" className={css.blog__link} />
 			<BoxLink path={software} text="Software" className={css.blog__link} />
 			<BoxLink path={FAQ} text="FAQ" className={css.blog__link} />
