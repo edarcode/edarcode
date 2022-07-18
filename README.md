@@ -1,4 +1,4 @@
-Amo programar, trabajar en equipo, crear contenido y enseñar lo que aprendo. 
+Amo programar, trabajar en equipo, crear contenido y enseñar lo que aprendo.
 
 Soy un programador web full-stack. He estado trabajando en proyectos que van desde los SPA de front-end con React / Redux hasta el back-end en Sequielize / Postgres conectándolos con Express.js y Node.js. 
 
