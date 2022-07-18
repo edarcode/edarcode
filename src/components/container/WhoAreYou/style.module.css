@@ -20,18 +20,12 @@
 	padding: 8px;
 }
 
-.who__text {
-	text-align: left;
-	max-width: 310px;
-}
-.who__love,
 .who__tipazo {
 	display: inline-block;
 	padding: 2px;
 	transition: transform 0.3s ease;
 	transform: rotate(-3deg);
 }
-.who__love:hover,
 .who__tipazo:hover {
 	transform: scale(1.2);
 }
@@ -48,8 +42,7 @@
 	background-color: var(--softViolet);
 }
 .who__tipazo,
-.who__cv,
-.who__love {
+.who__cv {
 	border-radius: 3px;
 }
 .who__cv:active {

@@ -22,3 +22,16 @@
 	transform: translateY(-8px);
 	color: var(--blue);
 }
+.banner__love {
+	display: inline-block;
+	padding: 2px;
+	transition: transform 0.3s ease;
+	transform: rotate(-3deg);
+	border-radius: 3px;
+	background-color: var(--softBlack);
+	border-radius: 3px;
+	color: var(--pink);
+}
+.banner__love:hover {
+	transform: scale(1.2);
+}
