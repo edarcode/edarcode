@@ -1,3 +1,4 @@
+import { linkedin } from "../../../constants/urls";
 import css from "./style.module.css";
 
 export default function Banner() {
@@ -6,7 +7,9 @@ export default function Banner() {
 			<div className={css.banner__name}>
 				{renderSpanByChar("edarcode", css.banner__char)}
 			</div>
-			<img className={css.banner__img} src="/edarko.png" alt="edarcode" />
+			<a href={linkedin} target="_blank" rel="noreferrer">
+				<img className={css.banner__img} src="/edarko.png" alt="edarcode" />
+			</a>
 			<p>
 				<strong className={css.banner__love}>Amo programar,</strong> trabajar en
 				equipo, crear contenido y enseñar lo que voy aprendiendo.
