@@ -14,18 +14,11 @@
 	min-height: 250px;
 	height: 270px;
 }
-.project__picture:hover {
-	overflow: visible;
-}
+
 .project__img {
 	border-radius: var(--border);
 	transition: transform 0.8s ease;
 	caret-color: transparent;
-}
-@media screen and (min-width: 1280px) {
-	.project__img:hover {
-		transform: scale(1.2);
-	}
 }
 .project__name {
 	font-size: 2rem;
@@ -34,4 +27,7 @@
 .project__text {
 	font-size: 1.6rem;
 	overflow: auto auto;
+}
+.project__img:hover {
+	transform: scale(1.1);
 }
