@@ -20,41 +20,18 @@
 	padding: 8px;
 }
 
-.who__tipazo {
-	display: inline-block;
-	padding: 2px;
-	transition: transform 0.3s ease;
-	transform: rotate(-3deg);
-}
-.who__tipazo:hover {
-	transform: scale(1.2);
-}
-.who__container-cv-tipazo {
-	display: flex;
-	gap: 8px;
-}
-.who__tipazo {
-	font-family: "Blinker";
-	padding: 5px;
-}
 .who__cv {
 	padding: 6px;
 	background-color: var(--softViolet);
 }
-.who__tipazo,
+
 .who__cv {
 	border-radius: 3px;
 }
 .who__cv:active {
 	transform: scale(0.8);
 }
-.who__img-videogame {
-	width: 25px;
-	height: 25px;
-	display: inline-block;
-	position: relative;
-	top: 6px;
-}
+
 @media screen and (min-width: 768px) {
 	.who__text {
 		max-width: 700px;
