@@ -6,6 +6,7 @@
 .banner__img {
 	caret-color: transparent;
 	width: 220px;
+	height: 220px;
 	transition: transform 0.8s ease;
 }
 .banner__img:hover {
