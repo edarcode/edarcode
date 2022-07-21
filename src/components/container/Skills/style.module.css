@@ -20,6 +20,7 @@
 .skills__img {
 	transition: transform 0.3s ease;
 	width: 45px;
+	height: 45px;
 }
 .skills__img:hover {
 	transform: scale(1.1);

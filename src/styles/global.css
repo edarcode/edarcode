@@ -2,15 +2,18 @@
 	font-family: "Montserrat";
 	src: local("Montserrat"),
 		url("/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+	font-display: fallback;
 }
 @font-face {
 	font-family: "Press_Start_2P";
 	src: local("Press_Start_2P"),
 		url("/fonts/Press_Start_2P/PressStart2P-Regular.ttf");
+	font-display: fallback;
 }
 @font-face {
 	font-family: "Blinker";
 	src: local("Blinker"), url("/fonts/Blinker/Blinker-SemiBold.ttf");
+	font-display: fallback;
 }
 body {
 	background-color: var(--black);
