@@ -8,7 +8,11 @@ export default function Banner() {
 				{renderSpanByChar("edarcode", css.banner__char)}
 			</div>
 			<a href={linkedin} target="_blank" rel="noreferrer">
-				<img className={css.banner__img} src="/edarcode.webp" alt="edarcode" />
+				<img
+					className={css.banner__img}
+					src="/personal/edarcode.webp"
+					alt="edarcode"
+				/>
 			</a>
 			<p>
 				<strong className={css.banner__love}>Amo programar,</strong> trabajar en
