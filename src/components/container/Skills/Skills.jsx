@@ -42,7 +42,7 @@ const skills = [
 export default function Skills() {
 	return (
 		<div className={css.skills}>
-			<h6 className={css.skills__title}>Habilidades 😎</h6>
+			<div className={css.skills__title}>Habilidades 😎</div>
 			<div className={css.skills__items}>
 				{skills.map(({ src, name }) => (
 					<div key={src} className={css.skills__item}>

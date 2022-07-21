@@ -6,7 +6,7 @@ export default function Project({ name, text, link, img }) {
 			<picture className={css.project__picture}>
 				<img className={css.project__img} src={img} alt={name} />
 			</picture>
-			<h2 className={css.project__name}>{name}</h2>
+			<div className={css.project__name}>{name}</div>
 			<p className={`${css.project__text} scroll`}>{text}</p>
 		</a>
 	);
