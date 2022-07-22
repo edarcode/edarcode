@@ -16,7 +16,7 @@ export default function Footer() {
 			</span> */}
 			<div className={css.footer__created}>
 				☕ Creado con
-				<img className={css.footer__react} src="/react.svg" alt="react" />
+				<img className={css.footer__react} src="/svgs/react.svg" alt="react" />
 				👑 React 👑
 			</div>
 		</footer>

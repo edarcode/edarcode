@@ -14,35 +14,35 @@ export default function SocialNav({ className }) {
 			<BoxLink
 				a
 				path={github}
-				img="/github.svg"
+				img="/svgs/github.svg"
 				color="black"
 				className={css.social__link}
 			/>
 			<BoxLink
 				a
 				path={linkedin}
-				img="/linkedin.svg"
+				img="/svgs/linkedin.svg"
 				color="royalblue"
 				className={css.social__link}
 			/>
 			<BoxLink
 				a
 				path={youtube}
-				img="/youtube.svg"
+				img="/svgs/youtube.svg"
 				color="red"
 				className={css.social__link}
 			/>
 			<BoxLink
 				a
 				path={instagram}
-				img="/instagram.svg"
+				img="/svgs/instagram.svg"
 				color="magenta"
 				className={css.social__link}
 			/>
 			<BoxLink
 				a
 				path={discord}
-				img="/discord.svg"
+				img="/svgs/discord.svg"
 				color="hsl(266, 45%, 40%)"
 				className={css.social__link}
 			/>

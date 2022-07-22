@@ -2,39 +2,39 @@ import css from "./style.module.css";
 
 const skills = [
 	{
-		src: "/html_color.svg",
+		src: "/svgs/html_color.svg",
 		name: "HTML"
 	},
 	{
-		src: "/css_color.svg",
+		src: "/svgs/css_color.svg",
 		name: "CSS"
 	},
 	{
-		src: "/js_color.svg",
+		src: "/svgs/js_color.svg",
 		name: "javascript"
 	},
 	{
-		src: "/react.svg",
+		src: "/svgs/react.svg",
 		name: "react"
 	},
 	{
-		src: "/redux.svg",
+		src: "/svgs/redux.svg",
 		name: "redux"
 	},
 	{
-		src: "/node.svg",
+		src: "/svgs/node.svg",
 		name: "nodejs"
 	},
 	{
-		src: "/pgsql.svg",
+		src: "/svgs/pgsql.svg",
 		name: "postgress"
 	},
 	{
-		src: "/sequelize.svg",
+		src: "/svgs/sequelize.svg",
 		name: "sequelize"
 	},
 	{
-		src: "/svelte.svg",
+		src: "/svgs/svelte.svg",
 		name: "svelte"
 	}
 ];

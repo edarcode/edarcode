@@ -14,7 +14,7 @@ export default function WhatIsJs() {
 			</header>
 			<section className={css.article__concept}>
 				<h1 className={css.article__title}>
-					¿Qué es Javascript? <img src="/js_color.svg" alt="js" />
+					¿Qué es Javascript? <img src="/svgs/js_color.svg" alt="js" />
 				</h1>
 				<p>
 					Un mecanismo con el que podemos decirle a nuestro navegador que tareas

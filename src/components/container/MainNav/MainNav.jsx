@@ -17,7 +17,7 @@ export default function MainNav({ className }) {
 				className={css.mainnav__link}
 				path={javascript}
 				text="javascript"
-				img={"/js.svg"}
+				img={"/svgs/js.svg"}
 				color="hsl(65, 100%, 20%)"
 			/>
 			{/* <BoxLink
