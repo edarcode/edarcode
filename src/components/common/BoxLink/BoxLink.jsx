@@ -16,10 +16,16 @@ export default function BoxLink({ text, img, color, path, a, className }) {
 				href={path}
 				target="_blank"
 				rel="noreferrer"
-				className={`${css.box} ${className}`}
+				className={`${css.box} ${className}}`}
 				ref={link}
 			>
-				{img && <img className={css.box__img} src={img} alt={img} />}
+				{img && (
+					<img
+						className={`${css.box__img} ${css["box__img--invert"]}`}
+						src={img}
+						alt={img}
+					/>
+				)}
 				{text && <span className={css.box__text}>{text}</span>}
 			</a>
 		);

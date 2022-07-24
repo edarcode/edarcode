@@ -1,4 +1,5 @@
 import { javascript } from "../../../constants/path";
+import { react } from "../../../constants/react";
 import BoxLink from "../../common/BoxLink/BoxLink";
 import css from "./style.module.css";
 
@@ -17,7 +18,7 @@ export default function MainNav({ className }) {
 				className={css.mainnav__link}
 				path={javascript}
 				text="javascript"
-				img={"/svgs/js.svg"}
+				img={"/svgs/js_color.svg"}
 				color="hsl(65, 100%, 20%)"
 			/>
 			{/* <BoxLink
@@ -27,6 +28,7 @@ export default function MainNav({ className }) {
 				img={"/terminal.svg"}
 				color="black"
 			/> */}
+			<BoxLink className={css.mainnav__link} {...react} />
 		</nav>
 	);
 }

@@ -12,6 +12,8 @@
 .box__img {
 	width: 30px;
 	height: 30px;
+}
+.box__img--invert {
 	filter: invert(1);
 }
 

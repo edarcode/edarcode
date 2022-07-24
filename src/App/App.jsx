@@ -84,10 +84,12 @@ import {
 	typeArray,
 	variables
 } from "../constants/path";
+import { react } from "../constants/react";
 import Home from "../views/Home/Home";
 import Javascript from "../views/Javascript/Javascript";
 import NotFound from "../views/NotFound/NotFound";
 import Projects from "../views/Projects/Projects";
+import React from "../views/React/React";
 import css from "./style.module.css";
 
 function App() {
@@ -145,6 +147,7 @@ function App() {
 					<Route path={asyncJs} element={<AsyncJavascript />} />
 					<Route path={reqHttpJs} element={<RequestHTTPJavascript />} />
 				</Route>
+				<Route path={react.path} element={<React />}></Route>
 				<Route path="/*" element={<NotFound />} />
 			</Routes>
 			<Footer />
