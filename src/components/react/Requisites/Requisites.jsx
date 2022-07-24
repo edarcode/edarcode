@@ -16,7 +16,7 @@ export default function Requisites() {
 			</ul>
 			<p className="quote">
 				Acepto que NO soy tan bueno con los katas, pero igual me lancé a
-				aprender React, estaba aburrido de copiar y pegar la misma estructura en
+				aprender React, estaba aburrido de copiar y pegar la misma estructura
 				HTML al maquetar una web 💩. Trabajar con componentes es súper cómodo,
 				vas a escribir menos code, facil de leer y escalar.
 			</p>

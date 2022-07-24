@@ -75,7 +75,7 @@ em {
 	gap: 20px;
 }
 .quote {
-	background-color: var(--softViolet);
+	background-color: var(--fullViolet);
 	padding: 8px;
 	border-radius: 3px;
 }
