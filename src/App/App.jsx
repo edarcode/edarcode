@@ -1,92 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import ApiClassListJs from "../components/container/ApiClassListJs/ApiClassListJs";
-import ArrayFunctions from "../components/container/ArrayFunctions/ArrayFunctions";
-import AsyncJavascript from "../components/container/AsyncJavascript/AsyncJavascript";
-import BrowseDomElements from "../components/container/BrowseDomElements/BrowseDomElements";
-import Class from "../components/container/Class/Class";
-import ClassInheritance from "../components/container/ClassInheritance/ClassInheritance";
-import Comments from "../components/container/Comments/Comments";
-import ConceptsJs from "../components/container/ConceptsJs/ConceptsJs";
-import ConsoleJs from "../components/container/ConsoleJs/ConsoleJs";
-import ControlStructures from "../components/container/ControlStructures/ControlStructuresJs";
-import CreateDomElements from "../components/container/CreateDomElements/CreateDomElements";
-import DataTypes from "../components/container/DataTypes/DataTypes";
-import DatesJavascript from "../components/container/DatesJavascript/DatesJavascript";
-import DomJavascript from "../components/container/DomJavascript/DomJavascript";
-import DynamicImport from "../components/container/DynamicImport/DynamicImport";
-import ECMAScript from "../components/container/ECMAScript/ECMAScript";
-import ESLint from "../components/container/ESLint/ESLint";
-import EventsJs from "../components/container/EventsJs/EventsJs";
-import FeaturesJs from "../components/container/FeaturesJs/FeaturesJs";
 import Footer from "../components/container/Footer/Footer";
-import Functions from "../components/container/Functions/Functions";
-import FundamentalsJavascript from "../components/container/FundamentalsJavascript/FundamentalsJavascript";
 import Header from "../components/container/Header/Header";
-import Indentation from "../components/container/Indentation/Indentation";
-import InsertDomElements from "../components/container/InsertDomElements/InsertDomElements";
-import IntroJavascript from "../components/container/IntroJavascript/IntroJavascript";
-import Json from "../components/container/Json/Json";
-import LoadJsFile from "../components/container/LoadJsFile/LoadJsFile";
-import Loops from "../components/container/Loops/Loops";
-import Math from "../components/container/Math/Math";
-import Methods from "../components/container/Methods/Methods";
-import ModulesECMAScript from "../components/container/ModulesECMAScript/ModulesECMAScript";
-import MultimediaJavascript from "../components/container/MultimediaJavascript/MultimediaJavascript";
-import NamingConventions from "../components/container/NamingConventions/NamingConventions";
-import Number from "../components/container/Number/Number";
-import Objects from "../components/container/Objects/Objects";
-import RegExp from "../components/container/RegExp/RegExp";
-import RequestHTTPJavascript from "../components/container/RequestHTTPJavascript/RequestHTTPJavascript";
-import SelectDomElements from "../components/container/SelectDomElements/SelectDomElements";
-import String from "../components/container/String/String";
-import TypeArray from "../components/container/TypeArray/TypeArray";
-import Variables from "../components/container/Variables/Variables";
-import WhatIsDom from "../components/container/WhatIsDom/WhatIsDom";
-import WhatIsJs from "../components/container/WhatIsJs/WhatIsJs";
-import {
-	apiClassListJs,
-	asyncJs,
-	browseDomElements,
-	clases,
-	classInheritance,
-	comments,
-	conceptsJs,
-	consoleJs,
-	controlStructures,
-	createDomElements,
-	datesJs,
-	domJs,
-	dynamicImport,
-	ecmascript,
-	eslint,
-	eventsJs,
-	featuresJs,
-	functions,
-	fundamentalsJs,
-	indentation,
-	insertDomElements,
-	javascript,
-	json,
-	loadJsFile,
-	loops,
-	math,
-	methods,
-	modulesECMAScript,
-	multimediaJS,
-	namingConventions,
-	number,
-	objects,
-	projects,
-	regExp,
-	reqHttpJs,
-	selectDomElements,
-	string,
-	typeArray,
-	variables
-} from "../constants/path";
+import { projects } from "../constants/path";
 import { react } from "../constants/react";
 import Home from "../views/Home/Home";
-import Javascript from "../views/Javascript/Javascript";
 import NotFound from "../views/NotFound/NotFound";
 import Projects from "../views/Projects/Projects";
 import React from "../views/React/React";
@@ -99,54 +16,6 @@ function App() {
 			<Routes>
 				<Route index element={<Home />} />
 				<Route path={projects} element={<Projects />} />
-				<Route path={javascript} element={<Javascript />}>
-					<Route element={<IntroJavascript />}>
-						<Route index element={<WhatIsJs />} />
-						<Route path={consoleJs} element={<ConsoleJs />} />
-						<Route path={loadJsFile} element={<LoadJsFile />} />
-						<Route path={conceptsJs} element={<ConceptsJs />} />
-						<Route path={ecmascript} element={<ECMAScript />} />
-						<Route path={comments} element={<Comments />} />
-						<Route path={controlStructures} element={<ControlStructures />} />
-						<Route path={loops} element={<Loops />} />
-						<Route path={indentation} element={<Indentation />} />
-						<Route path={namingConventions} element={<NamingConventions />} />
-						<Route path={functions} element={<Functions />} />
-					</Route>
-					<Route path={fundamentalsJs} element={<FundamentalsJavascript />}>
-						<Route index element={<DataTypes />} />
-						<Route path={variables} element={<Variables />} />
-						<Route path={number} element={<Number />} />
-						<Route path={objects} element={<Objects />} />
-						<Route path={math} element={<Math />} />
-						<Route path={string} element={<String />} />
-						<Route path={methods} element={<Methods />} />
-						<Route path={typeArray} element={<TypeArray />} />
-					</Route>
-					<Route path={featuresJs} element={<FeaturesJs />}>
-						<Route index element={<ArrayFunctions />} />
-						<Route path={eventsJs} element={<EventsJs />} />
-						<Route path={regExp} element={<RegExp />} />
-						<Route path={json} element={<Json />} />
-						<Route path={clases} element={<Class />} />
-						<Route path={classInheritance} element={<ClassInheritance />} />
-						<Route path={eslint} element={<ESLint />} />
-						<Route path={modulesECMAScript} element={<ModulesECMAScript />} />
-						<Route path={dynamicImport} element={<DynamicImport />} />
-					</Route>
-					<Route path={domJs} element={<DomJavascript />}>
-						<Route index element={<WhatIsDom />} />
-						<Route path={selectDomElements} element={<SelectDomElements />} />
-						<Route path={createDomElements} element={<CreateDomElements />} />
-						<Route path={insertDomElements} element={<InsertDomElements />} />
-						<Route path={apiClassListJs} element={<ApiClassListJs />} />
-						<Route path={browseDomElements} element={<BrowseDomElements />} />
-					</Route>
-					<Route path={datesJs} element={<DatesJavascript />} />
-					<Route path={multimediaJS} element={<MultimediaJavascript />} />
-					<Route path={asyncJs} element={<AsyncJavascript />} />
-					<Route path={reqHttpJs} element={<RequestHTTPJavascript />} />
-				</Route>
 				<Route path={react.path} element={<React />}></Route>
 				<Route path="/*" element={<NotFound />} />
 			</Routes>
