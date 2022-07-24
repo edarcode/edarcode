@@ -70,3 +70,12 @@ em {
 .scroll::-webkit-scrollbar-track {
 	border-radius: 10px;
 }
+.article {
+	display: grid;
+	gap: 20px;
+}
+.quote {
+	background-color: var(--softViolet);
+	padding: 8px;
+	border-radius: 3px;
+}
