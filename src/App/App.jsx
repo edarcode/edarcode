@@ -1,8 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
-import { projects } from "../constants/path";
-import { react } from "../constants/react";
+import { projects, react } from "../constants/pathViews";
 import Home from "../views/Home/Home";
 import NotFound from "../views/NotFound/NotFound";
 import Projects from "../views/Projects/Projects";
@@ -16,7 +15,7 @@ function App() {
 			<Routes>
 				<Route index element={<Home />} />
 				<Route path={projects} element={<Projects />} />
-				<Route path={react.path} element={<React />}></Route>
+				<Route path={react} element={<React />}></Route>
 				<Route path="/*" element={<NotFound />} />
 			</Routes>
 			<Footer />
