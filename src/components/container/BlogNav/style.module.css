@@ -4,8 +4,15 @@
 	justify-content: center;
 	flex-wrap: wrap;
 	background-color: var(--mediumBlack);
+	position: relative;
 }
 .blog__link {
 	color: royalblue;
 	padding: 10px;
+}
+.blog__fabars {
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	transform: translateY(-50%);
 }

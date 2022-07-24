@@ -1,0 +1,12 @@
+.react {
+	position: relative;
+}
+.react__outlet {
+	padding: 15px;
+}
+@media screen and (min-width: 1280px) {
+	.react {
+		display: grid;
+		grid-template-columns: auto 1fr;
+	}
+}

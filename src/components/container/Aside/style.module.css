@@ -1,0 +1,16 @@
+.aside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--darkViolet);
+	min-width: 100%;
+	min-height: 400px;
+	padding: 15px;
+}
+@media screen and (min-width: 1280px) {
+	.aside {
+		position: initial;
+		min-height: initial;
+		min-width: initial;
+	}
+}

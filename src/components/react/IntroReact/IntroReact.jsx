@@ -1,3 +1,5 @@
+import css from "./style.module.css";
+
 export default function IntroReact() {
-	return <div>Intro React</div>;
+	return <div className={css.intro}>Intro React</div>;
 }
