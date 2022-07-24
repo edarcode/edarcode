@@ -1,0 +1,11 @@
+.topic {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 8px;
+	align-items: center;
+	position: relative;
+}
+.topic__arrow,
+.topic__title {
+	cursor: pointer;
+}

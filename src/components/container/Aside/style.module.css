@@ -6,11 +6,19 @@
 	min-width: 100%;
 	min-height: 400px;
 	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.aside__topics {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 @media screen and (min-width: 1280px) {
 	.aside {
 		position: initial;
 		min-height: initial;
-		min-width: initial;
+		min-width: 330px;
 	}
 }

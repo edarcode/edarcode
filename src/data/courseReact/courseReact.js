@@ -4,7 +4,7 @@ import { whatIsReact } from "./whatIsReact";
 
 export const courseReact = {
 	path: react.route,
-	topic: "react",
+	topic: "React 👑",
 	color: "hsl(193, 95%, 28%)",
 	img: "/svgs/react.svg",
 	subTopics: [introReact, whatIsReact]
