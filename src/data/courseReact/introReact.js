@@ -6,11 +6,11 @@ export const introReact = {
 	subTopics: [
 		{
 			topic: "Requisitos",
-			path: react.route
+			path: react.introReact.requisites.exactPath
 		},
 		{
 			topic: "Chrome y React Developer Tools",
-			path: `${react.route}/${react.introReact.chrome}`
+			path: react.introReact.chrome.exactPath
 		}
 	]
 };

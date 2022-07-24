@@ -25,15 +25,15 @@ function App() {
 				<Routes>
 					<Route index element={<Home />} />
 					<Route path={projects} element={<Projects />} />
-					<Route path={react.route} element={<React />}>
-						<Route path={react.introReact.route} element={<IntroReact />}>
+					<Route path={react.path} element={<React />}>
+						<Route path={react.introReact.path} element={<IntroReact />}>
 							<Route index element={<Requisites />} />
-							<Route path={react.introReact.chrome} element={<Chrome />} />
+							<Route path={react.introReact.chrome.path} element={<Chrome />} />
 						</Route>
-						<Route path={react.whatIsReact.route} element={<WhatIsReact />}>
+						<Route path={react.whatIsReact.path} element={<WhatIsReact />}>
 							<Route index element={<WhyReact />} />
 							<Route
-								path={react.whatIsReact.firstComponents}
+								path={react.whatIsReact.firstComponents.path}
 								element={<FirstComponents />}
 							/>
 						</Route>

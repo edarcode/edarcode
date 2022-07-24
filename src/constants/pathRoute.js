@@ -1,15 +1,17 @@
 export const home = "/";
 export const projects = "/projects";
 export const react = {
-	route: "/react",
+	path: "/react",
 	introReact: {
-		route: "",
-		requisites: "",
-		chrome: "chrome"
+		path: "",
+		exactPath: "/react",
+		requisites: { path: "", exactPath: "/react" },
+		chrome: { path: "chrome", exactPath: "/react/chrome" }
 	},
 	whatIsReact: {
-		route: "what",
-		whyReact: "",
-		firstComponents: "first"
+		path: "what",
+		exactPath: "/react/what",
+		whyReact: { path: "", exactPath: "/react/what" },
+		firstComponents: { path: "first", exactPath: "/react/what/first" }
 	}
 };
