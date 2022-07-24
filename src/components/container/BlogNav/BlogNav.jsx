@@ -1,4 +1,4 @@
-import { home, projects } from "../../../constants/pathViews";
+import { home, projects } from "../../../constants/pathRoute";
 import BoxLink from "../../common/BoxLink/BoxLink";
 import css from "./style.module.css";
 

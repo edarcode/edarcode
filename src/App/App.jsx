@@ -1,7 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
-import { projects, react } from "../constants/pathViews";
+import IntroReact from "../components/react/IntroReact/IntroReact";
+import WhatIsReact from "../components/react/WhatIsReact/WhatIsReact";
+import { projects, react } from "../constants/pathRoute";
 import Home from "../views/Home/Home";
 import NotFound from "../views/NotFound/NotFound";
 import Projects from "../views/Projects/Projects";
@@ -15,7 +17,10 @@ function App() {
 			<Routes>
 				<Route index element={<Home />} />
 				<Route path={projects} element={<Projects />} />
-				<Route path={react} element={<React />}></Route>
+				<Route path={react} element={<React />}>
+					<Route index element={<IntroReact />} />
+					<Route path="what" element={<WhatIsReact />} />
+				</Route>
 				<Route path="/*" element={<NotFound />} />
 			</Routes>
 			<Footer />

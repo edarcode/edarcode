@@ -1,3 +1,9 @@
+import { Outlet } from "react-router-dom";
+
 export default function React() {
-	return <main>React</main>;
+	return (
+		<main>
+			<Outlet />
+		</main>
+	);
 }
