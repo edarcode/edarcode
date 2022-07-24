@@ -1,3 +1,9 @@
 export const home = "/";
 export const projects = "/projects";
-export const react = "/react";
+export const react = {
+	route: "/react",
+	subRoute: {
+		introReact: "",
+		whatIsReact: "what"
+	}
+};

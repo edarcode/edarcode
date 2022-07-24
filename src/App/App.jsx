@@ -17,9 +17,9 @@ function App() {
 			<Routes>
 				<Route index element={<Home />} />
 				<Route path={projects} element={<Projects />} />
-				<Route path={react} element={<React />}>
+				<Route path={react.route} element={<React />}>
 					<Route index element={<IntroReact />} />
-					<Route path="what" element={<WhatIsReact />} />
+					<Route path={react.subRoute.whatIsReact} element={<WhatIsReact />} />
 				</Route>
 				<Route path="/*" element={<NotFound />} />
 			</Routes>

@@ -1,7 +1,7 @@
 import { react } from "../../constants/pathRoute";
 
 export const whatIsReact = {
-	path: `${react}/what`,
+	path: `${react.route}/${react.subRoute.whatIsReact}`,
 	topic: "¿Qué es React?",
 	subTopics: [
 		{ topic: "¿Por qué React?" },

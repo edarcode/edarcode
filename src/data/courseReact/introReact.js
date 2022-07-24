@@ -1,7 +1,7 @@
 import { react } from "../../constants/pathRoute";
 
 export const introReact = {
-	path: `${react}/intro`,
+	path: react.route,
 	topic: "Introducción",
 	subTopics: [
 		{ topic: "Requisitos" },
