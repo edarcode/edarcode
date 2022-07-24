@@ -18,6 +18,7 @@ export default function BoxTopic({ topic, subTopics }) {
 			</span>
 			<FaArrowCircleRight
 				className={css.topic__arrow}
+				style={isCollapseTopics && { transform: "rotate(90deg)" }}
 				onClick={handleOnClickIsCollapseTopics}
 			/>
 			{isCollapseTopics && <SubTopicsNav subTopics={subTopics} />}
