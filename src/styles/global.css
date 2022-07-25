@@ -30,6 +30,9 @@ h6,
 strong {
 	font-family: "Blinker", sans-serif;
 }
+h1 {
+	font-size: 3.5rem;
+}
 em {
 	font-family: "Press_Start_2P", cursive;
 	font-style: normal;
