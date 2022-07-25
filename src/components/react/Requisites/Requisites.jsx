@@ -8,7 +8,7 @@ export default function Requisites() {
 			<ul>
 				<li>
 					Resolver katas(ejercicios) de js, es decir bases solidas con el
-					lenguaje javascript 🧐.
+					lenguaje Javascript 🧐.
 				</li>
 				<li>Maquetar una web con HTML y estilarla con CSS 🥸.</li>
 				<li>
