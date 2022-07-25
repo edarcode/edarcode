@@ -6,7 +6,10 @@ export default function Requisites() {
 				Lo ideal es que domine cada uno de estos puntos, NO debe ser un experto.
 			</p>
 			<ul>
-				<li>Resolver katas(ejercicios) de js 🧐.</li>
+				<li>
+					Resolver katas(ejercicios) de js, es decir bases solidas con el
+					lenguaje javascript 🧐.
+				</li>
 				<li>Maquetar una web con HTML y estilarla con CSS 🥸.</li>
 				<li>
 					Manejo del package.json e instalación de dependencias con npm para
