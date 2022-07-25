@@ -7,6 +7,7 @@ import FirstComponents from "../components/react/FirstComponents/FirstComponents
 import IntroReact from "../components/react/IntroReact/IntroReact";
 import Nodejs from "../components/react/Nodejs/Nodejs";
 import Requisites from "../components/react/Requisites/Requisites";
+import Vsc from "../components/react/Vsc/Vsc";
 import WhatIsReact from "../components/react/WhatIsReact/WhatIsReact";
 import WhyReact from "../components/react/WhyReact/WhyReact";
 import { projects, react } from "../constants/pathRoute";
@@ -31,6 +32,7 @@ function App() {
 							<Route index element={<Requisites />} />
 							<Route path={react.introReact.chrome.path} element={<Chrome />} />
 							<Route path={react.introReact.nodejs.path} element={<Nodejs />} />
+							<Route path={react.introReact.vsc.path} element={<Vsc />} />
 						</Route>
 						<Route path={react.whatIsReact.path} element={<WhatIsReact />}>
 							<Route index element={<WhyReact />} />

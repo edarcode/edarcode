@@ -15,6 +15,10 @@ export const introReact = {
 		{
 			topic: "Nodejs",
 			path: react.introReact.nodejs.exactPath
+		},
+		{
+			topic: "VSC",
+			path: react.introReact.vsc.exactPath
 		}
 	]
 };
