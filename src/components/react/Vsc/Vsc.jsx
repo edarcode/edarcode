@@ -80,7 +80,7 @@ export default function Vsc() {
 					<h3>Auto Rename Tag</h3>
 					<p>
 						Cuando cambies el nombre de una etiqueta HTML/XML, cambiará
-						automaticamente su pareja.
+						automáticamente su pareja.
 					</p>
 					<img src="/react/rename_tag.webp" alt="rename tag" />
 				</section>
