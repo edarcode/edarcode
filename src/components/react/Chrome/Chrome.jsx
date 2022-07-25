@@ -8,7 +8,7 @@ export default function Chrome() {
 				están utilizando React y además nos da herramientas muy útiles para
 				desarrollo.
 			</p>
-			<img src="/public/react/react_dev_tools.webp" alt="react dev tools" />
+			<img src="/react/react_dev_tools.webp" alt="react dev tools" />
 		</article>
 	);
 }
