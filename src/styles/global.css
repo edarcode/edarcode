@@ -72,10 +72,17 @@ em {
 }
 .article {
 	display: grid;
+	justify-items: start;
 	gap: 20px;
 }
 .quote {
 	background-color: var(--fullViolet);
 	padding: 8px;
+	border-radius: 3px;
+}
+.url {
+	background-color: var(--softBlack);
+	color: var(--pink);
+	padding: 5px;
 	border-radius: 3px;
 }

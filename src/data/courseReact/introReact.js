@@ -11,6 +11,10 @@ export const introReact = {
 		{
 			topic: "Chrome y React Developer Tools",
 			path: react.introReact.chrome.exactPath
+		},
+		{
+			topic: "Nodejs",
+			path: react.introReact.nodejs.exactPath
 		}
 	]
 };

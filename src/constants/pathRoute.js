@@ -6,7 +6,8 @@ export const react = {
 		path: "",
 		exactPath: "/react",
 		requisites: { path: "", exactPath: "/react" },
-		chrome: { path: "chrome", exactPath: "/react/chrome" }
+		chrome: { path: "chrome", exactPath: "/react/chrome" },
+		nodejs: { path: "nodejs", exactPath: "/react/nodejs" }
 	},
 	whatIsReact: {
 		path: "what",
