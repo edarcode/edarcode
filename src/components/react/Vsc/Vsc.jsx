@@ -4,7 +4,7 @@ export default function Vsc() {
 			<section className="section">
 				<h1>Visual Studio Code</h1>
 				<p>
-					Este editor es el mas famoso y utilizado para provectos React, es
+					Este editor es el mas famoso y utilizado para proyectos React, es
 					ligero, multiplataforma y muy maleable.
 				</p>
 				<a
