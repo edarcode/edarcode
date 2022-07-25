@@ -70,9 +70,13 @@ em {
 .scroll::-webkit-scrollbar-track {
 	border-radius: 10px;
 }
-.article {
+.article,
+.section {
 	display: grid;
 	justify-items: start;
+	gap: 30px;
+}
+.section {
 	gap: 20px;
 }
 .quote {
@@ -85,4 +89,10 @@ em {
 	color: var(--pink);
 	padding: 5px;
 	border-radius: 3px;
+}
+.special_word {
+	background-color: var(--softViolet);
+	border-radius: 2px;
+	padding: 1px 4px;
+	font-weight: bold;
 }
