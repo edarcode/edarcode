@@ -36,8 +36,8 @@ export default function FirstComponents() {
 			</p>
 			<img src="/react/why_react/xhp.webp" alt="xhp" />
 			<p className="quote">
-				Pero si tenia todo lo que se deseaba ¿Cual era el problema ahora? esto
-				en si era PHP y lamentablemente solo funcionaba en servidor 😞.
+				Pero si lo tenía todo ¿Cual era el problema ahora? esto en si, era PHP y
+				lamentablemente solo funcionaba en servidor 😞.
 			</p>
 		</article>
 	);
