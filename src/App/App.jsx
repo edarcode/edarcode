@@ -6,6 +6,7 @@ import Chrome from "../components/react/Chrome/Chrome";
 import FirstComponents from "../components/react/FirstComponents/FirstComponents";
 import IntroReact from "../components/react/IntroReact/IntroReact";
 import Nodejs from "../components/react/Nodejs/Nodejs";
+import OriginReactJsx from "../components/react/OriginReactJsx/OriginReactJsx";
 import Requisites from "../components/react/Requisites/Requisites";
 import Vsc from "../components/react/Vsc/Vsc";
 import WhatIsReact from "../components/react/WhatIsReact/WhatIsReact";
@@ -39,6 +40,10 @@ function App() {
 							<Route
 								path={react.whatIsReact.firstComponents.path}
 								element={<FirstComponents />}
+							/>
+							<Route
+								path={react.whatIsReact.originReactJsx.path}
+								element={<OriginReactJsx />}
 							/>
 						</Route>
 					</Route>

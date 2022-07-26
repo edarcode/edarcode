@@ -11,6 +11,10 @@ export const whatIsReact = {
 		{
 			topic: "Primeros Componentes",
 			path: react.whatIsReact.firstComponents.exactPath
+		},
+		{
+			topic: "Origen React y JSX",
+			path: react.whatIsReact.originReactJsx.exactPath
 		}
 	]
 };

@@ -11,9 +11,16 @@ export const react = {
 		vsc: { path: "vsc", exactPath: "/react/vsc" }
 	},
 	whatIsReact: {
-		path: "what",
-		exactPath: "/react/what",
-		whyReact: { path: "", exactPath: "/react/what" },
-		firstComponents: { path: "first", exactPath: "/react/what/first" }
+		path: "what_is_react",
+		exactPath: "/react/what_is_react",
+		whyReact: { path: "", exactPath: "/react/what_is_react" },
+		firstComponents: {
+			path: "first_components",
+			exactPath: "/react/what_is_react/first_components"
+		},
+		originReactJsx: {
+			path: "origin_react_jsx",
+			exactPath: "/react/what_is_react/origin_react_jsx"
+		}
 	}
 };
