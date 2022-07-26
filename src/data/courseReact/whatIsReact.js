@@ -13,7 +13,7 @@ export const whatIsReact = {
 			path: react.whatIsReact.firstComponents.exactPath
 		},
 		{
-			topic: "Origen React y JSX",
+			topic: "Origen de React y JSX",
 			path: react.whatIsReact.originReactJsx.exactPath
 		}
 	]
