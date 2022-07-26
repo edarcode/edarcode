@@ -1,8 +1,11 @@
 .react {
 	position: relative;
 }
-.react__outlet {
-	padding: 15px;
+.react__wisdom {
+	padding: 20px;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	gap: 40px;
 }
 @media screen and (min-width: 1280px) {
 	.react {
