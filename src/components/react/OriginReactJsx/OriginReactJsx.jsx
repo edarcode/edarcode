@@ -10,10 +10,10 @@ export default function OriginReactJsx() {
 			</p>
 			<p>
 				La mayoría de estas peticiones eran para un tarea tan sencilla como
-				actualizar una vista, una carga se podía delegar al navegador del
-				usuario con su CPU y memoria RAM. Con Javascript evitamos muchas de
-				estas llamadas al servidor, calmando así, el humo que echaban los
-				servidores 💧.
+				actualizar una vista, una carga que se podía delegar al navegador del
+				usuario, aprovechando su CPU y su memoria RAM. Con Javascript evitamos
+				muchas de estas llamadas al servidor, calmando así, el humo que echaban
+				los servidores 💧.
 			</p>
 			<p>
 				En 2011 Jordan Walke crea Fax JS, una librería que permitía crear
