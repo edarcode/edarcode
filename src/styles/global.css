@@ -82,10 +82,15 @@ em {
 .section {
 	gap: 20px;
 }
-.quote {
+.quote,
+.quote2 {
 	background-color: var(--fullViolet);
 	padding: 8px;
 	border-radius: 3px;
+}
+.quote2 {
+	background-color: var(--softBlack);
+	color: var(--pink);
 }
 .url {
 	background-color: var(--softBlack);
