@@ -27,7 +27,7 @@ export default function Vsc() {
 					estoy de acuerdo con mi profesor Pablo &quot;Menos es Mas&quot;.
 				</p>
 				<img
-					src="/react/extensiones.webp"
+					src="/react/intro/extensiones.webp"
 					alt="apartado para instalar extensiones"
 				/>
 				<section className="section">
@@ -37,11 +37,11 @@ export default function Vsc() {
 						intentando pasarme a nvim y me enamoré del tema. En VSC vas a
 						encontrar muchos resultados, yo recomiendo Gruvbox Theme
 					</p>
-					<img src="/react/gruvbox.webp" alt="extension gruvbox" />
+					<img src="/react/intro/gruvbox.webp" alt="extension gruvbox" />
 					<span>En particular la config de Dark Medium</span>
-					<img src="/react/config_gruvbox.webp" alt="config gruvbox" />
+					<img src="/react/intro/config_gruvbox.webp" alt="config gruvbox" />
 					<span>Un ejemplo de como se ve</span>
-					<img src="/react/example_gruvbox.webp" alt="ejemplo gruvbox" />
+					<img src="/react/intro/example_gruvbox.webp" alt="ejemplo gruvbox" />
 				</section>
 				<section className="section">
 					<h3>Iconos para carpetas y archivos</h3>
@@ -51,7 +51,7 @@ export default function Vsc() {
 						nos ayudará con esto.
 					</p>
 					<img
-						src="/react/material_icons.webp"
+						src="/react/intro/material_icons.webp"
 						alt="extension material icons themes"
 					/>
 					<p>
@@ -65,14 +65,14 @@ export default function Vsc() {
 						al parte inferior izquierda del editor.
 					</p>
 
-					<img src="/react/admin_vsc.webp" alt="admin vsc" />
+					<img src="/react/intro/admin_vsc.webp" alt="admin vsc" />
 					<p>
 						Mas rápido sería usando directamente el atajo{" "}
 						<span className="special_word">Ctrl + ,</span> que nos lleva directo
 						a configuración
 					</p>
 					<img
-						src="/react/config_material_icons.webp"
+						src="/react/intro/config_material_icons.webp"
 						alt="config material icons"
 					/>
 				</section>
@@ -82,7 +82,7 @@ export default function Vsc() {
 						Cuando cambies el nombre de una etiqueta HTML/XML, cambiará
 						automáticamente su pareja.
 					</p>
-					<img src="/react/rename_tag.webp" alt="rename tag" />
+					<img src="/react/intro/rename_tag.webp" alt="rename tag" />
 				</section>
 			</section>
 			<p>
