@@ -42,8 +42,8 @@ export default function VirtualDom() {
 				</li>
 			</ul>
 			<p>
-				Ahora veamos paso a paso que el proceso a seguir para dejar lista una
-				web al usuario.
+				Ahora veamos paso a paso el proceso a seguir para dejar lista una web al
+				usuario.
 			</p>
 			<ol>
 				<li>
