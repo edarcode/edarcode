@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
+import CascadeUpdate from "../components/react/CascadeUpdate/CascadeUpdate";
 import Chrome from "../components/react/Chrome/Chrome";
 import FirstComponents from "../components/react/FirstComponents/FirstComponents";
 import ImperativeDeclarative from "../components/react/ImperativeDeclarative/ImperativeDeclarative";
@@ -49,6 +50,10 @@ function App() {
 							<Route
 								path={react.whatIsReact.imperativeDeclarative.path}
 								element={<ImperativeDeclarative />}
+							/>
+							<Route
+								path={react.whatIsReact.cascadeUpdate.path}
+								element={<CascadeUpdate />}
 							/>
 						</Route>
 					</Route>

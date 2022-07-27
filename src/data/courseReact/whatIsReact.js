@@ -19,6 +19,10 @@ export const whatIsReact = {
 		{
 			topic: "Imperativo VS Declarativo",
 			path: react.whatIsReact.imperativeDeclarative.exactPath
+		},
+		{
+			topic: "Cascade Update",
+			path: react.whatIsReact.cascadeUpdate.exactPath
 		}
 	]
 };

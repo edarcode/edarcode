@@ -25,6 +25,10 @@ export const react = {
 		imperativeDeclarative: {
 			path: "imperative_declarative",
 			exactPath: "/react/what_is_react/imperative_declarative"
+		},
+		cascadeUpdate: {
+			path: "cascade_update",
+			exactPath: "/react/what_is_react/cascade_update"
 		}
 	}
 };
