@@ -1,14 +1,14 @@
 export default function ImperativeDeclarative() {
 	return (
 		<article className="article">
-			<h1>Imperativo vs Declarativo</h1>
+			<h1>Imperativo vs Declarativo 💩</h1>
 			<p>
 				Para entender estos conceptos veremos un ejemplo; 💭 Imaginemos 💭 que
 				toca crear un algoritmo que debe multiplicar * 2 cada elemento de un
 				array.
 			</p>
 			<img src="/react/why_react/array.webp" alt="array multiplicado por 2" />
-			<h2>Enfoque Imperativo</h2>
+			<h2>Enfoque Imperativo </h2>
 			<p>
 				Debemos indicar cada uno de los procedimientos e instrucciones concretas
 				que debe realizar el algoritmo para cumplir con el objetivo, es decir,
@@ -37,7 +37,7 @@ export default function ImperativeDeclarative() {
 				Imperativo genera code menos mantenible o mejor dicho mas code que
 				mantener 💩.
 			</p>
-			<h2>Declarativo</h2>
+			<h2>Declarativo 😎</h2>
 			<p>
 				En este enfoque solo nos importa que hace el code, mas NO como lo hace,
 				es decir, se busca abstraernos de la implementación. Para solucionar el
