@@ -17,7 +17,7 @@ export const whatIsReact = {
 			path: react.whatIsReact.originReactJsx.exactPath
 		},
 		{
-			topic: "Imperativo VS Declarativo",
+			topic: "Imperativo vs Declarativo",
 			path: react.whatIsReact.imperativeDeclarative.exactPath
 		},
 		{
