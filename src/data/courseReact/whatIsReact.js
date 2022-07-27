@@ -25,7 +25,7 @@ export const whatIsReact = {
 			path: react.whatIsReact.cascadeUpdate.exactPath
 		},
 		{
-			topic: "Dom de Javascript",
+			topic: "DOM de Javascript",
 			path: react.whatIsReact.domJavascript.exactPath
 		},
 		{
