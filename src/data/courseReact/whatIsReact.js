@@ -29,7 +29,7 @@ export const whatIsReact = {
 			path: react.whatIsReact.domJavascript.exactPath
 		},
 		{
-			topic: "Virtual Dom",
+			topic: "Virtual DOM",
 			path: react.whatIsReact.virtualDom.exactPath
 		},
 		{
