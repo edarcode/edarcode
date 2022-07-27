@@ -10,13 +10,13 @@ export default function ImperativeDeclarative() {
 			<img src="/react/why_react/array.webp" alt="array multiplicado por 2" />
 			<h2>Enfoque Imperativo 💩</h2>
 			<p>
-				Debemos indicar cada uno de los procedimientos e instrucciones concretas
-				que debe realizar el algoritmo para cumplir con el objetivo, es decir,
-				nos centramos en la implementación.
+				En este enfoque debemos indicar cada uno de los procedimientos e
+				instrucciones concretas que debe realizar el algoritmo para cumplir con
+				el objetivo, es decir, nos centramos en la implementación.
 			</p>
 			<p>
-				El problema con es que existen muchísimas formas de cumplir con el
-				objetivo y cada desarrollador lo resolverá como mas le apetezca.
+				El problema es que existen muchísimas formas de cumplir con el objetivo
+				y cada desarrollador lo resolverá como mas le apetezca.
 			</p>
 			<img
 				src="/react/why_react/example_algoritmo_array.webp"
