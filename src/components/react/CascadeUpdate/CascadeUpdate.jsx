@@ -29,7 +29,7 @@ export default function CascadeUpdate() {
 				cuando funcionaban juntos, es decir, todo un sacrilegio 😱.
 			</p>
 			<p>
-				Se necesitaba un algoritmo que automatizara dicho sacrilegio, y de
+				Se necesitaba un algoritmo que automatizara dicho sacrilegio, que de
 				hecho, es el núcleo del 👑 React. El algoritmo basa su funcionamiento en
 				una estructura de datos llamada{" "}
 				<span className="special_word">Virtual DOM 🤗.</span>
