@@ -25,7 +25,7 @@ export default function ImperativeDeclarative() {
 			<p>
 				Como puede ver cada proceso es diferente, y a pesar de que cumplen el
 				mismo objetivo, implica tener que testear cada proceso por separado,
-				dado que, no todos se rompen de la misma forma. Veamos que sucede si un
+				dado que, NO todos se rompen de la misma forma. Veamos que sucede si un
 				elemento del array es un string.
 			</p>
 			<img
