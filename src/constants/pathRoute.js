@@ -33,6 +33,10 @@ export const react = {
 		domJavascript: {
 			path: "dom_javascript",
 			exactPath: "/react/what_is_react/dom_javascript"
+		},
+		virtualDom: {
+			path: "virtual_dom",
+			exactPath: "/react/what_is_react/virtual_dom"
 		}
 	}
 };

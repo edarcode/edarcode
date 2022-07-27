@@ -11,6 +11,7 @@ import IntroReact from "../components/react/IntroReact/IntroReact";
 import Nodejs from "../components/react/Nodejs/Nodejs";
 import OriginReactJsx from "../components/react/OriginReactJsx/OriginReactJsx";
 import Requisites from "../components/react/Requisites/Requisites";
+import VirtualDom from "../components/react/VirtualDom/VirtualDom";
 import Vsc from "../components/react/Vsc/Vsc";
 import WhatIsReact from "../components/react/WhatIsReact/WhatIsReact";
 import WhyReact from "../components/react/WhyReact/WhyReact";
@@ -59,6 +60,10 @@ function App() {
 							<Route
 								path={react.whatIsReact.domJavascript.path}
 								element={<DomJavascript />}
+							/>
+							<Route
+								path={react.whatIsReact.virtualDom.path}
+								element={<VirtualDom />}
 							/>
 						</Route>
 					</Route>
