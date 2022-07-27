@@ -56,8 +56,7 @@ export default function VirtualDom() {
 				</li>
 				<li>
 					La web estará lista para el usuario. Y por supuesto el usuario podrá
-					realizar acciones que modifiquen la interfaz, es decir, cambiar el
-					DOM.
+					realizar acciones que modifiquen la interfaz 👆.
 				</li>
 			</ol>
 			<img src="/react/why_react/react_dom.webp" alt="react y el DOM" />
