@@ -10,7 +10,7 @@ export default function AnswerWhatIsReact() {
 				<li>
 					<p>
 						Fue desarrollada por Facebook, es de código abierto y actualmente es
-						la librería mas utilizada en el mundo, de hecho va muy por delante
+						la librería mas utilizada en el mundo, de hecho, va muy por delante
 						de sus competidores.
 					</p>
 					<img
@@ -41,14 +41,14 @@ export default function AnswerWhatIsReact() {
 			</p>
 			<p>
 				¿Por qué separarlos? Esto está relacionado con la aparición de React
-				Native un framework que nos permite crear apps mobile usando componentes
-				de React, React es valido tanto para el navegador como para React
-				Native, lo único que hacemos con React (mencionado anteriormente) es
-				definir componentes sin importar como se vayan a usar luego.
+				Native: un framework que nos permite crear apps mobile usando
+				componentes de React. React es valido tanto para el navegador como para
+				React Native, lo único que hacemos con React (mencionado anteriormente)
+				es definir componentes sin importar como se vayan a usar luego.
 			</p>
 			<p>
 				ReactDOM se encarga de manipular componentes de React en un entorno web,
-				pero React Native es quien los manipula para en una app mobile, ya sea
+				pero React Native es quien los manipula para en una app mobile, ya sea,
 				para android o IOS. Por lo tanto podemos construir el siguiente eslogan.
 			</p>
 			<p className="quote">
