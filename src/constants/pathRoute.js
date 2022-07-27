@@ -37,6 +37,10 @@ export const react = {
 		virtualDom: {
 			path: "virtual_dom",
 			exactPath: "/react/what_is_react/virtual_dom"
+		},
+		answerWhatIsReact: {
+			path: "answer_what_is_react",
+			exactPath: "/react/what_is_react/answer_what_is_react"
 		}
 	}
 };

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
+import AnswerWhatIsReact from "../components/react/AnswerWhatIsReact/AnswerWhatIsReact";
 import CascadeUpdate from "../components/react/CascadeUpdate/CascadeUpdate";
 import Chrome from "../components/react/Chrome/Chrome";
 import DomJavascript from "../components/react/DomJavascript/DomJavascript";
@@ -64,6 +65,10 @@ function App() {
 							<Route
 								path={react.whatIsReact.virtualDom.path}
 								element={<VirtualDom />}
+							/>
+							<Route
+								path={react.whatIsReact.answerWhatIsReact.path}
+								element={<AnswerWhatIsReact />}
 							/>
 						</Route>
 					</Route>
