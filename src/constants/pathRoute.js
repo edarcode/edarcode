@@ -21,6 +21,10 @@ export const react = {
 		originReactJsx: {
 			path: "origin_react_jsx",
 			exactPath: "/react/what_is_react/origin_react_jsx"
+		},
+		imperativeDeclarative: {
+			path: "imperative_declarative",
+			exactPath: "/react/what_is_react/imperative_declarative"
 		}
 	}
 };

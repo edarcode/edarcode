@@ -4,6 +4,7 @@ import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
 import Chrome from "../components/react/Chrome/Chrome";
 import FirstComponents from "../components/react/FirstComponents/FirstComponents";
+import ImperativeDeclarative from "../components/react/ImperativeDeclarative/ImperativeDeclarative";
 import IntroReact from "../components/react/IntroReact/IntroReact";
 import Nodejs from "../components/react/Nodejs/Nodejs";
 import OriginReactJsx from "../components/react/OriginReactJsx/OriginReactJsx";
@@ -44,6 +45,10 @@ function App() {
 							<Route
 								path={react.whatIsReact.originReactJsx.path}
 								element={<OriginReactJsx />}
+							/>
+							<Route
+								path={react.whatIsReact.imperativeDeclarative.path}
+								element={<ImperativeDeclarative />}
 							/>
 						</Route>
 					</Route>

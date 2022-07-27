@@ -1,13 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import SubTopicsNav from "../SubTopicsNav/SubTopicsNav";
 import css from "./style.module.css";
 
 export default function BoxTopic({ topic, subTopics }) {
 	const [isCollapseTopics, setIsCollapseTopics] = useState(false);
-	const handleOnClickIsCollapseTopics = e => {
+
+	const handleOnClickIsCollapseTopics = () => {
 		setIsCollapseTopics(state => !state);
 	};
+
+	useEffect(() => {
+		if (topic === "Introducción") setIsCollapseTopics(true);
+	}, [topic]);
+
 	return (
 		<div className={css.topic}>
 			<span
