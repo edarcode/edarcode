@@ -39,26 +39,26 @@ export default function ImperativeDeclarative() {
 			</p>
 			<h2>Enfoque Declarativo 😎</h2>
 			<p>
-				En este enfoque solo nos importa que hace el code, mas NO como lo hace,
-				es decir, se busca abstraernos de la implementación. Para solucionar el
-				ejemplo anterior, podríamos utilizar el método map de Javascript.
+				En este enfoque solo importa que hace el code, mas NO como lo hace, es
+				decir, se busca abstraernos de la implementación. Para solucionar el
+				ejemplo anterior, se podría utilizar el método map de Javascript.
 			</p>
 			<img
 				src="/react/why_react/example_algoritmo_array_map.webp"
 				alt="solución del ejemplo anterior con map"
 			/>
 			<p>
-				Como puede notar en un enfoque declarativo, nos abstraemos de la
-				implementación. Los desarrolladores no tendrán que gastar tiempo
-				preguntando o infiriendo como se llegó a la solución del algoritmo,
-				todos sabemos que hace map y no importa como lo hace internamente.
+				Como puede notar en un enfoque declarativo los desarrolladores no
+				tendrán que gastar tiempo preguntando o infiriendo como se llegó a la
+				solución del algoritmo, todos sabemos que hace map y no importa como lo
+				hace internamente.
 			</p>
 			<p>
-				Si se programar de forma Declarativa para resolver una situación,
+				Si se programa de forma Declarativa para resolver una situación,
 				tendremos 1 y NO 3 o mas soluciones, dando como resultado un code
 				sencillo de entender, mas fácil de mantener y mas predecible.
 			</p>
-			<p>Por esto React 👑 tiene un enfoque Declarativo.</p>
+			<p>Por esto React 👑 tiene un enfoque Declarativo 😎.</p>
 			<p className="quote">
 				Programadores de Facebook comentan que desde que usan React, son capaces
 				de pushear commits desde el primer día que entran a trabajar, antes de
