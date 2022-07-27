@@ -11,27 +11,27 @@ const skills = [
 	},
 	{
 		src: "/svgs/js_color.svg",
-		name: "javascript"
+		name: "Javascript"
 	},
 	{
 		src: "/svgs/react.svg",
-		name: "react"
+		name: "React"
 	},
 	{
 		src: "/svgs/redux.svg",
-		name: "redux"
+		name: "Redux"
 	},
 	{
 		src: "/svgs/node.svg",
-		name: "nodejs"
+		name: "Nodejs"
 	},
 	{
 		src: "/svgs/pgsql.svg",
-		name: "postgress"
+		name: "PostgreSQL"
 	},
 	{
 		src: "/svgs/sequelize.svg",
-		name: "sequelize"
+		name: "Sequelize"
 	},
 	{
 		src: "/svgs/svelte.svg",
