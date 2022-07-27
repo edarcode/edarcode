@@ -35,7 +35,7 @@ const skills = [
 	},
 	{
 		src: "/svgs/svelte.svg",
-		name: "svelte"
+		name: "Svelte"
 	}
 ];
 
