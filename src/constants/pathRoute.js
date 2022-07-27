@@ -29,6 +29,10 @@ export const react = {
 		cascadeUpdate: {
 			path: "cascade_update",
 			exactPath: "/react/what_is_react/cascade_update"
+		},
+		domJavascript: {
+			path: "dom_javascript",
+			exactPath: "/react/what_is_react/dom_javascript"
 		}
 	}
 };

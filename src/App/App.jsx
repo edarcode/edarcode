@@ -4,6 +4,7 @@ import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
 import CascadeUpdate from "../components/react/CascadeUpdate/CascadeUpdate";
 import Chrome from "../components/react/Chrome/Chrome";
+import DomJavascript from "../components/react/DomJavascript/DomJavascript";
 import FirstComponents from "../components/react/FirstComponents/FirstComponents";
 import ImperativeDeclarative from "../components/react/ImperativeDeclarative/ImperativeDeclarative";
 import IntroReact from "../components/react/IntroReact/IntroReact";
@@ -54,6 +55,10 @@ function App() {
 							<Route
 								path={react.whatIsReact.cascadeUpdate.path}
 								element={<CascadeUpdate />}
+							/>
+							<Route
+								path={react.whatIsReact.domJavascript.path}
+								element={<DomJavascript />}
 							/>
 						</Route>
 					</Route>

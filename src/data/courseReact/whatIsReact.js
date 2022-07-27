@@ -23,6 +23,10 @@ export const whatIsReact = {
 		{
 			topic: "Cascade Update",
 			path: react.whatIsReact.cascadeUpdate.exactPath
+		},
+		{
+			topic: "Dom de Javascript",
+			path: react.whatIsReact.domJavascript.exactPath
 		}
 	]
 };
