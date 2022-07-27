@@ -37,7 +37,7 @@ export default function ImperativeDeclarative() {
 				Imperativo genera code menos mantenible o mejor dicho mas code que
 				mantener 💩.
 			</p>
-			<h2>Declarativo 😎</h2>
+			<h2>Enfoque Declarativo 😎</h2>
 			<p>
 				En este enfoque solo nos importa que hace el code, mas NO como lo hace,
 				es decir, se busca abstraernos de la implementación. Para solucionar el
