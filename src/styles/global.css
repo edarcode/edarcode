@@ -97,6 +97,10 @@ em {
 	color: var(--pink);
 	padding: 5px;
 	border-radius: 3px;
+	transition: transform 0.5s ease;
+}
+.url:hover {
+	transform: scale(1.06);
 }
 .special_word {
 	background-color: var(--softViolet);

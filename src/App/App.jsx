@@ -2,20 +2,22 @@ import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
-import AnswerWhatIsReact from "../components/react/AnswerWhatIsReact/AnswerWhatIsReact";
-import CascadeUpdate from "../components/react/CascadeUpdate/CascadeUpdate";
-import Chrome from "../components/react/Chrome/Chrome";
-import DomJavascript from "../components/react/DomJavascript/DomJavascript";
-import FirstComponents from "../components/react/FirstComponents/FirstComponents";
-import ImperativeDeclarative from "../components/react/ImperativeDeclarative/ImperativeDeclarative";
-import IntroReact from "../components/react/IntroReact/IntroReact";
-import Nodejs from "../components/react/Nodejs/Nodejs";
-import OriginReactJsx from "../components/react/OriginReactJsx/OriginReactJsx";
-import Requisites from "../components/react/Requisites/Requisites";
-import VirtualDom from "../components/react/VirtualDom/VirtualDom";
-import Vsc from "../components/react/Vsc/Vsc";
-import WhatIsReact from "../components/react/WhatIsReact/WhatIsReact";
-import WhyReact from "../components/react/WhyReact/WhyReact";
+import BuildingProject from "../components/react/building_project/BuildingProject/BuildingProject";
+import InitVite from "../components/react/building_project/InitVite/InitVite";
+import Chrome from "../components/react/intro/Chrome/Chrome";
+import IntroReact from "../components/react/intro/IntroReact/IntroReact";
+import Nodejs from "../components/react/intro/Nodejs/Nodejs";
+import Requisites from "../components/react/intro/Requisites/Requisites";
+import Vsc from "../components/react/intro/Vsc/Vsc";
+import AnswerWhatIsReact from "../components/react/what_is_react/AnswerWhatIsReact/AnswerWhatIsReact";
+import CascadeUpdate from "../components/react/what_is_react/CascadeUpdate/CascadeUpdate";
+import DomJavascript from "../components/react/what_is_react/DomJavascript/DomJavascript";
+import FirstComponents from "../components/react/what_is_react/FirstComponents/FirstComponents";
+import ImperativeDeclarative from "../components/react/what_is_react/ImperativeDeclarative/ImperativeDeclarative";
+import OriginReactJsx from "../components/react/what_is_react/OriginReactJsx/OriginReactJsx";
+import VirtualDom from "../components/react/what_is_react/VirtualDom/VirtualDom";
+import WhatIsReact from "../components/react/what_is_react/WhatIsReact/WhatIsReact";
+import WhyReact from "../components/react/what_is_react/WhyReact/WhyReact";
 import { projects, react } from "../constants/pathRoute";
 import { IsCollapseAside } from "../contexts/IsCollapseAside";
 import Home from "../views/Home/Home";
@@ -70,6 +72,12 @@ function App() {
 								path={react.whatIsReact.answerWhatIsReact.path}
 								element={<AnswerWhatIsReact />}
 							/>
+						</Route>
+						<Route
+							path={react.buildingProject.path}
+							element={<BuildingProject />}
+						>
+							<Route index element={<InitVite />} />
 						</Route>
 					</Route>
 					<Route path="/*" element={<NotFound />} />

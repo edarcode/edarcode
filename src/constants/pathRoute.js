@@ -42,5 +42,13 @@ export const react = {
 			path: "answer_what_is_react",
 			exactPath: "/react/what_is_react/answer_what_is_react"
 		}
+	},
+	buildingProject: {
+		path: "building_project",
+		exactPath: "/react/building_project",
+		initVite: {
+			path: "",
+			exactPath: "/react/building_project"
+		}
 	}
 };
