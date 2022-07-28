@@ -2,7 +2,7 @@ import { react } from "../../constants/pathRoute";
 
 export const buildingProject = {
 	path: react.buildingProject.exactPath,
-	topic: "Iniciando Proyecto",
+	topic: "Inicializando Proyecto",
 	subTopics: [
 		{
 			topic: "Init Vite",
