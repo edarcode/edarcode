@@ -1,7 +1,7 @@
 export default function InitVite() {
 	return (
 		<article className="article">
-			<h1>Creando app con Vite</h1>
+			<h1>Creando Proyecto con Vite</h1>
 			<p>
 				Vite es un framework que nos permite inicializar un proyecto en
 				múltiples librerías o si gusta en vanilla js. Es súper súper rápido y
