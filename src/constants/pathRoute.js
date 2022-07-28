@@ -49,6 +49,10 @@ export const react = {
 		initVite: {
 			path: "",
 			exactPath: "/react/building_project"
+		},
+		configESLint: {
+			path: "config_eslint",
+			exactPath: "/react/building_project/config_eslint"
 		}
 	}
 };

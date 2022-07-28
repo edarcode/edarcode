@@ -5,8 +5,12 @@ export const buildingProject = {
 	topic: "Inicializando Proyecto",
 	subTopics: [
 		{
-			topic: "Init Vite",
+			topic: "Vite",
 			path: react.buildingProject.initVite.exactPath
+		},
+		{
+			topic: "ESLint",
+			path: react.buildingProject.configESLint.exactPath
 		}
 	]
 };

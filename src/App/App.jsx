@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Footer from "../components/container/Footer/Footer";
 import Header from "../components/container/Header/Header";
 import BuildingProject from "../components/react/building_project/BuildingProject/BuildingProject";
+import ConfigESLint from "../components/react/building_project/ConfigESLint/ConfigESLint";
 import InitVite from "../components/react/building_project/InitVite/InitVite";
 import Chrome from "../components/react/intro/Chrome/Chrome";
 import IntroReact from "../components/react/intro/IntroReact/IntroReact";
@@ -78,6 +79,10 @@ function App() {
 							element={<BuildingProject />}
 						>
 							<Route index element={<InitVite />} />
+							<Route
+								path={react.buildingProject.configESLint.path}
+								element={<ConfigESLint />}
+							/>
 						</Route>
 					</Route>
 					<Route path="/*" element={<NotFound />} />
