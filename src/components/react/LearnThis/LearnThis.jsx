@@ -14,7 +14,6 @@ export default function LearnThis() {
 				>
 					<LearnThisAcademy />
 				</a>
-				👣
 			</p>
 		</div>
 	);
