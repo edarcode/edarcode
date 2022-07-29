@@ -57,6 +57,10 @@ export const react = {
 		prettier: {
 			path: "prettier",
 			exactPath: "/react/building_project/prettier"
+		},
+		prettierESLint: {
+			path: "prettier_eslint",
+			exactPath: "/react/building_project/prettier_eslint"
 		}
 	}
 };
