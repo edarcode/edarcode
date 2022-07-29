@@ -13,8 +13,9 @@ export default function Prettier() {
 			<p>
 				La idea de Prettier es que todos trabajen bajo el mismo formato y evitar
 				cambios fantasma cuando trabajamos en remoto (git y github). Hay quienes
-				gustan usar punto y coma y hay quienes no, hay quienes gustan usar
-				comillas simples y otros comillas dobles, y entre otros muchos detalles.
+				gustan usar punto y coma al final de cada linea y hay quienes no, hay
+				quienes gustan usar comillas simples y otros comillas dobles, y entre
+				otros muchos detalles.
 			</p>
 			<p>
 				Al igual que ESLint debemos instalar Prettier en nuestro editor (VSC).
