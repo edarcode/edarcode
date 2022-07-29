@@ -17,41 +17,38 @@ export default function Prettier() {
 				quienes gustan usar comillas simples y otros comillas dobles, y entre
 				otros muchos detalles.
 			</p>
-			<p>
-				Al igual que ESLint debemos instalar Prettier en nuestro editor (VSC).
-			</p>
+			<p>Al igual que ESLint, se debe instalar Prettier en el editor (VSC).</p>
 			<img
 				src="/react/building_project/prettier_extension.webp"
 				alt="exten prettier VSC"
 			/>
 			<p>
-				Luego vamos a instalar lo en nuestro proyecto como dependencia{" "}
+				Luego instalar en nuestro proyecto como dependencia{" "}
 				<span className="special_word">npm i -D prettier</span>
 			</p>
 			<p>
-				Ahora para que Prettier actúe automáticamente al guardar un documento,
+				Ahora, para que Prettier actúe automáticamente al guardar un documento,
 				vamos a configuración de VSC con{" "}
 				<span className="special_word">Ctrl+,</span>,{" "}
 				<span className="special_word">Editor de texto</span>{" "}
-				<span className="special_word">Formato</span> y chuleas Format On Save.
+				<span className="special_word">Formato</span> y chulea Format On Save.
 			</p>
 			<img
 				src="/react/building_project/format_on_save.webp"
 				alt="formatear al guardar"
 			/>
 			<p>
-				En este punto cada que se guarde un archivo Prettier va a formatearlo,
+				En este punto, cada que guarde un archivo, Prettier va a formatearlo,
 				pero entra en conflicto con ESLint que además de analizar el code
 				también formatea. ¿Por qué no usar ESLint para ambas cosas entonces?
 				ESLint no es especialmente bueno formateando por lo que optamos en usar
 				Prettier.
 			</p>
 			<p>
-				¿Como evitar el conflicto? Vamos a crear un archivo de configuración{" "}
-				<span className="special_word">.prettierrc</span> en la raíz del
-				proyecto y en principio vamos a acomodarlo a gusto en formato JSON. En
-				el sitio oficial de Prettier encontraremos toda la cantidad de opciones
-				posibles.
+				¿Como evitar el conflicto? en principio se va a crear un archivo de
+				configuración <span className="special_word">.prettierrc</span> en la
+				raíz del proyecto y acomodarlo a gusto (formato JSON). En el sitio
+				oficial de Prettier encontraremos toda la cantidad de opciones posibles.
 			</p>
 			<a
 				className="url"
@@ -66,8 +63,8 @@ export default function Prettier() {
 				alt="config prettier"
 			/>
 			<p>
-				Esta es la configuración que a mi mas me agrada, siéntase libre de
-				elegir la suya.
+				Prettier ya tiene una configuración por defecto, pero estas son las que
+				cambio a mi gusto, siéntase libre de elegir.
 			</p>
 			<a
 				className="download"
@@ -101,8 +98,8 @@ export default function Prettier() {
 			<p>
 				Ahora si, estamos listos para indicar a ESLint que no se pelee con
 				Prettier, aunque, lo veremos en el siguiente apartado porque también
-				habrá que configurar unos últimos detalles (NO te preocupes es muy
-				sencillo).
+				habrá que configurar unos últimos detalles para cerrar con broche de oro
+				(NO te preocupes es muy sencillo).
 			</p>
 		</article>
 	);
