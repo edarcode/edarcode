@@ -66,5 +66,13 @@ export const react = {
 			path: "template",
 			exactPath: "/react/building_project/template"
 		}
+	},
+	jsxSyntax: {
+		path: "jsx_syntax",
+		exactPath: "/react/jsx_syntax",
+		jsxTag: {
+			path: "",
+			exactPath: "/react/jsx_syntax"
+		}
 	}
 };

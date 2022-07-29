@@ -1,6 +1,7 @@
 import { react } from "../../constants/pathRoute";
 import { buildingProject } from "./buildingProject";
 import { introReact } from "./introReact";
+import { jsxSyntax } from "./jsxSyntax";
 import { whatIsReact } from "./whatIsReact";
 
 export const courseReact = {
@@ -8,5 +9,5 @@ export const courseReact = {
 	topic: "React 👑",
 	color: "hsl(193, 95%, 28%)",
 	img: "/svgs/react.svg",
-	subTopics: [introReact, whatIsReact, buildingProject]
+	subTopics: [introReact, whatIsReact, buildingProject, jsxSyntax]
 };

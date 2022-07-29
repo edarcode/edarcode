@@ -13,6 +13,8 @@ import IntroReact from "../components/react/intro/IntroReact/IntroReact";
 import Nodejs from "../components/react/intro/Nodejs/Nodejs";
 import Requisites from "../components/react/intro/Requisites/Requisites";
 import Vsc from "../components/react/intro/Vsc/Vsc";
+import JsxSyntax from "../components/react/jsx_syntax/JsxSyntax/JsxSyntax";
+import JsxTag from "../components/react/jsx_syntax/JsxTag/JsxTag";
 import AnswerWhatIsReact from "../components/react/what_is_react/AnswerWhatIsReact/AnswerWhatIsReact";
 import CascadeUpdate from "../components/react/what_is_react/CascadeUpdate/CascadeUpdate";
 import DomJavascript from "../components/react/what_is_react/DomJavascript/DomJavascript";
@@ -98,6 +100,9 @@ function App() {
 								path={react.buildingProject.template.path}
 								element={<Template />}
 							/>
+						</Route>
+						<Route path={react.jsxSyntax.path} element={<JsxSyntax />}>
+							<Route index element={<JsxTag />} />
 						</Route>
 					</Route>
 					<Route path="/*" element={<NotFound />} />
