@@ -5,6 +5,7 @@ import Header from "../components/container/Header/Header";
 import BuildingProject from "../components/react/building_project/BuildingProject/BuildingProject";
 import ConfigESLint from "../components/react/building_project/ConfigESLint/ConfigESLint";
 import InitVite from "../components/react/building_project/InitVite/InitVite";
+import Prettier from "../components/react/building_project/Prettier/Prettier";
 import Chrome from "../components/react/intro/Chrome/Chrome";
 import IntroReact from "../components/react/intro/IntroReact/IntroReact";
 import Nodejs from "../components/react/intro/Nodejs/Nodejs";
@@ -82,6 +83,10 @@ function App() {
 							<Route
 								path={react.buildingProject.configESLint.path}
 								element={<ConfigESLint />}
+							/>
+							<Route
+								path={react.buildingProject.prettier.path}
+								element={<Prettier />}
 							/>
 						</Route>
 					</Route>

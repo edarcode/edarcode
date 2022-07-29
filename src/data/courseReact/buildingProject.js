@@ -11,6 +11,10 @@ export const buildingProject = {
 		{
 			topic: "ESLint",
 			path: react.buildingProject.configESLint.exactPath
+		},
+		{
+			topic: "Prettier",
+			path: react.buildingProject.prettier.exactPath
 		}
 	]
 };

@@ -51,8 +51,12 @@ export const react = {
 			exactPath: "/react/building_project"
 		},
 		configESLint: {
-			path: "config_eslint",
-			exactPath: "/react/building_project/config_eslint"
+			path: "eslint",
+			exactPath: "/react/building_project/eslint"
+		},
+		prettier: {
+			path: "prettier",
+			exactPath: "/react/building_project/prettier"
 		}
 	}
 };
