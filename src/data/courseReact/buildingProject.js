@@ -19,6 +19,10 @@ export const buildingProject = {
 		{
 			topic: "Prettier + ESLint",
 			path: react.buildingProject.prettierESLint.exactPath
+		},
+		{
+			topic: "Template github",
+			path: react.buildingProject.template.exactPath
 		}
 	]
 };

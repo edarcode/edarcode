@@ -7,6 +7,7 @@ import ConfigESLint from "../components/react/building_project/ConfigESLint/Conf
 import InitVite from "../components/react/building_project/InitVite/InitVite";
 import Prettier from "../components/react/building_project/Prettier/Prettier";
 import PrettierESLint from "../components/react/building_project/PrettierESLint/PrettierESLint";
+import Template from "../components/react/building_project/Template/Template";
 import Chrome from "../components/react/intro/Chrome/Chrome";
 import IntroReact from "../components/react/intro/IntroReact/IntroReact";
 import Nodejs from "../components/react/intro/Nodejs/Nodejs";
@@ -92,6 +93,10 @@ function App() {
 							<Route
 								path={react.buildingProject.prettierESLint.path}
 								element={<PrettierESLint />}
+							/>
+							<Route
+								path={react.buildingProject.template.path}
+								element={<Template />}
 							/>
 						</Route>
 					</Route>

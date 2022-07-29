@@ -61,6 +61,10 @@ export const react = {
 		prettierESLint: {
 			path: "prettier_eslint",
 			exactPath: "/react/building_project/prettier_eslint"
+		},
+		template: {
+			path: "template",
+			exactPath: "/react/building_project/template"
 		}
 	}
 };
