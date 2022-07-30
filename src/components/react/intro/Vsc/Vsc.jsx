@@ -13,7 +13,7 @@ export default function Vsc() {
 					target="_blank"
 					rel="noreferrer"
 				>
-					Sitio oficial para descargar VSC
+					Sitio oficial Download VSC
 				</a>
 			</section>
 			<section className="section">

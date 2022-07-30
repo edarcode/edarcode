@@ -32,10 +32,8 @@ export default function JsxTag() {
 			</p>
 			<img src="/react/jsx_syntax/console_app.webp" alt="refactor main.jsx" />
 			<p>
-				Ahora, ¿Realmente así va a reflejarse una etiqueta? evidentemente hace
-				falta mas información, tenemos un Objeto que representa un Nodo y se
-				debe conocer donde está ubicando en el Virtual DOM y donde debe ubicarlo
-				en el DOM.
+				Ahora, ¿Realmente así va a reflejarse una etiqueta? hace falta mas información, se tiene un Objeto que representa un Nodo, y se
+				debe conocer donde está ubicando en el Virtual DOM y donde se debe ubicar en el DOM.
 			</p>
 			<p>
 				El método render por detrás se encarga de toda la implementación, es
