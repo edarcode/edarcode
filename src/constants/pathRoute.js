@@ -73,6 +73,10 @@ export const react = {
 		jsxTag: {
 			path: "",
 			exactPath: "/react/jsx_syntax"
+		},
+		children: {
+			path: "children",
+			exactPath: "/react/jsx_syntax/children"
 		}
 	}
 };
