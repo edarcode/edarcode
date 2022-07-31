@@ -30,7 +30,7 @@ export default function DefaultValue() {
 				alt="resultado navegador de valor por defecto"
 			/>
 			<p>
-				Entonces ¿para que sirve value en React? mas adelante se verá, tiene
+				Entonces ¿para qué sirve value en React? mas adelante se verá, tiene
 				otra utilidad muy genial, así que NO se preocupe.
 			</p>
 		</article>
