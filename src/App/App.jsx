@@ -14,6 +14,7 @@ import Nodejs from "../components/react/intro/Nodejs/Nodejs";
 import Requisites from "../components/react/intro/Requisites/Requisites";
 import Vsc from "../components/react/intro/Vsc/Vsc";
 import Children from "../components/react/jsx_syntax/Children/Children";
+import DefaultValue from "../components/react/jsx_syntax/DefaultValue/DefaultValue";
 import JsxProps from "../components/react/jsx_syntax/JsxProps/JsxProps";
 import JsxSyntax from "../components/react/jsx_syntax/JsxSyntax/JsxSyntax";
 import JsxTag from "../components/react/jsx_syntax/JsxTag/JsxTag";
@@ -117,6 +118,10 @@ function App() {
 							<Route
 								path={react.jsxSyntax.propStyle.path}
 								element={<PropStyle />}
+							/>
+							<Route
+								path={react.jsxSyntax.defaultValue.path}
+								element={<DefaultValue />}
 							/>
 						</Route>
 					</Route>

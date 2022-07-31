@@ -19,6 +19,10 @@ export const jsxSyntax = {
 		{
 			topic: "Propiedad Style",
 			path: react.jsxSyntax.propStyle.exactPath
+		},
+		{
+			topic: "Valor por defecto",
+			path: react.jsxSyntax.defaultValue.exactPath
 		}
 	]
 };

@@ -85,6 +85,10 @@ export const react = {
 		propStyle: {
 			path: "prop_style",
 			exactPath: "/react/jsx_syntax/prop_style"
+		},
+		defaultValue: {
+			path: "default_value",
+			exactPath: "/react/jsx_syntax/default_value"
 		}
 	}
 };
