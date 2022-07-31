@@ -29,7 +29,7 @@ export default function JsxProps() {
 			<p>
 				Pese a existir diferencias entre HTML y JSX, note que React no está
 				inventando nada, solo cambia un poco la sintaxis, por lo que si desea
-				usar una prop en JSX, lo idea es que conozca su equivalente en HTML.
+				usar props en JSX, lo idea es que conozca su equivalente en HTML.
 			</p>
 		</article>
 	);
