@@ -11,6 +11,10 @@ export const jsxSyntax = {
 		{
 			topic: "Prop children",
 			path: react.jsxSyntax.children.exactPath
+		},
+		{
+			topic: "Props JSX",
+			path: react.jsxSyntax.jsxProps.exactPath
 		}
 	]
 };

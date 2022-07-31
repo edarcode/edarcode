@@ -77,6 +77,10 @@ export const react = {
 		children: {
 			path: "children",
 			exactPath: "/react/jsx_syntax/children"
+		},
+		jsxProps: {
+			path: "props",
+			exactPath: "/react/jsx_syntax/props"
 		}
 	}
 };
