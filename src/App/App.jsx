@@ -13,6 +13,7 @@ import IntroReact from "../components/react/intro/IntroReact/IntroReact";
 import Nodejs from "../components/react/intro/Nodejs/Nodejs";
 import Requisites from "../components/react/intro/Requisites/Requisites";
 import Vsc from "../components/react/intro/Vsc/Vsc";
+import Children from "../components/react/jsx_syntax/Children/Children";
 import JsxSyntax from "../components/react/jsx_syntax/JsxSyntax/JsxSyntax";
 import JsxTag from "../components/react/jsx_syntax/JsxTag/JsxTag";
 import AnswerWhatIsReact from "../components/react/what_is_react/AnswerWhatIsReact/AnswerWhatIsReact";
@@ -103,6 +104,10 @@ function App() {
 						</Route>
 						<Route path={react.jsxSyntax.path} element={<JsxSyntax />}>
 							<Route index element={<JsxTag />} />
+							<Route
+								path={react.jsxSyntax.children.path}
+								element={<Children />}
+							/>
 						</Route>
 					</Route>
 					<Route path="/*" element={<NotFound />} />
