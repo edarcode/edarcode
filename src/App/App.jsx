@@ -17,6 +17,7 @@ import Children from "../components/react/jsx_syntax/Children/Children";
 import JsxProps from "../components/react/jsx_syntax/JsxProps/JsxProps";
 import JsxSyntax from "../components/react/jsx_syntax/JsxSyntax/JsxSyntax";
 import JsxTag from "../components/react/jsx_syntax/JsxTag/JsxTag";
+import PropStyle from "../components/react/jsx_syntax/PropStyle/PropStyle";
 import AnswerWhatIsReact from "../components/react/what_is_react/AnswerWhatIsReact/AnswerWhatIsReact";
 import CascadeUpdate from "../components/react/what_is_react/CascadeUpdate/CascadeUpdate";
 import DomJavascript from "../components/react/what_is_react/DomJavascript/DomJavascript";
@@ -112,6 +113,10 @@ function App() {
 							<Route
 								path={react.jsxSyntax.jsxProps.path}
 								element={<JsxProps />}
+							/>
+							<Route
+								path={react.jsxSyntax.propStyle.path}
+								element={<PropStyle />}
 							/>
 						</Route>
 					</Route>

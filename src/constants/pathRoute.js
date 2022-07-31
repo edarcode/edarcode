@@ -81,6 +81,10 @@ export const react = {
 		jsxProps: {
 			path: "props",
 			exactPath: "/react/jsx_syntax/props"
+		},
+		propStyle: {
+			path: "prop_style",
+			exactPath: "/react/jsx_syntax/prop_style"
 		}
 	}
 };
