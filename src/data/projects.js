@@ -1,5 +1,12 @@
 export const projects = [
 	{
+		name: "edar ecommerce 🤑",
+		text: "Pago con tarjeta (stripe). Filtros para los productos, detalle, Login (requiere verificarse), reset password, agg productos al carrito o sacarlos",
+		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1658381576/apps/edar_ecommerce_kz4jhm_f3pdxd.webp",
+		link: "https://edar-ecommerce.vercel.app/store",
+		video: ""
+	},
+	{
 		name: "player mp3 🎵",
 		text: "Reproductor mp3 hecho con FULL js vanilla",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1658381576/apps/mp3_vn9cks_cy6eye.webp",
@@ -13,14 +20,14 @@ export const projects = [
 		link: "https://rick-amber.vercel.app/",
 		video: ""
 	},
+
 	{
-		name: "edar ecommerce 🤑",
-		text: "Pago con tarjeta (stripe). Filtros para los productos, detalle, Login (requiere verificarse), reset password, agg productos al carrito o sacarlos",
-		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1658381576/apps/edar_ecommerce_kz4jhm_f3pdxd.webp",
-		link: "https://edar-ecommerce.vercel.app/store",
+		name: "disnayapi 🪄",
+		text: "API para explorar el mundo de Disney, permitirá conocer y modificar los personajes que lo componen y entender en qué películas estos participaron",
+		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1659690405/apps/disnayapi_dxzb9b.webp",
+		link: "https://disneyapi-doc.vercel.app/",
 		video: ""
 	},
-
 	{
 		name: "gusakafe (en desarrollo) ☕",
 		text: "App en tiempo real, el cliente ocupa una mesa, crea un pedido y los chef atienden la orden",
