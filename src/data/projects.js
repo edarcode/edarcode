@@ -8,7 +8,7 @@ export const projects = [
 	},
 	{
 		name: "player mp3 🎵",
-		text: "Reproductor mp3 hecho con FULL js vanilla",
+		text: "Reproductor mp3 hecho con Javascript vanilla",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1658381576/apps/mp3_vn9cks_cy6eye.webp",
 		link: "https://player-mp3.vercel.app/",
 		video: ""
