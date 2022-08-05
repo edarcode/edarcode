@@ -1,17 +1,16 @@
 .project {
 	--border: 3px;
 	display: grid;
+	grid-template-rows: auto auto 1fr;
 	gap: 15px;
 	padding: 15px;
 	background-color: var(--mediumBlack);
 	border-radius: var(--border);
 	width: 310px;
-	min-height: 300px;
-	max-height: 450px;
+	height: 480px;
 }
 .project__picture {
 	overflow: hidden;
-	min-height: 250px;
 	height: 270px;
 }
 
