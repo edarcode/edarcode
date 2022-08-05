@@ -29,7 +29,7 @@ export const projects = [
 		video: ""
 	},
 	{
-		name: "gusakafe (pendding) ☕",
+		name: "gusakafe (pending) ☕",
 		text: "App en tiempo real, el cliente ocupa una mesa, crea un pedido y los chef atienden la orden",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1658381576/apps/gusakafe_gfamju_ctsnd5.webp",
 		link: "https://gusakafe.vercel.app/",
