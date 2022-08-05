@@ -9,7 +9,7 @@ import css from "./style.module.css";
 
 const prohibitedRoutes = ["/", "/projects"];
 
-export default function BlogNav() {
+export default function BlogNav({ className }) {
 	const { pathname } = useLocation();
 	const { isCollapseMenu, setIsCollapseMenu } = useContext(IsCollapseAside);
 
@@ -18,7 +18,7 @@ export default function BlogNav() {
 	};
 
 	return (
-		<nav className={css.blog}>
+		<nav className={`${css.blog} ${className || ""}`}>
 			<BoxLink path={home} text="Inicio" className={css.blog__link} />
 			<BoxLink path={projects} text="Proyectos" className={css.blog__link} />
 			{!isCollapseMenu && !prohibitedRoutes.includes(pathname) && (

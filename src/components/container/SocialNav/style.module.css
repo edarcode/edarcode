@@ -1,8 +1,13 @@
 .social {
 	display: flex;
-	justify-content: end;
+	justify-content: center;
 }
 .social__link {
 	padding: 10px;
 	background-color: var(--mediumBlack);
+}
+@media screen and (min-width: 1280px) {
+	.social {
+		justify-content: end;
+	}
 }
