@@ -16,7 +16,7 @@ export default function Banner() {
 			</a>
 			<p>
 				<strong className={css.banner__love}>Amo programar,</strong> trabajar en
-				equipo, crear contenido y enseñar lo que voy aprendiendo.
+				equipo, crear y enseñar lo que voy aprendiendo.
 			</p>
 		</div>
 	);
