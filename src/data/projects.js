@@ -20,7 +20,13 @@ export const projects = [
 		link: "https://rick-amber.vercel.app/",
 		video: ""
 	},
-
+	{
+		name: "gestor de usuarios (pending) ☕",
+		text: "Gestor de usuarios para una plataforma de elearning.",
+		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1659898101/apps/users_manager_vaggdo.webp",
+		link: "https://github.com/edarcode/user-manager",
+		video: ""
+	},
 	{
 		name: "disneyapi 🪄",
 		text: "API para explorar el mundo de Disney, permitirá conocer y modificar los personajes que lo componen y entender en qué películas estos participaron",
