@@ -21,7 +21,7 @@ export const projects = [
 		video: ""
 	},
 	{
-		name: "gestor de usuarios (pending) ☕",
+		name: "gestor de usuarios 📄",
 		text: "Gestor de usuarios para una plataforma de elearning.",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1659898101/apps/users_manager_vaggdo.webp",
 		link: "https://github.com/edarcode/user-manager",
