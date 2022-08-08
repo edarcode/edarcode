@@ -11,14 +11,14 @@
 }
 .wrapperImg {
 	overflow: hidden;
-	height: 270px;
+	height: 258px;
 }
 
 .img {
 	border-radius: var(--border);
 	transition: transform 0.8s ease;
 	caret-color: transparent;
-	min-height: 270px;
+	min-height: 258px;
 }
 .img:hover {
 	transform: scale(1.1);
