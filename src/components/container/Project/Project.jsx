@@ -1,13 +1,23 @@
 import css from "./style.module.css";
 
-export default function Project({ name, text, link, img }) {
+export default function Project({ name, text, link, img, video }) {
 	return (
-		<a href={link} className={css.project} target="_blank" rel="noreferrer">
-			<picture className={css.project__picture}>
-				<img className={css.project__img} src={img} alt={name} />
-			</picture>
-			<div className={css.project__name}>{name}</div>
-			<p className={`${css.project__text} scroll`}>{text}</p>
-		</a>
+		<article className={css.card}>
+			<a
+				className={css.wrapperImg}
+				href={link}
+				target="_blank"
+				rel="noreferrer"
+			>
+				<img className={css.img} src={img} alt={name} />
+			</a>
+			<div className={css.name}>{name}</div>
+			<p className={`${css.text} scroll`}>{text}</p>
+			{video && (
+				<a className={css.video} href={video} target="_blank" rel="noreferrer">
+					📼
+				</a>
+			)}
+		</article>
 	);
 }

@@ -25,7 +25,8 @@ export const projects = [
 		text: "Gestor de usuarios para una plataforma de elearning.",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1659898101/apps/users_manager_vaggdo.webp",
 		link: "https://github.com/edarcode/user-manager",
-		video: ""
+		video:
+			"https://www.youtube.com/watch?v=tctRAUq13zQ&t=1s&ab_channel=edarcode"
 	},
 	{
 		name: "disneyapi 🪄",

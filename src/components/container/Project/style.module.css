@@ -1,33 +1,42 @@
-.project {
+.card {
 	--border: 3px;
 	display: grid;
-	grid-template-rows: auto auto 1fr;
+	grid-template-rows: auto auto 1fr auto;
 	gap: 15px;
 	padding: 15px;
 	background-color: var(--mediumBlack);
 	border-radius: var(--border);
 	width: 310px;
-	height: 480px;
+	height: 490px;
 }
-.project__picture {
+.wrapperImg {
 	overflow: hidden;
 	height: 270px;
 }
 
-.project__img {
+.img {
 	border-radius: var(--border);
 	transition: transform 0.8s ease;
 	caret-color: transparent;
 	min-height: 270px;
 }
-.project__name {
+.img:hover {
+	transform: scale(1.1);
+}
+.name {
 	font-size: 2rem;
 	text-transform: uppercase;
 }
-.project__text {
-	font-size: 1.6rem;
+.text {
+	font-size: 1.5rem;
 	overflow: auto auto;
 }
-.project__img:hover {
+.video {
+	justify-self: end;
+	font-size: 4rem;
+	line-height: 30px;
+	transition: transform 0.4s ease;
+}
+.video:hover {
 	transform: scale(1.1);
 }
