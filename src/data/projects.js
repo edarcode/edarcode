@@ -29,7 +29,7 @@ export const projects = [
 			"https://www.youtube.com/watch?v=tctRAUq13zQ&t=1s&ab_channel=edarcode"
 	},
 	{
-		name: "disneyapi 🪄",
+		name: "disneyapi ✨",
 		text: "API para explorar el mundo de Disney, permitirá conocer y modificar los personajes que lo componen y entender en qué películas estos participaron",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1659690405/apps/disnayapi_dxzb9b.webp",
 		link: "https://disneyapi-doc.vercel.app/",
