@@ -10,7 +10,7 @@ export default function WhoAreYou() {
 			<p className={css.who__text}>
 				Soy un programador web full-stack. He estado trabajando en proyectos que
 				van desde los SPA de front-end con React / Redux hasta el back-end en
-				Sequielize / Postgres conectándolos con Express.js y Node.js.
+				Sequelize / Postgres conectándolos con Express.js y Node.js.
 			</p>
 			<p className={css.who__text}>
 				Me encantan los desafíos, crecer tanto técnica como personalmente y, por
