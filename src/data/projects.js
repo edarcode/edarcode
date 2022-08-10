@@ -1,6 +1,6 @@
 export const projects = [
 	{
-		name: "edar ecommerce 🤑",
+		name: "ecommerce 🤑",
 		text: "Pago con tarjeta (stripe). Filtros para los productos, detalle, Login (requiere verificarse), reset password, agg productos al carrito o sacarlos",
 		img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1658381576/apps/edar_ecommerce_kz4jhm_f3pdxd.webp",
 		link: "https://edar-ecommerce.vercel.app/store",
