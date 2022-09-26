@@ -36,6 +36,7 @@ export default function BoxLink({ text, img, color, path, a, className }) {
 			className={`${css.box} ${className}`}
 			ref={link}
 			style={({ isActive }) => isActiveLink({ isActive, color })}
+			end
 		>
 			{img && <img className={css.box__img} src={img} alt={img} />}
 			{text && <span className={css.box__text}>{text}</span>}

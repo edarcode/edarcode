@@ -5,8 +5,8 @@ import { jsxSyntax } from "./jsxSyntax";
 import { whatIsReact } from "./whatIsReact";
 
 export const courseReact = {
+	topic: "React",
 	path: react.path,
-	topic: "React 👑",
 	color: "hsl(193, 95%, 28%)",
 	img: "/svgs/react.svg",
 	subTopics: [introReact, whatIsReact, buildingProject, jsxSyntax]

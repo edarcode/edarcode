@@ -10,7 +10,6 @@ export default function Aside({ data }) {
 	return (
 		isCollapseMenu && (
 			<aside className={css.aside}>
-				<span>{data.topic}</span>
 				<div className={css.aside__topics}>
 					{data.subTopics.map(item => (
 						<BoxTopic key={item.topic} {...item} />
