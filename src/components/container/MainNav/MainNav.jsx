@@ -1,4 +1,4 @@
-import { courseReact } from "../../../constants/courseReact/courseReact";
+import { courseReact } from "../../../constants/course-react/courseReact";
 import BoxLink from "../../common/BoxLink/BoxLink";
 import css from "./style.module.css";
 

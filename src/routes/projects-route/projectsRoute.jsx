@@ -1,4 +1,4 @@
-import { projects } from "../../constants/pathRoutes.js/project.js";
+import { projects } from "../../constants/path-routes.js/project.js";
 import Projects from "../../views/Projects/Projects.jsx";
 
 export const projectsRoute = {

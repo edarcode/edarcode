@@ -4,7 +4,7 @@ import JsxProps from "../../../components/react/jsx_syntax/JsxProps/JsxProps.jsx
 import JsxSyntax from "../../../components/react/jsx_syntax/JsxSyntax/JsxSyntax.jsx";
 import JsxTag from "../../../components/react/jsx_syntax/JsxTag/JsxTag.jsx";
 import PropStyle from "../../../components/react/jsx_syntax/PropStyle/PropStyle.jsx";
-import { react } from "../../../constants/pathRoutes.js/react.js";
+import { react } from "../../../constants/path-routes.js/react.js";
 
 export const jsxSyntax = {
 	path: react.jsxSyntax.path,

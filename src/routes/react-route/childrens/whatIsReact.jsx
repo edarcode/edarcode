@@ -7,7 +7,7 @@ import OriginReactJsx from "../../../components/react/what_is_react/OriginReactJ
 import VirtualDom from "../../../components/react/what_is_react/VirtualDom/VirtualDom.jsx";
 import WhatIsReact from "../../../components/react/what_is_react/WhatIsReact/WhatIsReact.jsx";
 import WhyReact from "../../../components/react/what_is_react/WhyReact/WhyReact.jsx";
-import { react } from "../../../constants/pathRoutes.js/react.js";
+import { react } from "../../../constants/path-routes.js/react.js";
 
 export const whatIsReact = {
 	path: react.whatIsReact.path,

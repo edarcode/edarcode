@@ -1,4 +1,4 @@
-import { react } from "../pathRoutes.js/react.js";
+import { react } from "../path-routes.js/react.js";
 import { buildingProject } from "./buildingProject";
 import { introReact } from "./introReact";
 import { jsxSyntax } from "./jsxSyntax";

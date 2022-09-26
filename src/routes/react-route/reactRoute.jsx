@@ -1,4 +1,4 @@
-import { react } from "../../constants/pathRoutes.js/react.js";
+import { react } from "../../constants/path-routes.js/react.js";
 import React from "../../views/React/React.jsx";
 import { buildingProject } from "./childrens/buildingProject.jsx";
 import { introReact } from "./childrens/introReact.jsx";

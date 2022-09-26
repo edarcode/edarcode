@@ -4,7 +4,7 @@ import InitVite from "../../../components/react/building_project/InitVite/InitVi
 import Prettier from "../../../components/react/building_project/Prettier/Prettier.jsx";
 import PrettierESLint from "../../../components/react/building_project/PrettierESLint/PrettierESLint.jsx";
 import Template from "../../../components/react/building_project/Template/Template.jsx";
-import { react } from "../../../constants/pathRoutes.js/react.js";
+import { react } from "../../../constants/path-routes.js/react.js";
 
 export const buildingProject = {
 	path: react.buildingProject.path,

@@ -2,8 +2,8 @@ import { useContext } from "react";
 import { CgCloseO } from "react-icons/cg";
 import { FaBars } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
-import { home } from "../../../constants/pathRoutes.js/home.js";
-import { projects } from "../../../constants/pathRoutes.js/project.js";
+import { home } from "../../../constants/path-routes.js/home.js";
+import { projects } from "../../../constants/path-routes.js/project.js";
 
 import { IsCollapseAside } from "../../../contexts/IsCollapseAside";
 

@@ -1,4 +1,4 @@
-import { home } from "../../constants/pathRoutes.js/home.js";
+import { home } from "../../constants/path-routes.js/home.js";
 import Home from "../../views/Home/Home.jsx";
 
 export const homeRoute = {

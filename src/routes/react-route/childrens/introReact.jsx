@@ -3,7 +3,7 @@ import IntroReact from "../../../components/react/intro/IntroReact/IntroReact.js
 import Nodejs from "../../../components/react/intro/Nodejs/Nodejs.jsx";
 import Requisites from "../../../components/react/intro/Requisites/Requisites.jsx";
 import Vsc from "../../../components/react/intro/Vsc/Vsc.jsx";
-import { react } from "../../../constants/pathRoutes.js/react.js";
+import { react } from "../../../constants/path-routes.js/react.js";
 
 export const introReact = {
 	path: react.introReact.path,
