@@ -1,4 +1,4 @@
-import { react } from "../../constants/pathRoute";
+import { react } from "../pathRoutes.js/react.js";
 
 export const whatIsReact = {
 	path: react.introReact.exactPath,

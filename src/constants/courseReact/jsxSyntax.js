@@ -1,4 +1,4 @@
-import { react } from "../../constants/pathRoute";
+import { react } from "../pathRoutes.js/react.js";
 
 export const jsxSyntax = {
 	path: react.jsxSyntax.exactPath,

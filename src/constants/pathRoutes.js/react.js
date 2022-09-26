@@ -1,5 +1,3 @@
-export const home = "/";
-export const projects = "/projects";
 export const react = {
 	path: "/react",
 	introReact: {

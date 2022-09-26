@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Aside from "../../components/container/Aside/Aside";
 import LearnThis from "../../components/react/LearnThis/LearnThis";
-import { courseReact } from "../../data/courseReact/courseReact";
+import { courseReact } from "../../constants/courseReact/courseReact";
 import css from "./style.module.css";
 
 export default function React() {
