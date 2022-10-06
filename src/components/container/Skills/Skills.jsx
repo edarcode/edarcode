@@ -32,6 +32,14 @@ const skills = [
 	{
 		src: "/svgs/sequelize.svg",
 		name: "Sequelize"
+	},
+	{
+		src: "/svgs/typescript.svg",
+		name: "Typescript"
+	},
+	{
+		src: "/svgs/prisma.svg",
+		name: "Prisma"
 	}
 ];
 
