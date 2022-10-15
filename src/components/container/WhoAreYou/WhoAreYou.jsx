@@ -21,7 +21,7 @@ export default function WhoAreYou() {
 			<a
 				className={css.who__cv}
 				href="/personal/cv.pdf"
-				download="cv_edarcode.pdf"
+				download="cv-edarcode.pdf"
 			>
 				Descargar cv
 			</a>
