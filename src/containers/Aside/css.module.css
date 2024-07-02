@@ -1,0 +1,6 @@
+.aside {
+	background-color: var(--c-darkblack);
+	padding: var(--p-md);
+	display: grid;
+	justify-items: start;
+}

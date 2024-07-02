@@ -4,16 +4,25 @@ import css from "./css.module.css";
 import { BTN__ICON_KIND } from "./kinds.js";
 import { Props } from "./types.js";
 
-export default function BtnIcon({ className, icon, kind, ...props }: Props) {
+export default function BtnIcon({
+	className,
+	icon,
+	kind,
+	onClick,
+	isVisible = true,
+	...props
+}: Props) {
 	const Icon = icon || Cross;
 	const finalClassNameBtn = joinClassNames([
 		css.btn,
-		BTN__ICON_KIND[kind ?? "yellow"],
+		BTN__ICON_KIND[kind ?? "green"],
 		className
 	]);
 
+	if (!isVisible) return null;
+
 	return (
-		<button {...props} className={finalClassNameBtn}>
+		<button {...props} onClick={onClick} className={finalClassNameBtn}>
 			<Icon />
 		</button>
 	);
