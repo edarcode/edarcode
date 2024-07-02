@@ -1,0 +1,35 @@
+.btn {
+	border: none;
+	padding: 0;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.btn:disabled {
+	cursor: initial;
+	color: var(--c-white);
+	background-color: var(--c-gray);
+	border-radius: 50%;
+}
+
+.black {
+	color: var(--c-black);
+}
+
+.red {
+	color: var(--c-red);
+}
+
+.blue {
+	color: var(--c-blue);
+}
+
+.yellow {
+	color: var(--c-yellow);
+}
+
+.green {
+	color: var(--c-green);
+}
