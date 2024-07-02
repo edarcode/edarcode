@@ -6,6 +6,6 @@ type Props = {
 };
 
 export default function Footer({ className }: Props) {
-	const finalClassName = joinClassNames([css.header, className]);
+	const finalClassName = joinClassNames([css.footer, className]);
 	return <footer className={finalClassName}>Footer</footer>;
 }

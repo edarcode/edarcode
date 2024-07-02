@@ -9,12 +9,10 @@
 
 body {
 	background-color: var(--c-white);
-	color: var(--c-black);
+	color: var(--c-darkblack);
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		background: var(--c-green);
-		color: var(--c-white);
-	}
+a {
+	color: currentColor;
+	text-decoration: none;
 }

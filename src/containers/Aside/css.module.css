@@ -1,6 +1,11 @@
 .aside {
 	background-color: var(--c-darkblack);
 	padding: var(--p-md);
+	gap: var(--g-md);
+	color: var(--c-white);
+}
+
+.nav {
 	display: grid;
-	justify-items: start;
+	gap: var(--g-sm);
 }

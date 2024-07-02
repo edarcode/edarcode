@@ -15,7 +15,7 @@ export default function BtnIcon({
 	const Icon = icon || Cross;
 	const finalClassNameBtn = joinClassNames([
 		css.btn,
-		BTN__ICON_KIND[kind ?? "green"],
+		BTN__ICON_KIND[kind ?? "red"],
 		className
 	]);
 

@@ -3,34 +3,26 @@
 	min-height: 100vh;
 	display: grid;
 	gap: var(--g-sm);
+	grid-template-areas:
+		"aside header"
+		"aside main"
+		"aside footer";
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr auto;
 }
 
 .aside {
-	min-height: 100vh;
+	grid-area: aside;
 }
 
-@media (min-width: 768px) {
-	.app {
-		grid-template-areas:
-			"aside header"
-			"aside main"
-			"aside footer";
-		grid-template-columns: minmax(200px, auto) 1fr;
-		grid-template-rows: auto 1fr auto;
-	}
-	.aside {
-		grid-area: aside;
-	}
+.header {
+	grid-area: header;
+}
 
-	.header {
-		grid-area: header;
-	}
+.main {
+	grid-area: main;
+}
 
-	.main {
-		grid-area: main;
-	}
-
-	.footer {
-		grid-area: footer;
-	}
+.footer {
+	grid-area: footer;
 }

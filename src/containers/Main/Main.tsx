@@ -6,6 +6,6 @@ type Props = {
 };
 
 export default function Main({ className }: Props) {
-	const finalClassName = joinClassNames([css.header, className]);
+	const finalClassName = joinClassNames([css.main, className]);
 	return <main className={finalClassName}>Main</main>;
 }

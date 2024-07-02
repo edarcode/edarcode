@@ -1,0 +1,6 @@
+.active {
+	background-color: var(--c-red);
+	border-radius: var(--r-sm);
+	padding: var(--p-sm);
+	text-align: start;
+}
