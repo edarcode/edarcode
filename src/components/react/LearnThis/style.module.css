@@ -1,8 +1,0 @@
-.learn p {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 10px;
-	border-top: 1px solid var(--softBlack);
-	padding-top: 15px;
-}

@@ -4,11 +4,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar:vertical {
 	width: 6px;
-	background-color: var(--mediumBlack);
+	background-color: var(--c-black);
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--violet);
+	background-color: var(--c-red);
 	width: 100%;
 	border-radius: 25px;
 }

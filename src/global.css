@@ -1,0 +1,20 @@
+@import "./styles/reset.css";
+@import "./styles/colors.css";
+@import "./styles/shadow.css";
+@import "./styles/radius.css";
+@import "./styles/fonts.css";
+@import "./styles/padding.css";
+@import "./styles/gap.css";
+@import "./styles/scroll.css";
+
+body {
+	background-color: var(--c-white);
+	color: var(--c-black);
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: var(--c-black);
+		color: var(--c-white);
+	}
+}
