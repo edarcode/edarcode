@@ -1,24 +1,36 @@
 .app {
+	min-width: 100%;
 	min-height: 100vh;
 	display: grid;
-	grid-template-areas:
-		"aside header"
-		"aside main"
-		"aside footer";
+	gap: var(--g-sm);
 }
 
 .aside {
-	grid-area: aside;
+	min-height: 100vh;
 }
 
-.header {
-	grid-area: header;
-}
+@media (min-width: 768px) {
+	.app {
+		grid-template-areas:
+			"aside header"
+			"aside main"
+			"aside footer";
+		grid-template-columns: minmax(200px, auto) 1fr;
+		grid-template-rows: auto 1fr auto;
+	}
+	.aside {
+		grid-area: aside;
+	}
 
-.main {
-	grid-area: main;
-}
+	.header {
+		grid-area: header;
+	}
 
-.footer {
-	grid-area: footer;
+	.main {
+		grid-area: main;
+	}
+
+	.footer {
+		grid-area: footer;
+	}
 }
