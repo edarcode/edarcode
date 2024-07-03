@@ -8,10 +8,7 @@ import Tools from "../../../components/svgs/Tools";
 import { APP_PATH } from "../../../constants/appPaths";
 import { joinClassNames } from "../../../utils/joinClassNames";
 import css from "./css.module.css";
-
-type Props = {
-	className?: string;
-};
+import { Props } from "./type";
 
 export default function Aside({ className }: Props) {
 	const [isCollapsed, setIsCollapsed] = useState(true); // decide si está collapsado el aside

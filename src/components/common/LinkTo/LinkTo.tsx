@@ -11,7 +11,7 @@ export default function LinkTo({ to, children, icon, ...props }: Props) {
 			to={to}
 			className={({ isActive }) => (isActive ? css.active : css.link)}
 		>
-			<Icons className={css.me} />
+			<Icons className={css.icon} />
 			{children}
 		</NavLink>
 	);

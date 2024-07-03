@@ -8,9 +8,9 @@
 	gap: var(--g-sm);
 }
 
-.me {
-	width: 20px;
-	height: 20px;
+.icon {
+	width: 18px;
+	height: 18px;
 }
 
 .active {
