@@ -1,11 +1,5 @@
 import LinkTo from "../../../components/common/LinkTo/LinkTo";
-import {
-	APP,
-	CONTACT,
-	PROJECTS,
-	STUDIES,
-	UTILITIES
-} from "../../../constants/paths";
+import { APP_PATH } from "../../../constants/appPaths";
 import { joinClassNames } from "../../../utils/joinClassNames";
 import css from "./css.module.css";
 
@@ -19,11 +13,11 @@ export default function Aside({ className }: Props) {
 	return (
 		<aside className={finalClassName}>
 			<nav className={css.nav}>
-				<LinkTo to={APP}>Inicio</LinkTo>
-				<LinkTo to={PROJECTS}>Proyectos</LinkTo>
-				<LinkTo to={STUDIES}>Estudios</LinkTo>
-				<LinkTo to={UTILITIES}>Utilidades</LinkTo>
-				<LinkTo to={CONTACT}>Contacto</LinkTo>
+				<LinkTo to={APP_PATH.index}>Inicio</LinkTo>
+				<LinkTo to={APP_PATH.projects}>Proyectos</LinkTo>
+				<LinkTo to={APP_PATH.studies}>Estudios</LinkTo>
+				<LinkTo to={APP_PATH.utilities}>Utilidades</LinkTo>
+				<LinkTo to={APP_PATH.contact}>Contacto</LinkTo>
 			</nav>
 		</aside>
 	);

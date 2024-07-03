@@ -4,20 +4,21 @@ import Contact from "../components/containers/Contact/Contact";
 import Projects from "../components/containers/Projects/Projects";
 import Studies from "../components/containers/Studies/Studies";
 import Utilities from "../components/containers/Utilities/Utilities";
-import { APP, CONTACT, PROJECTS, STUDIES, UTILITIES } from "../constants/paths";
+
+import { APP_PATH } from "../constants/appPaths";
 import App from "../views/App/App";
 import ErrPage from "../views/ErrPage/ErrPage";
 
 export const router = createBrowserRouter([
 	{
-		path: APP,
+		path: APP_PATH.index,
 		element: <App />,
 		errorElement: <ErrPage />,
 		children: [
-			{ path: PROJECTS, element: <Projects /> },
-			{ path: CONTACT, element: <Contact /> },
-			{ path: UTILITIES, element: <Utilities /> },
-			{ path: STUDIES, element: <Studies /> }
+			{ path: APP_PATH.projects, element: <Projects /> },
+			{ path: APP_PATH.contact, element: <Contact /> },
+			{ path: APP_PATH.utilities, element: <Utilities /> },
+			{ path: APP_PATH.studies, element: <Studies /> }
 		]
 	}
 ]);
