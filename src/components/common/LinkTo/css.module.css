@@ -1,6 +1,10 @@
+.link,
 .active {
-	background-color: var(--c-red);
-	border-radius: var(--r-sm);
 	padding: var(--p-sm);
-	text-align: start;
+	border-radius: var(--r-sm);
+}
+
+.active {
+	background-color: var(--c-black);
+	color: var(--c-blue);
 }

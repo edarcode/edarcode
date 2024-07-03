@@ -1,11 +1,11 @@
 .aside {
 	background-color: var(--c-darkblack);
 	padding: var(--p-md);
-	gap: var(--g-md);
 	color: var(--c-white);
+	font-size: 1.4rem;
 }
 
 .nav {
 	display: grid;
-	gap: var(--g-sm);
+	gap: var(--g-md);
 }

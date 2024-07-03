@@ -7,7 +7,7 @@ export default function LinkTo({ to, children, ...props }: Props) {
 		<NavLink
 			{...props}
 			to={to}
-			className={({ isActive }) => (isActive ? css.active : "")}
+			className={({ isActive }) => (isActive ? css.active : css.link)}
 		>
 			{children}
 		</NavLink>

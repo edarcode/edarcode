@@ -4,7 +4,7 @@ import {
 	CONTACT,
 	PROJECTS,
 	STUDIES,
-	UTILS
+	UTILITIES
 } from "../../../constants/paths";
 import { joinClassNames } from "../../../utils/joinClassNames";
 import css from "./css.module.css";
@@ -22,7 +22,7 @@ export default function Aside({ className }: Props) {
 				<LinkTo to={APP}>Inicio</LinkTo>
 				<LinkTo to={PROJECTS}>Proyectos</LinkTo>
 				<LinkTo to={STUDIES}>Estudios</LinkTo>
-				<LinkTo to={UTILS}>Utilidades</LinkTo>
+				<LinkTo to={UTILITIES}>Utilidades</LinkTo>
 				<LinkTo to={CONTACT}>Contacto</LinkTo>
 			</nav>
 		</aside>
