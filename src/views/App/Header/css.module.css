@@ -1,8 +1,26 @@
 .header {
+	position: relative;
 	padding: var(--p-md);
+	display: flex;
+	gap: var(--g-md);
+	justify-content: center;
 }
 
-.youtube {
-	width: 30px;
-	height: auto;
+.header::after {
+	content: "";
+	width: 60%;
+	border-bottom: 1px solid var(--c-lightgray);
+	position: absolute;
+	bottom: 0;
+	left: center;
+}
+
+.header svg {
+	width: 25px;
+	height: 25px;
+	transition: transform ease 0.5s;
+}
+
+.header svg:hover {
+	transform: scale(1.1);
 }
