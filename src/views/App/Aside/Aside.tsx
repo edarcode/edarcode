@@ -1,6 +1,12 @@
-import LinkTo from "../../components/common/LinkTo/LinkTo";
-import { APP, CONTACT, PROJECTS, STUDIES, UTILS } from "../../constants/paths";
-import { joinClassNames } from "../../utils/joinClassNames";
+import LinkTo from "../../../components/common/LinkTo/LinkTo";
+import {
+	APP,
+	CONTACT,
+	PROJECTS,
+	STUDIES,
+	UTILS
+} from "../../../constants/paths";
+import { joinClassNames } from "../../../utils/joinClassNames";
 import css from "./css.module.css";
 
 type Props = {

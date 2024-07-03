@@ -1,7 +1,7 @@
-import Aside from "../../containers/Aside/Aside";
-import Footer from "../../containers/Footer/Footer";
-import Header from "../../containers/Header/Header";
-import Main from "../../containers/Main/Main";
+import Aside from "./Aside/Aside";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+import Main from "./Main/Main";
 import css from "./css.module.css";
 
 export default function App() {

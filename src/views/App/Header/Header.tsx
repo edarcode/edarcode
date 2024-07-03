@@ -1,9 +1,6 @@
-import { joinClassNames } from "../../utils/joinClassNames";
+import { joinClassNames } from "../../../utils/joinClassNames";
 import css from "./css.module.css";
-
-type Props = {
-	className?: string;
-};
+import { Props } from "./types";
 
 export default function Header({ className }: Props) {
 	const finalClassName = joinClassNames([css.header, className]);
