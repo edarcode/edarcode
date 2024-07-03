@@ -1,3 +1,3 @@
 export default function AboutMe() {
-	return <div>sobre edar</div>;
+	return <div>Sobre edar</div>;
 }

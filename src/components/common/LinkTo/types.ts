@@ -1,4 +1,5 @@
 export type Props = {
 	to: string;
-	children: React.ReactNode;
+	icon?: JSX.ElementType;
+	children?: React.ReactNode;
 };

@@ -2,6 +2,15 @@
 .active {
 	padding: var(--p-sm);
 	border-radius: var(--r-sm);
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	gap: var(--g-sm);
+}
+
+.me {
+	width: 20px;
+	height: 20px;
 }
 
 .active {

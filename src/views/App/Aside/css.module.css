@@ -3,6 +3,19 @@
 	padding: var(--p-md);
 	color: var(--c-white);
 	font-size: 1.4rem;
+	display: grid;
+	gap: var(--g-md);
+	place-items: start;
+	grid-template-rows: auto 1fr;
+}
+
+.arrow {
+	width: 30px;
+	height: 30px;
+}
+
+.arrow_rotate {
+	transform: rotate(180deg);
 }
 
 .nav {

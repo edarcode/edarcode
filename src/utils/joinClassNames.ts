@@ -1,4 +1,4 @@
-type Items = string | undefined;
+type Items = string | undefined | null | false;
 type ClassNames = Items[];
 
 export const joinClassNames = (classNames: ClassNames) => {
