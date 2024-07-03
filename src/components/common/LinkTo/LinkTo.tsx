@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import Me from "../../svgs/Me";
+import Person from "../../svgs/Person";
 import css from "./css.module.css";
 import { Props } from "./types";
 
 export default function LinkTo({ to, children, icon, ...props }: Props) {
-	const Icons = icon || Me;
+	const Icons = icon || Person;
 	return (
 		<NavLink
 			{...props}

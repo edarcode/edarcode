@@ -4,5 +4,5 @@ import { Props } from "./types";
 
 export default function Header({ className }: Props) {
 	const finalClassName = joinClassNames([css.header, className]);
-	return <header className={finalClassName}>header</header>;
+	return <header className={finalClassName}></header>;
 }

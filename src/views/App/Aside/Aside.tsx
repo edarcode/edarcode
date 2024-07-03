@@ -3,8 +3,8 @@ import LinkTo from "../../../components/common/LinkTo/LinkTo";
 import Arrow from "../../../components/svgs/Arrow";
 import Diploma from "../../../components/svgs/Diploma";
 import Folder from "../../../components/svgs/Folder";
+import Resources from "../../../components/svgs/Resources";
 import Tell from "../../../components/svgs/Tell";
-import Tools from "../../../components/svgs/Tools";
 import { APP_PATH } from "../../../constants/appPaths";
 import { joinClassNames } from "../../../utils/joinClassNames";
 import css from "./css.module.css";
@@ -34,7 +34,7 @@ export default function Aside({ className }: Props) {
 				<LinkTo to={APP_PATH.studies} icon={Diploma}>
 					{!isCollapsed && "Estudios"}
 				</LinkTo>
-				<LinkTo to={APP_PATH.utilities} icon={Tools}>
+				<LinkTo to={APP_PATH.utilities} icon={Resources}>
 					{!isCollapsed && "Utilidades"}
 				</LinkTo>
 				<LinkTo to={APP_PATH.contact} icon={Tell}>
