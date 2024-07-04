@@ -4,5 +4,5 @@ import { Props } from "./types";
 
 export default function Footer({ className }: Props) {
 	const finalClassName = joinClassNames([css.footer, className]);
-	return <footer className={finalClassName}>Footer</footer>;
+	return <footer className={finalClassName}>🚀 ©edarcode ☕</footer>;
 }

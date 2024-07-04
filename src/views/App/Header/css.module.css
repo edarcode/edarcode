@@ -12,7 +12,6 @@
 	border-bottom: 1px solid var(--c-lightgray);
 	position: absolute;
 	bottom: 0;
-	left: center;
 }
 
 .header svg {

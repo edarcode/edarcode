@@ -1,3 +1,14 @@
 .footer {
+	position: relative;
 	padding: var(--p-md);
+	display: flex;
+	justify-content: center;
+}
+
+.footer::after {
+	content: "";
+	width: 60%;
+	border-bottom: 1px solid var(--c-lightgray);
+	position: absolute;
+	top: 0;
 }
