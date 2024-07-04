@@ -1,4 +1,5 @@
 import { EDARCODE } from "../../../constants/edarcode";
+import { joinClassNames } from "../../../utils/joinClassNames";
 import Discord from "../../svgs/Discord";
 import Github from "../../svgs/Github";
 import Instagram from "../../svgs/Instagram";
@@ -7,9 +8,15 @@ import Youtube from "../../svgs/Youtube";
 import LinkTo from "../LinkTo/LinkTo";
 import css from "./css.module.css";
 
-export default function Networks() {
+type Props = {
+	className?: string;
+};
+
+export default function Networks({ className }: Props) {
+	const finalClassName = joinClassNames([css.networks, className]);
+
 	return (
-		<article className={css.networks}>
+		<article className={finalClassName}>
 			<LinkTo
 				to={EDARCODE.networks.github}
 				icon={Github}

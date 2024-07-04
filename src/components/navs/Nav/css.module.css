@@ -1,5 +1,5 @@
 .nav {
 	display: flex;
+	flex-direction: column;
 	gap: var(--g-sm);
-	flex-wrap: wrap;
 }

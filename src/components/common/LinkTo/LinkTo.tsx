@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Person from "../../svgs/Person";
 import css from "./css.module.css";
 import { Props } from "./types";
 
@@ -11,7 +10,7 @@ export default function LinkTo({
 	rel,
 	...props
 }: Props) {
-	const Icons = icon || Person;
+	const Icon = icon;
 	return (
 		<NavLink
 			{...props}
@@ -20,7 +19,7 @@ export default function LinkTo({
 			rel={rel}
 			className={({ isActive }) => (isActive ? css.active : css.link)}
 		>
-			<Icons className={css.icon} />
+			{Icon && <Icon className={css.icon} />}
 			{children}
 		</NavLink>
 	);

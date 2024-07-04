@@ -2,13 +2,39 @@
 	position: relative;
 	padding: var(--p-md);
 	display: grid;
-	justify-items: center;
+	grid-template-columns: 1fr auto;
+	align-items: center;
 }
 
-.header::after {
+.header::before {
 	content: "";
 	width: 60%;
-	border-bottom: 1px solid var(--c-lightgray);
+	height: 1px;
+	background-color: var(--c-lightgray);
 	position: absolute;
 	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn {
+	position: relative;
+	z-index: 20;
+}
+
+.nav {
+	background-color: var(--c-white);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100vh - 100%);
+	transform: translateY(-100%);
+	z-index: 10;
+	transition: transform 0.5s ease;
+}
+
+.nav.expand {
+	top: 100%;
+	transform: translateY(0);
 }

@@ -1,7 +1,6 @@
 .networks {
 	display: flex;
-	gap: var(--g-md);
-	justify-content: center;
+	gap: var(--g-sm);
 }
 
 .networks svg {
