@@ -13,11 +13,7 @@ import { Props } from "./type";
 export default function Aside({ className }: Props) {
 	const [isCollapsed, setIsCollapsed] = useState(true); // decide si está collapsado el aside
 
-	const finalClassName = joinClassNames([
-		css.aside,
-		!isCollapsed && css.expand,
-		className
-	]);
+	const finalClassName = joinClassNames([css.aside, className]);
 
 	const finalClassNameArrow = joinClassNames([
 		css.arrow,

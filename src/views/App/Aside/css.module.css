@@ -1,23 +1,15 @@
 .aside {
-	background-color: var(--c-darkblack);
+	background-color: var(--c-black);
 	padding: var(--p-md);
 	color: var(--c-white);
-	font-size: 1.2rem;
 	display: grid;
 	gap: var(--g-md);
 	place-items: start;
 	grid-template-rows: auto 1fr;
-	width: 50px;
-	transition: width 1s ease;
-}
-
-.expand {
-	width: 120px;
+	border-radius: 0 10px 10px 0;
 }
 
 .arrow {
-	width: 25px;
-	height: 25px;
 	transition: transform 1s ease;
 }
 
