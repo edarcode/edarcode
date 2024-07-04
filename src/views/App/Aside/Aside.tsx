@@ -13,7 +13,11 @@ import { Props } from "./type";
 export default function Aside({ className }: Props) {
 	const [isCollapsed, setIsCollapsed] = useState(true); // decide si está collapsado el aside
 
-	const finalClassName = joinClassNames([css.aside, className]);
+	const finalClassName = joinClassNames([
+		css.aside,
+		!isCollapsed && css.expand,
+		className
+	]);
 
 	const finalClassNameArrow = joinClassNames([
 		css.arrow,
@@ -27,7 +31,7 @@ export default function Aside({ className }: Props) {
 				onClick={() => setIsCollapsed(!isCollapsed)}
 			/>
 			<nav className={css.nav}>
-				<LinkTo to={APP_PATH.index}>{!isCollapsed && "Sobre mi"}</LinkTo>
+				<LinkTo to={APP_PATH.index}>{!isCollapsed && "Edar"}</LinkTo>
 				<LinkTo to={APP_PATH.projects} icon={Folder}>
 					{!isCollapsed && "Proyectos"}
 				</LinkTo>

@@ -18,9 +18,9 @@
 .header svg {
 	width: 25px;
 	height: 25px;
-	transition: transform ease 0.5s;
+	transition: transform 1s ease;
 }
 
 .header svg:hover {
-	transform: scale(1.1);
+	transform: scale(1.2);
 }
