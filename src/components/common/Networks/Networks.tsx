@@ -1,18 +1,15 @@
-import LinkTo from "../../../components/common/LinkTo/LinkTo";
-import Discord from "../../../components/svgs/Discord";
-import Github from "../../../components/svgs/Github";
-import Instagram from "../../../components/svgs/Instagram";
-import Linkedin from "../../../components/svgs/Linkedin";
-import Youtube from "../../../components/svgs/Youtube";
 import { EDARCODE } from "../../../constants/edarcode";
-import { joinClassNames } from "../../../utils/joinClassNames";
+import Discord from "../../svgs/Discord";
+import Github from "../../svgs/Github";
+import Instagram from "../../svgs/Instagram";
+import Linkedin from "../../svgs/Linkedin";
+import Youtube from "../../svgs/Youtube";
+import LinkTo from "../LinkTo/LinkTo";
 import css from "./css.module.css";
-import { Props } from "./types";
 
-export default function Header({ className }: Props) {
-	const finalClassName = joinClassNames([css.header, className]);
+export default function Networks() {
 	return (
-		<header className={finalClassName}>
+		<article className={css.networks}>
 			<LinkTo
 				to={EDARCODE.networks.github}
 				icon={Github}
@@ -43,6 +40,6 @@ export default function Header({ className }: Props) {
 				rel="noopener noreferrer"
 				icon={Instagram}
 			></LinkTo>
-		</header>
+		</article>
 	);
 }

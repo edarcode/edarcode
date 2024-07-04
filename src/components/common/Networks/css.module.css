@@ -1,0 +1,13 @@
+.networks {
+	display: flex;
+	gap: var(--g-md);
+	justify-content: center;
+}
+
+.networks svg {
+	transition: transform 1s ease;
+}
+
+.networks svg:hover {
+	transform: scale(1.2);
+}

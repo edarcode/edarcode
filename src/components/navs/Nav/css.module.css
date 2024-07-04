@@ -1,0 +1,5 @@
+.nav {
+	display: flex;
+	gap: var(--g-sm);
+	flex-wrap: wrap;
+}

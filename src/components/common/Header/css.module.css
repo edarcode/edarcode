@@ -1,0 +1,14 @@
+.header {
+	position: relative;
+	padding: var(--p-md);
+	display: grid;
+	justify-items: center;
+}
+
+.header::after {
+	content: "";
+	width: 60%;
+	border-bottom: 1px solid var(--c-lightgray);
+	position: absolute;
+	bottom: 0;
+}

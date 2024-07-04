@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import Contact from "../components/containers/Contact/Contact";
-import Projects from "../components/containers/Projects/Projects";
-import Studies from "../components/containers/Studies/Studies";
-import Utilities from "../components/containers/Utilities/Utilities";
+import Contact from "../views/Contact/Contact";
+import Projects from "../views/Projects/Projects";
+import Studies from "../views/Studies/Studies";
+import Utilities from "../views/Utilities/Utilities";
 
-import AboutMe from "../components/containers/AboutMe/AboutMe";
 import { APP_PATH } from "../constants/appPaths";
+import AboutMe from "../views/AboutMe/AboutMe";
 import App from "../views/App/App";
 import ErrPage from "../views/ErrPage/ErrPage";
 

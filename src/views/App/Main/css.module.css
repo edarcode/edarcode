@@ -1,3 +1,4 @@
 .main {
-	padding: var(--p-md);
+	padding-top: var(--p-md);
+	padding-bottom: var(--p-md);
 }
