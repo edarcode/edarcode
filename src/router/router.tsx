@@ -1,14 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-
+import App from "../App/App";
+import { APP_PATH } from "../constants/appPaths";
+import AboutMe from "../views/AboutMe/AboutMe";
 import Contact from "../views/Contact/Contact";
+import ErrPage from "../views/ErrPage/ErrPage";
 import Projects from "../views/Projects/Projects";
 import Studies from "../views/Studies/Studies";
 import Utilities from "../views/Utilities/Utilities";
-
-import { APP_PATH } from "../constants/appPaths";
-import AboutMe from "../views/AboutMe/AboutMe";
-import App from "../views/App/App";
-import ErrPage from "../views/ErrPage/ErrPage";
 
 export const router = createBrowserRouter([
 	{
