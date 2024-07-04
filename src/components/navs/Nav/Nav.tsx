@@ -5,21 +5,32 @@ import css from "./css.module.css";
 
 type Props = {
 	className?: string;
+	onClickLinks?: () => void;
 };
 
-export default function Nav({ className }: Props) {
+export default function Nav({ className, onClickLinks }: Props) {
 	const finalClassName = joinClassNames([css.nav, className]);
 	return (
 		<nav className={finalClassName}>
-			<LinkTo to={APP_PATH.index}>Edar</LinkTo>
+			<LinkTo to={APP_PATH.index} onClick={onClickLinks}>
+				Edar
+			</LinkTo>
 
-			<LinkTo to={APP_PATH.projects}>Proyectos</LinkTo>
+			<LinkTo to={APP_PATH.projects} onClick={onClickLinks}>
+				Proyectos
+			</LinkTo>
 
-			<LinkTo to={APP_PATH.studies}>Estudios</LinkTo>
+			<LinkTo to={APP_PATH.studies} onClick={onClickLinks}>
+				Estudios
+			</LinkTo>
 
-			<LinkTo to={APP_PATH.utilities}>Utilidades</LinkTo>
+			<LinkTo to={APP_PATH.utilities} onClick={onClickLinks}>
+				Utilidades
+			</LinkTo>
 
-			<LinkTo to={APP_PATH.contact}>Contacto</LinkTo>
+			<LinkTo to={APP_PATH.contact} onClick={onClickLinks}>
+				Contacto
+			</LinkTo>
 		</nav>
 	);
 }

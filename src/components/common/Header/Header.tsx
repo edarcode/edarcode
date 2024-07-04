@@ -11,11 +11,15 @@ export default function Header({ className }: Props) {
 
 	const finalClassName = joinClassNames([css.header, className]);
 	const finalClassNameNav = joinClassNames([css.nav, isVisible && css.expand]);
+	const finalClassNameBtn = joinClassNames([css.btn, isVisible && css.expand]);
+
+	const hVisible = () => setIsVisible(!isVisible);
+
 	return (
 		<header className={finalClassName}>
 			<Networks className={css.networks} />
-			<BtnNav className={css.btn} onClick={() => setIsVisible(!isVisible)} />
-			<Nav className={finalClassNameNav} />
+			<BtnNav className={finalClassNameBtn} onClick={hVisible} />
+			<Nav className={finalClassNameNav} onClickLinks={hVisible} />
 		</header>
 	);
 }

@@ -4,4 +4,5 @@ export type Props = {
 	children?: React.ReactNode;
 	target?: string;
 	rel?: string;
+	onClick?: () => void;
 };

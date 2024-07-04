@@ -8,6 +8,7 @@ export default function LinkTo({
 	icon,
 	target,
 	rel,
+	onClick,
 	...props
 }: Props) {
 	const Icon = icon;
@@ -18,6 +19,7 @@ export default function LinkTo({
 			target={target}
 			rel={rel}
 			className={({ isActive }) => (isActive ? css.active : css.link)}
+			onClick={onClick}
 		>
 			{Icon && <Icon className={css.icon} />}
 			{children}
