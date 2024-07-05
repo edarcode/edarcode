@@ -1,13 +1,7 @@
 .about {
 	display: grid;
-	justify-items: center;
 	gap: var(--g-sm);
 }
-.about p {
-	text-align: center;
-	max-width: 300px;
-}
-
 .img {
 	border-radius: 50%;
 	width: 250px;
