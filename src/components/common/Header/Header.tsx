@@ -18,7 +18,11 @@ export default function Header({ className }: Props) {
 	return (
 		<header className={finalClassName}>
 			<Networks className={css.networks} />
-			<BtnNav className={finalClassNameBtn} onClick={hVisible} />
+			<BtnNav
+				className={finalClassNameBtn}
+				isCross={isVisible}
+				onClick={hVisible}
+			/>
 			<Nav className={finalClassNameNav} onClickLinks={hVisible} />
 		</header>
 	);

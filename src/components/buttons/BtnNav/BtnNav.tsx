@@ -1,14 +1,18 @@
-import { useState } from "react";
 import { joinClassNames } from "../../../utils/joinClassNames";
 import css from "./css.module.css";
 
 type Props = {
 	className?: string;
 	onClick?: () => void;
+	isCross?: boolean;
 };
 
-export default function BtnNav({ className, onClick, ...props }: Props) {
-	const [isCross, setIsCross] = useState(false);
+export default function BtnNav({
+	className,
+	onClick,
+	isCross,
+	...props
+}: Props) {
 	const finalClassName = joinClassNames([
 		css.btn,
 		isCross && css.cross,
@@ -20,10 +24,7 @@ export default function BtnNav({ className, onClick, ...props }: Props) {
 			{...props}
 			type="button"
 			className={finalClassName}
-			onClick={() => {
-				setIsCross(!isCross);
-				onClick && onClick();
-			}}
+			onClick={onClick}
 		></button>
 	);
 }
