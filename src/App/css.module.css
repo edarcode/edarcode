@@ -20,9 +20,7 @@
 }
 
 .main {
-	padding-top: var(--p-md);
-	padding-bottom: var(--p-md);
-
+	padding: var(--p-md);
 	grid-area: main;
 }
 

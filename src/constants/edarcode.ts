@@ -1,5 +1,6 @@
 export const EDARCODE = {
 	name: "edwin ortiz",
+	img: "/edarcode.avif",
 	networks: {
 		github: "https://github.com/edarcode",
 		youtube: "https://youtube.com/@edarcode8124?si=rdyoVhSE8RuFOy1r",

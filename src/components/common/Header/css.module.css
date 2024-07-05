@@ -1,8 +1,7 @@
 .header {
 	position: relative;
 	padding: var(--p-md);
-	display: grid;
-	grid-template-columns: 1fr auto;
+	display: flex;
 	align-items: center;
 }
 
@@ -21,6 +20,7 @@
 	position: relative;
 	z-index: 20;
 	color: var(--lightblack);
+	margin-left: auto;
 }
 
 .nav {
@@ -40,4 +40,32 @@
 
 .btn.expand {
 	color: var(--c-green);
+}
+
+@media (min-width: 768px) {
+	.btn {
+		display: none;
+	}
+	.header {
+		display: grid;
+		place-items: center;
+	}
+	.nav {
+		width: initial;
+		height: initial;
+		position: initial;
+		transform: initial;
+		transition: initial;
+		background-color: var(--c-white);
+		color: var(--c-black);
+		flex-direction: row;
+		justify-content: center;
+	}
+	.nav.expand {
+		transform: initial;
+	}
+
+	.btn.expand {
+		color: initial;
+	}
 }
