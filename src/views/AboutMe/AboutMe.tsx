@@ -7,8 +7,8 @@ export default function AboutMe() {
 	return (
 		<div className={css.about}>
 			<Banner />
-			<Skills />
 			<Experience />
+			<Skills />
 		</div>
 	);
 }

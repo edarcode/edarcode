@@ -2,8 +2,29 @@
 	display: grid;
 	gap: var(--g-md);
 }
+
 .img {
 	border-radius: 50%;
-	width: 250px;
 	justify-self: center;
+}
+
+.description {
+	display: grid;
+	gap: var(--g-sm);
+}
+
+h1 {
+	font-size: 2em;
+}
+
+p {
+	max-width: 340px;
+}
+
+@media (min-width: 768px) {
+	.banner {
+		grid-template-columns: auto 1fr;
+		align-items: center;
+		gap: var(--g-lg);
+	}
 }

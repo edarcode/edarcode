@@ -4,7 +4,7 @@ export default function Experience() {
 	return (
 		<section className={css.experience}>
 			<article>
-				<h3>Experience</h3>
+				<h3>Experiencia</h3>
 				<h4>Asistente de enseñanza Full-Stack</h4>
 				<h5>6 meses</h5>
 				<ul>
