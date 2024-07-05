@@ -4,46 +4,66 @@ export const EDARCODE = {
 	Skills: [
 		{
 			name: "HTML",
-			url: "/skills/html.svg"
+			logo: "/skills/html.svg"
 		},
 		{
 			name: "CSS",
-			url: "/skills/css.svg"
+			logo: "/skills/css.svg"
 		},
 		{
 			name: "JavaScript",
-			url: "/skills/js.svg"
+			logo: "/skills/js.svg"
 		},
 		{
 			name: "React",
-			url: "/skills/react.svg"
+			logo: "/skills/react.svg"
 		},
 		{
 			name: "Node.js",
-			url: "/skills/nodejs.svg"
+			logo: "/skills/nodejs.svg"
 		},
 		{
 			name: "Express",
-			url: "/skills/express.svg"
+			logo: "/skills/express.svg"
 		},
 		{
 			name: "TypeScript",
-			url: "/skills/typescript.svg"
+			logo: "/skills/typescript.svg"
 		},
 		{
 			name: "Prisma",
-			url: "/skills/prisma.svg"
+			logo: "/skills/prisma.svg"
 		},
 		{
 			name: "PostgreSQL",
-			url: "/skills/postgresql.svg"
+			logo: "/skills/postgresql.svg"
 		}
 	],
-	networks: {
-		github: "https://github.com/edarcode",
-		youtube: "https://youtube.com/@edarcode8124?si=rdyoVhSE8RuFOy1r",
-		instagram: "https://www.instagram.com/edarcode",
-		linkedin: "https://www.linkedin.com/in/edarcode",
-		discord: "https://discord.gg/JA27MgPh"
-	}
+	networks: [
+		{
+			name: "github",
+			url: "https://github.com/edarcode",
+			logo: "/networks/github.svg"
+		},
+		{
+			name: "youtube",
+			url: "https://youtube.com/@edarcode8124?si=rdyoVhSE8RuFOy1r",
+			logo: "/networks/youtube.svg"
+		},
+		{
+			name: "instagram",
+			url: "https://www.instagram.com/edarcode",
+			logo: "/networks/instagram.svg"
+		},
+		{
+			name: "linkedin",
+			url: "https://www.linkedin.com/in/edarcode",
+			logo: "/networks/linkedin.svg"
+		},
+		{
+			name: "discord",
+			url: "https://discord.gg/JA27MgPh",
+			logo: "/networks/discord.svg"
+		}
+	]
 };

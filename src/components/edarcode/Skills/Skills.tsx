@@ -6,7 +6,7 @@ export default function Skills() {
 		<img
 			key={skill.name}
 			className={css.logo}
-			src={skill.url}
+			src={skill.logo}
 			alt={skill.name}
 		/>
 	));

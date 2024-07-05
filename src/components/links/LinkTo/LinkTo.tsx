@@ -11,17 +11,16 @@ export default function LinkTo({
 	onClick,
 	...props
 }: Props) {
-	const Icon = icon;
 	return (
 		<NavLink
 			{...props}
-			to={to}
+			to={(icon && icon.url) || to || ""}
 			target={target}
 			rel={rel}
 			className={({ isActive }) => (isActive ? css.active : css.link)}
 			onClick={onClick}
 		>
-			{Icon && <Icon className={css.icon} />}
+			{icon && <img className={css.icon} src={icon.logo} alt={icon.name} />}
 			{children}
 		</NavLink>
 	);

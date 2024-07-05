@@ -3,10 +3,10 @@
 	gap: var(--g-sm);
 }
 
-.networks svg {
+.networks img {
 	transition: transform 1s ease;
 }
 
-.networks svg:hover {
+.networks img:hover {
 	transform: scale(1.2);
 }
