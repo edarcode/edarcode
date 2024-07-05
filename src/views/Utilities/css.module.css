@@ -1,0 +1,9 @@
+.utils,
+.nav {
+	display: grid;
+	gap: var(--g-md);
+}
+
+.nav {
+	justify-items: start;
+}

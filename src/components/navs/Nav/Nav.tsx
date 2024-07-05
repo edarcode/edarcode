@@ -1,6 +1,6 @@
 import { APP_PATH } from "../../../constants/appPaths";
 import { joinClassNames } from "../../../utils/joinClassNames";
-import LinkTo from "../../common/LinkTo/LinkTo";
+import LinkTo from "../../links/LinkTo/LinkTo";
 import css from "./css.module.css";
 
 type Props = {

@@ -13,8 +13,8 @@ export default function AboutMe() {
 				<h2>Full Stack Developer</h2>
 				<img className={css.img} src={EDARCODE.img} alt="edarcode" />
 				<p>
-					Siempre atento a aprender de los demás y a compartir conocimiento.
-					Creo en el trabajo duro y el compromiso.
+					Siempre atento a aprender de los demás y compartir conocimiento. Creo
+					en el trabajo duro y el compromiso.
 				</p>
 			</article>
 			<article>

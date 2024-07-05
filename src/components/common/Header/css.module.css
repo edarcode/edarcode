@@ -49,6 +49,7 @@
 	.header {
 		display: grid;
 		place-items: center;
+		gap: var(--g-sm);
 	}
 	.nav {
 		width: initial;

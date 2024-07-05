@@ -1,11 +1,11 @@
 import { EDARCODE } from "../../../constants/edarcode";
 import { joinClassNames } from "../../../utils/joinClassNames";
+import LinkTo from "../../links/LinkTo/LinkTo";
 import Discord from "../../svgs/Discord";
 import Github from "../../svgs/Github";
 import Instagram from "../../svgs/Instagram";
 import Linkedin from "../../svgs/Linkedin";
 import Youtube from "../../svgs/Youtube";
-import LinkTo from "../LinkTo/LinkTo";
 import css from "./css.module.css";
 
 type Props = {
