@@ -1,9 +1,31 @@
-.about {
+.about,
+.me {
 	display: grid;
+	gap: var(--g-lg);
+}
+
+.me {
 	gap: var(--g-sm);
 }
+
 .img {
 	border-radius: 50%;
 	width: 250px;
 	text-align: center;
+}
+
+.skills {
+	display: grid;
+	gap: var(--p-sm);
+}
+
+.logos {
+	display: flex;
+	gap: var(--g-sm);
+}
+
+@media (min-width: 768px) {
+	.about {
+		grid-template-columns: 40% 1fr;
+	}
 }
