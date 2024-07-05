@@ -1,3 +1,9 @@
+import Education from "../../components/edarcode/Education/Education";
+
 export default function Studies() {
-	return <div>Estudios</div>;
+	return (
+		<div>
+			<Education />
+		</div>
+	);
 }

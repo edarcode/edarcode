@@ -1,0 +1,4 @@
+.experience {
+	display: grid;
+	gap: var(--g-md);
+}

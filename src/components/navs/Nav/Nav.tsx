@@ -27,10 +27,6 @@ export default function Nav({ className, onClickLinks }: Props) {
 			<LinkTo to={APP_PATH.utilities} onClick={onClickLinks}>
 				Utilidades
 			</LinkTo>
-
-			<LinkTo to={APP_PATH.contact} onClick={onClickLinks}>
-				Contacto
-			</LinkTo>
 		</nav>
 	);
 }

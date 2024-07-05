@@ -2,9 +2,3 @@
 	display: grid;
 	gap: var(--g-lg);
 }
-
-@media (min-width: 768px) {
-	.about {
-		grid-template-columns: 40% 1fr;
-	}
-}
