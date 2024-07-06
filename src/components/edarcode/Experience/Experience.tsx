@@ -8,8 +8,7 @@ export default function Experience() {
 				<h4>Tutor de enseñanza Full-Stack</h4>
 				<ul>
 					<li>
-						Asistente de enseñanza en el bootcamp de desarrollo Full Stack
-						Henry.
+						Tutor de enseñanza en el bootcamp de desarrollo Full Stack Henry.
 					</li>
 					<li>
 						Coordinar grupos de estudiantes con el fin de lograr la integración

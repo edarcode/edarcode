@@ -1,0 +1,9 @@
+.henry {
+	display: grid;
+	gap: var(--g-md);
+}
+@media (min-width: 768px) {
+	.certificate {
+		max-width: 748px;
+	}
+}
