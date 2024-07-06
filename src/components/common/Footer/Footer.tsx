@@ -8,9 +8,8 @@ export default function Footer({ className }: Props) {
 		<footer className={finalClassName}>
 			<div className={css.gmail}>
 				<img src="/networks/gmail.svg" alt="gmail" />
-				<p>edarcode@...</p>
+				<p>edarcode@...☕</p>
 			</div>
-			<p>🚀 ©edarcode ☕</p>
 		</footer>
 	);
 }

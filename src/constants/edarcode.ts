@@ -68,12 +68,12 @@ export const EDARCODE = {
 	],
 	projects: [
 		{
-			title: "Gestor de usurios",
+			title: "Gestor de usuarios",
 			deploy: "https://user-list-peach.vercel.app/",
 			description:
 				"Crea, busca, actualiza y elimina usuarios. Cuenta con filtrado y ordenado. Además, almacena los datos de forma persistente en una base de datos.",
 			tools:
-				"HTML, CSS, JavaScript, React, Zustand, Node.js Express, Prisma-PostgreSQL.",
+				"HTML, CSS, JavaScript, React, Zustand, Node.js, Express, Prisma-PostgreSQL.",
 			imgs: {
 				mobile:
 					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1720285187/edarcode/projects/user-list/user-list-mobile.png",

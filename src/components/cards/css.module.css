@@ -1,0 +1,11 @@
+.project {
+	display: grid;
+	gap: var(--g-md);
+	justify-items: start;
+	max-width: 340px;
+}
+
+.imgPc,
+.imgMobile {
+	display: none;
+}
