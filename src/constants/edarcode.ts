@@ -1,6 +1,6 @@
 export const EDARCODE = {
 	name: "edwin ortiz",
-	img: "/edarcode.avif",
+	img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1720284695/edarcode/1-edarcode.avif",
 	Skills: [
 		{
 			name: "HTML",
@@ -64,6 +64,16 @@ export const EDARCODE = {
 			name: "discord",
 			url: "https://discord.gg/JA27MgPh",
 			logo: "/networks/discord.svg"
+		}
+	],
+	projects: [
+		{
+			title: "Gestor de usurios",
+			deploy: "https://user-list-peach.vercel.app/",
+			description:
+				"Crea, busca, actualiza y elimina usuarios. Cuenta con filtrado y ordenado. Además, almacena los datos de forma persistente en una base de datos.",
+			tools:
+				"HTML, CSS, JavaScript, React, Zustand, Node.js Express, Prisma-PostgreSQL."
 		}
 	]
 };

@@ -7,7 +7,7 @@ export default function Henry() {
 			<p>Bootcamp 800 horas teórico-practica www.soyhenry.com</p>
 			<img
 				className={css.certificate}
-				src="/education/henry-certificate.avif"
+				src="https://res.cloudinary.com/dvmsllkkg/image/upload/v1720284668/edarcode/henry-certificate.avif"
 				alt="certificado henry"
 			/>
 		</article>
