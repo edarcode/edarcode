@@ -1,8 +1,10 @@
 .footer {
 	position: relative;
 	padding: var(--p-md);
-	display: flex;
-	justify-content: center;
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	gap: var(--g-sm);
 }
 
 .footer::after {
@@ -14,4 +16,14 @@
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.gmail {
+	display: flex;
+	align-items: center;
+	gap: var(--g-sm);
+}
+
+.gmail img {
+	width: 28px;
 }
