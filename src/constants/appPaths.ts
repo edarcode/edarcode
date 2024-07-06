@@ -1,11 +1,11 @@
 const APP = "/";
 const PROJECTS = `${APP}projects`;
-const STUDIES = `${APP}studies`;
+const EDUCATION = `${APP}education`;
 const UTILITIES = `${APP}utils`;
 
 export const APP_PATH = {
 	index: APP,
 	projects: PROJECTS,
-	studies: STUDIES,
+	education: EDUCATION,
 	utilities: UTILITIES
 };

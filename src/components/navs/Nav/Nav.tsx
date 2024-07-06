@@ -20,7 +20,7 @@ export default function Nav({ className, onClickLinks }: Props) {
 				Proyectos
 			</LinkTo>
 
-			<LinkTo to={APP_PATH.studies} onClick={onClickLinks}>
+			<LinkTo to={APP_PATH.education} onClick={onClickLinks}>
 				Estudios
 			</LinkTo>
 

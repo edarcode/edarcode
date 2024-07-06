@@ -6,7 +6,6 @@ export default function Experience() {
 			<article>
 				<h3>Experiencia</h3>
 				<h4>Tutor de enseñanza Full-Stack</h4>
-				<h5>6 meses</h5>
 				<ul>
 					<li>
 						Asistente de enseñanza en el bootcamp de desarrollo Full Stack

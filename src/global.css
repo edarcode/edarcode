@@ -21,3 +21,9 @@ svg {
 	width: 28px;
 	height: 28px;
 }
+
+ul {
+	padding-left: 25px;
+	display: grid;
+	gap: var(--g-md);
+}
