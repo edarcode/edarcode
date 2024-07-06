@@ -13,11 +13,7 @@
 	gap: var(--g-sm);
 }
 
-h1 {
-	font-size: 2em;
-}
-
-p {
+.banner p {
 	max-width: 340px;
 }
 
