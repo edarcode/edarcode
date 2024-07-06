@@ -18,12 +18,12 @@
 	transform: translateX(-50%);
 }
 
-.gmail {
-	display: flex;
-	align-items: center;
-	gap: var(--g-sm);
-}
-
 .gmail img {
 	width: 28px;
+	display: inline;
+}
+
+.gmail p {
+	display: flex;
+	align-items: center;
 }
