@@ -1,4 +1,10 @@
-.experience {
+.experience article {
+	display: grid;
+	gap: var(--g-sm);
+}
+
+.experience ul {
+	padding-left: 25px;
 	display: grid;
 	gap: var(--g-md);
 }

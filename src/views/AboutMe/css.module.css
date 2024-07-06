@@ -1,4 +1,5 @@
 .about {
 	display: grid;
 	gap: var(--g-lg);
+	justify-content: center;
 }

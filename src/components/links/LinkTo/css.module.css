@@ -6,9 +6,12 @@
 	justify-items: center;
 	align-items: center;
 	gap: var(--g-sm);
-	transition:
-		color 0.5s ease,
-		background-color 0.5s ease;
+	transition: color 0.3s ease;
+}
+
+.link:hover,
+.active:hover {
+	color: var(--c-green);
 }
 
 .icon {

@@ -8,6 +8,7 @@ export default function Skills() {
 			className={css.logo}
 			src={skill.logo}
 			alt={skill.name}
+			title={skill.name}
 		/>
 	));
 

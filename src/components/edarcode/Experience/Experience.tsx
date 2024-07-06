@@ -5,7 +5,7 @@ export default function Experience() {
 		<section className={css.experience}>
 			<article>
 				<h3>Experiencia</h3>
-				<h4>Asistente de enseñanza Full-Stack</h4>
+				<h4>Tutor de enseñanza Full-Stack</h4>
 				<h5>6 meses</h5>
 				<ul>
 					<li>
