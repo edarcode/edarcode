@@ -9,5 +9,5 @@
 	--c-gray: rgb(102, 102, 102);
 	--c-darkgray: rgb(68, 68, 68);
 	--c-lightgray: #cfcfcf;
-	--c-white: #fffff0;
+	--c-white: hsl(60, 100%, 97%);
 }

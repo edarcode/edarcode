@@ -23,6 +23,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	color: var(--c-gray);
+}
+
 svg {
 	width: 28px;
 	height: 28px;
