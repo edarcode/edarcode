@@ -7,6 +7,19 @@
 	gap: var(--g-sm);
 }
 
+.footer::after {
+	content: "";
+	width: 98%;
+	min-width: var(--min-w-main);
+	max-width: var(--max-w-main);
+	height: 1px;
+	background-color: var(--c-lightgray);
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
 .gmail img {
 	width: 28px;
 }

@@ -9,7 +9,7 @@
 
 :root {
 	--min-w-main: 340px;
-	--max-w-main: 768px;
+	--max-w-main: 748px;
 	scrollbar-gutter: stable;
 }
 
