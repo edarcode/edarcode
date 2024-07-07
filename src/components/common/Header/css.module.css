@@ -21,6 +21,7 @@
 	z-index: 20;
 	color: var(--lightblack);
 	margin-left: auto;
+	width: 28px;
 }
 
 .nav {
@@ -36,6 +37,13 @@
 
 .nav.expand {
 	transform: translateY(0);
+	font-size: 1.8em;
+	text-align: end;
+	padding-top: 58px;
+}
+
+.nav.expand a {
+	justify-content: end;
 }
 
 .btn.expand {
