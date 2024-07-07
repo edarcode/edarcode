@@ -6,11 +6,11 @@ import css from "./css.module.css";
 
 export default function AboutMe() {
 	return (
-		<div className={css.about}>
+		<section className={css.about}>
 			<Banner />
 			<Experiences />
 			<Projects />
 			<Skills />
-		</div>
+		</section>
 	);
 }

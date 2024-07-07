@@ -10,7 +10,7 @@ export default function Footer({ className }: Props) {
 				<p>
 					edarcode@
 					<img src="/networks/gmail.svg" alt="gmail" />
-					.com☕
+					.com
 				</p>
 			</div>
 		</footer>
