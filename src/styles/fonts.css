@@ -1,11 +1,13 @@
 @font-face {
 	font-family: "Menlo";
 	src: url("/fonts/Menlo-Regular.woff");
+	font-display: swap;
 }
 
 @font-face {
 	font-family: "Poppins";
 	src: url("/fonts/Poppins-Regular.woff");
+	font-display: swap;
 }
 
 body {
