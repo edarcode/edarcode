@@ -1,3 +1,29 @@
+@font-face {
+	font-family: "Menlo";
+	src: url("/fonts/Menlo-Regular.ttf");
+}
+
 body {
-	font-family: Verdana, sans-serif;
+	font-family: "Menlo", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h6 {
+	font-size: 1.3em;
+}
+
+p {
+	color: var(--c-gray);
 }
