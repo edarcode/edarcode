@@ -1,8 +1,5 @@
 .nav {
 	display: flex;
-	flex-direction: column;
 	gap: var(--g-sm);
 	padding: var(--p-md);
-	background-color: var(--c-black);
-	color: var(--c-white);
 }

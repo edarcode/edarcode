@@ -8,7 +8,9 @@
 @import "./styles/scroll.css";
 
 :root {
+	--min-w-main: 340px;
 	--max-w-main: 768px;
+	scrollbar-gutter: stable;
 }
 
 body {
