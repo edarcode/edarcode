@@ -11,7 +11,12 @@ type Props = {
 export default function Nav({ className, onClickLinks }: Props) {
 	const finalClassName = joinClassNames([css.nav, className]);
 	return (
-		<nav className={finalClassName}>
+		<nav
+			className={finalClassName}
+			id="menu"
+			role="menu"
+			aria-labelledby="btn-nav"
+		>
 			<LinkTo to={APP_PATH.index} onClick={onClickLinks}>
 				Edar
 			</LinkTo>

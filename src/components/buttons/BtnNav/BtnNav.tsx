@@ -5,12 +5,14 @@ type Props = {
 	className?: string;
 	onClick?: () => void;
 	isCross?: boolean;
+	id?: string;
 };
 
 export default function BtnNav({
 	className,
 	onClick,
 	isCross,
+	id,
 	...props
 }: Props) {
 	const finalClassName = joinClassNames([
@@ -22,6 +24,7 @@ export default function BtnNav({
 	return (
 		<button
 			{...props}
+			id={id}
 			type="button"
 			className={finalClassName}
 			onClick={onClick}

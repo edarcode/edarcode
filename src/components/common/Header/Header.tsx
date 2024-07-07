@@ -22,6 +22,10 @@ export default function Header({ className }: Props) {
 				className={finalClassNameBtn}
 				isCross={isVisible}
 				onClick={hVisible}
+				id="btn-nav"
+				aria-controls="menu"
+				aria-label="Despliega menú principal"
+				aria-haspopup={isVisible ? "true" : "false"}
 			/>
 			<Nav className={finalClassNameNav} onClickLinks={hVisible} />
 		</header>
