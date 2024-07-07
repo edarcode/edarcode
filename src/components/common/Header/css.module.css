@@ -16,7 +16,7 @@
 	transform: translateX(-50%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.btn {
 		position: relative;
 		z-index: 20;
