@@ -12,6 +12,7 @@ export default function Footer({ className }: Props) {
 					<img src="/networks/gmail.svg" alt="gmail" />
 					.com
 				</p>
+				<p>© Casi todos los derechos reservados.</p>
 			</div>
 		</footer>
 	);

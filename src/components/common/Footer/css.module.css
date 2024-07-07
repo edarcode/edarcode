@@ -20,10 +20,10 @@
 
 .gmail img {
 	width: 28px;
-	display: inline;
 }
 
 .gmail p {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
