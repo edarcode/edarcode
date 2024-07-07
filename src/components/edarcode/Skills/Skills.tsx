@@ -4,6 +4,8 @@ import css from "./css.module.css";
 export default function Skills() {
 	const logos = EDARCODE.Skills.map(skill => (
 		<img
+			width="28"
+			height="28"
 			key={skill.name}
 			className={css.logo}
 			src={skill.logo}

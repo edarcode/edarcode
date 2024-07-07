@@ -9,7 +9,7 @@ export default function Footer({ className }: Props) {
 			<div className={css.gmail}>
 				<p>
 					edarcode@
-					<img src="/networks/gmail.svg" alt="gmail" />
+					<img src="/networks/gmail.svg" alt="gmail" width="28" height="28" />
 					.com
 				</p>
 				<p>© Casi todos los derechos reservados.</p>
