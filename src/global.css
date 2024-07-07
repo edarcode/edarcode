@@ -7,6 +7,10 @@
 @import "./styles/gap.css";
 @import "./styles/scroll.css";
 
+:root {
+	--max-w-main: 768px;
+}
+
 body {
 	background-color: var(--c-white);
 	color: var(--c-darkblack);

@@ -8,6 +8,7 @@
 .header::before {
 	content: "";
 	width: 60%;
+	max-width: var(--max-w-main);
 	height: 1px;
 	background-color: var(--c-lightgray);
 	position: absolute;

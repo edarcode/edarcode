@@ -23,7 +23,7 @@
 	padding: var(--p-md);
 	grid-area: main;
 	width: 100%;
-	max-width: 768px;
+	max-width: var(--max-w-main);
 	margin-inline: auto;
 }
 
