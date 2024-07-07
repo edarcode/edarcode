@@ -7,10 +7,10 @@ export default function Project({ project }: Props) {
 	const { mobile, pc } = imgs;
 	return (
 		<article className={css.project}>
-			<h6 className={css.title}>{title}</h6>
+			<h4 className={css.title}>{title}</h4>
 			<p>{description}</p>
 			<p>{tools}</p>
-			<Hyperlink href={deploy}>Deploy</Hyperlink>
+			<Hyperlink href={deploy}>Sitio web</Hyperlink>
 			<img className={css.imgMobile} src={mobile} alt="vista para mobile" />
 			<img className={css.imgPc} src={pc} alt="vista para pc" />
 		</article>

@@ -6,6 +6,7 @@ export default function Projects() {
 	EDARCODE;
 	return (
 		<section className={css.projects}>
+			<h3>Proyectos</h3>
 			<Project project={EDARCODE.projects[0]} />
 		</section>
 	);

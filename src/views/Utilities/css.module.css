@@ -1,11 +1,4 @@
-.utils {
-	display: grid;
-	gap: var(--g-md);
-	justify-content: center;
-}
-
 .nav {
 	display: grid;
-	gap: var(--g-md);
-	justify-items: start;
+	gap: var(--g-sm);
 }

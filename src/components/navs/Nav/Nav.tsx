@@ -16,10 +16,6 @@ export default function Nav({ className, onClickLinks }: Props) {
 				Edar
 			</LinkTo>
 
-			<LinkTo to={APP_PATH.projects} onClick={onClickLinks}>
-				Proyectos
-			</LinkTo>
-
 			<LinkTo to={APP_PATH.education} onClick={onClickLinks}>
 				Estudios
 			</LinkTo>

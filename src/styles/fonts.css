@@ -3,6 +3,11 @@
 	src: url("/fonts/Menlo-Regular.ttf");
 }
 
+@font-face {
+	font-family: "Poppins";
+	src: url("/fonts/Poppins-Regular.ttf");
+}
+
 body {
 	font-family: "Menlo", sans-serif;
 }
@@ -13,15 +18,15 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Poppins", sans-serif;
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.5em;
 }
 
-h6 {
-	font-size: 1.3em;
+h3 {
+	font-size: 1.6em;
 }
 
 p {

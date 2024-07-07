@@ -1,7 +1,0 @@
-.about {
-	display: grid;
-	gap: var(--g-lg);
-	max-width: 768px;
-	margin-left: auto;
-	margin-right: auto;
-}
