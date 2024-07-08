@@ -21,5 +21,8 @@
 
 	.nav.expand {
 		transform: translateY(0);
+		padding-top: 58px;
+		align-items: end;
+		font-size: 1.5em;
 	}
 }
