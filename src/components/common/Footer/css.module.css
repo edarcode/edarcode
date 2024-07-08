@@ -9,7 +9,7 @@
 
 .footer::after {
 	content: "";
-	width: 98%;
+	width: 95%;
 	min-width: var(--min-w-main);
 	max-width: var(--max-w-main);
 	height: 1px;
