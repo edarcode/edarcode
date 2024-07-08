@@ -1,6 +1,6 @@
 export const EDARCODE = {
 	name: "edwin ortiz",
-	img: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1720401602/edarcode/edarcode.avif",
+	img: "",
 	Skills: [
 		{
 			name: "HTML",

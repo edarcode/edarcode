@@ -3,13 +3,6 @@
 	gap: var(--g-md);
 }
 
-.img {
-	border-radius: var(--r-md);
-	width: 120px;
-	aspect-ratio: 8∶11;
-	display: none;
-}
-
 .description {
 	display: grid;
 	gap: var(--g-sm);
@@ -17,22 +10,4 @@
 
 .banner p {
 	max-width: 340px;
-}
-
-@media (min-width: 768px) {
-	.banner {
-		grid-template-columns: auto 1fr;
-		align-items: center;
-		gap: var(--g-lg);
-	}
-
-	.description {
-		grid-row: 1 / 2;
-	}
-
-	.img {
-		display: initial;
-		grid-column: 2 / 3;
-		justify-self: end;
-	}
 }
