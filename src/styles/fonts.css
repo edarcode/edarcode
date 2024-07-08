@@ -1,6 +1,6 @@
 @font-face {
-	font-family: "Menlo";
-	src: url("/fonts/Menlo-Regular.woff");
+	font-family: "Nunito";
+	src: url("/fonts/Nunito-Sans.woff");
 	font-display: swap;
 }
 
@@ -11,7 +11,7 @@
 }
 
 body {
-	font-family: "Menlo", "Poppins";
+	font-family: "Nunito", "Poppins";
 }
 
 h1,
