@@ -11,7 +11,7 @@ export default function Header({ className }: Props) {
 
 	const finalClassName = joinClassNames([css.header, className]);
 	const finalClassNameNav = joinClassNames([css.nav, isVisible && css.expand]);
-	const finalClassNameBtn = joinClassNames([css.btn, isVisible && css.expand]);
+	const finalClassNameBtn = joinClassNames([css.btn, isVisible && css.cross]);
 
 	const hVisible = () => setIsVisible(!isVisible);
 
@@ -27,7 +27,14 @@ export default function Header({ className }: Props) {
 				aria-label="Despliega menú principal"
 				aria-haspopup={isVisible ? "true" : "false"}
 			/>
-			<Nav className={finalClassNameNav} onClickLinks={hVisible} />
+			<Nav
+				className={finalClassNameNav}
+				isVisible={isVisible}
+				onClickLinks={hVisible}
+				id="menu"
+				aria-labelledby="btn-nav"
+				role="menu"
+			/>
 		</header>
 	);
 }
