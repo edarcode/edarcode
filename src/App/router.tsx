@@ -1,41 +1,43 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import AboutMe from "./pages/AboutMe/AboutMe";
+import DesignSystem from "./pages/DesignSystem/DesignSystem";
 import Education from "./pages/Education/Education";
 import ErrPage from "./pages/ErrPage/ErrPage";
-import Test from "./pages/Test/Text";
 import Utils from "./pages/Utils/Utils";
 
-export const PATH = {
-	App: "/",
-	AboutMe: "/",
-	Education: "/education",
-	Utils: "/utils",
-	Test: "/test"
-};
+export const PAGES = [
+	{
+		id: crypto.randomUUID(),
+		name: "Sobre mí",
+		path: "/",
+		element: <AboutMe />
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Educación",
+		path: "/education",
+		element: <Education />
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Utilidades",
+		path: "/utils",
+		element: <Utils />
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "UI",
+		path: "/design-system",
+		element: <DesignSystem />
+	}
+];
 
 export const router = createBrowserRouter([
 	{
-		path: PATH.App,
+		path: "/",
 		element: <App />,
 		errorElement: <ErrPage />,
-		children: [
-			{
-				path: PATH.AboutMe,
-				element: <AboutMe />
-			},
-			{
-				path: PATH.Education,
-				element: <Education />
-			},
-			{
-				path: PATH.Utils,
-				element: <Utils />
-			},
-			{
-				path: PATH.Test,
-				element: <Test />
-			}
-		]
+		children: PAGES
 	}
 ]);
