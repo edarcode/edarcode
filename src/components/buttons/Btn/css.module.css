@@ -1,0 +1,17 @@
+.btn {
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.btn:disabled {
+	cursor: initial;
+	background-color: var(--c-gray);
+}
+
+.primary {
+	color: var(--c-white);
+	background-color: var(--c-blue);
+	padding: var(--p-sm) var(--p-md);
+	border-radius: var(--r-md);
+}

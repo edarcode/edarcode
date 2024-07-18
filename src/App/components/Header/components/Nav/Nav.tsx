@@ -29,6 +29,10 @@ export default function Nav({
 			<LinkTo to={PATH.Utils} onClick={onClickLinks}>
 				Utilidades
 			</LinkTo>
+
+			<LinkTo to={PATH.Test} onClick={onClickLinks}>
+				Test
+			</LinkTo>
 		</nav>
 	);
 }
