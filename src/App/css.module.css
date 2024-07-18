@@ -1,32 +1,17 @@
+:root {
+	--min-w-main: 340px;
+	--max-w-main: 748px;
+}
+
 .app {
-	min-width: 100%;
 	min-height: 100vh;
 	display: grid;
-
-	grid-template-areas:
-		"aside header"
-		"aside main"
-		"aside footer";
-	grid-template-columns: auto 1fr;
 	grid-template-rows: auto 1fr auto;
 }
 
-.aside {
-	grid-area: aside;
-}
-
-.header {
-	grid-area: header;
-}
-
 .main {
-	padding: var(--p-md);
-	grid-area: main;
 	width: 100%;
 	max-width: var(--max-w-main);
+	padding: var(--p-md);
 	margin-inline: auto;
-}
-
-.footer {
-	grid-area: footer;
 }

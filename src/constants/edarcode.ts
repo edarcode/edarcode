@@ -4,66 +4,66 @@ export const EDARCODE = {
 	Skills: [
 		{
 			name: "HTML",
-			logo: "/skills/html.svg"
+			logo: "/svg/tech/html.svg"
 		},
 		{
 			name: "CSS",
-			logo: "/skills/css.svg"
+			logo: "/svg/tech/css.svg"
 		},
 		{
 			name: "JavaScript",
-			logo: "/skills/js.svg"
+			logo: "/svg/tech/js.svg"
 		},
 		{
 			name: "React",
-			logo: "/skills/react.svg"
+			logo: "/svg/tech/react.svg"
 		},
 		{
 			name: "Node.js",
-			logo: "/skills/nodejs.svg"
+			logo: "/svg/tech/nodejs.svg"
 		},
 		{
 			name: "Express",
-			logo: "/skills/express.svg"
+			logo: "/svg/tech/express.svg"
 		},
 		{
 			name: "TypeScript",
-			logo: "/skills/typescript.svg"
+			logo: "/svg/tech/typescript.svg"
 		},
 		{
 			name: "Prisma",
-			logo: "/skills/prisma.svg"
+			logo: "/svg/tech/prisma.svg"
 		},
 		{
 			name: "PostgreSQL",
-			logo: "/skills/postgresql.svg"
+			logo: "/svg/tech/postgresql.svg"
 		}
 	],
 	networks: [
 		{
 			name: "github",
 			url: "https://github.com/edarcode",
-			logo: "/networks/github.svg"
+			logo: "/svg/networks/github.svg"
 		},
 		{
 			name: "youtube",
 			url: "https://youtube.com/@edarcode8124?si=rdyoVhSE8RuFOy1r",
-			logo: "/networks/youtube.svg"
+			logo: "/svg/networks/youtube.svg"
 		},
 		{
 			name: "instagram",
 			url: "https://www.instagram.com/edarcode",
-			logo: "/networks/instagram.svg"
+			logo: "/svg/networks/instagram.svg"
 		},
 		{
 			name: "linkedin",
 			url: "https://www.linkedin.com/in/edarcode",
-			logo: "/networks/linkedin.svg"
+			logo: "/svg/networks/linkedin.svg"
 		},
 		{
 			name: "discord",
 			url: "https://discord.gg/JA27MgPh",
-			logo: "/networks/discord.svg"
+			logo: "/svg/networks/discord.svg"
 		}
 	],
 	projects: [

@@ -1,4 +1,4 @@
-import { joinClassNames } from "../../../utils/joinClassNames.js";
+import { joinClassNames } from "../../../services/joinClassNames.js";
 import Cross from "./Cross.js";
 import css from "./css.module.css";
 import { BTN__ICON_KIND } from "./kinds.js";

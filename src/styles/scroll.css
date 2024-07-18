@@ -1,3 +1,7 @@
+:root {
+	scrollbar-gutter: stable;
+}
+
 body::-webkit-scrollbar {
 	-webkit-appearance: none;
 }
@@ -8,7 +12,7 @@ body::-webkit-scrollbar:vertical {
 }
 
 body::-webkit-scrollbar-thumb {
-	background-color: var(--c-green);
+	background-color: var(--c-red);
 	width: 100%;
 	border-radius: 25px;
 }
