@@ -4,7 +4,7 @@ import { BTN__KIND } from "./kinds";
 import { Props } from "./types";
 
 export default function Btn(props: Props) {
-	const { className, kind, onClick, isVisible = true, children } = props;
+	const { isVisible = true, kind, className, ...extraProps } = props;
 
 	const finalClassNameBtn = joinClassNames([
 		css.btn,
@@ -13,10 +13,5 @@ export default function Btn(props: Props) {
 	]);
 
 	if (!isVisible) return null;
-
-	return (
-		<button {...props} onClick={onClick} className={finalClassNameBtn}>
-			{children}
-		</button>
-	);
+	return <button {...extraProps} className={finalClassNameBtn}></button>;
 }

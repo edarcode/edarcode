@@ -27,7 +27,7 @@ export const PAGES = [
 	},
 	{
 		id: crypto.randomUUID(),
-		name: "UI",
+		name: "Design System",
 		path: "/design-system",
 		element: <DesignSystem />
 	}

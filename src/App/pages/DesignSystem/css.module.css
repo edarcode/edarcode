@@ -1,0 +1,8 @@
+.design {
+	display: grid;
+}
+
+.btns {
+	display: flex;
+	gap: 5px;
+}

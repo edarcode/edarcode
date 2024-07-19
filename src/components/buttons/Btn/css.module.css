@@ -6,7 +6,9 @@
 
 .btn:disabled {
 	cursor: initial;
-	background-color: var(--c-gray);
+	background-color: var(--c-white);
+	color: var(--c-gray);
+	border: 1px solid var(--c-gray);
 }
 
 .primary {
