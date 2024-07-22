@@ -1,11 +1,6 @@
 import { joinClassNames } from "../../../services/joinClassNames";
 import css from "./css.module.css";
-
-interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
-	className?: string;
-	title?: string;
-	err?: string;
-}
+import { Props } from "./types";
 
 export default function InputText(props: Props) {
 	const { className, title, err, ...extraProps } = props;
