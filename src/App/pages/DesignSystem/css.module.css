@@ -1,8 +1,9 @@
 .design {
 	display: grid;
+	gap: var(--g-md);
 }
 
 .btns {
 	display: flex;
-	gap: 5px;
+	gap: var(--g-md);
 }
