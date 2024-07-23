@@ -7,12 +7,12 @@ interface Props extends React.SelectHTMLAttributes<HTMLSelectElement> {}
 export default function Select(props: Props) {
 	const { className, ...extraProps } = props;
 
-	const finalClassName = joinClassNames([css.label, className]);
+	const finalClassName = joinClassNames([css.wrapper_select, className]);
 
 	return (
-		<label className={finalClassName}>
+		<div className={finalClassName}>
 			<select {...extraProps} className={css.select}></select>
 			<Arrow className={css.arrow} />
-		</label>
+		</div>
 	);
 }
