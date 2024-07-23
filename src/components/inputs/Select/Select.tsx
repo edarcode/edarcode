@@ -1,10 +1,8 @@
 import { joinClassNames } from "../../../services/joinClassNames.js";
 import css from "./css.module.css";
-import arrow from "./icons/arrow.svg";
+import Arrow from "./icons/Arrow.js";
 
-interface Props extends React.SelectHTMLAttributes<HTMLSelectElement> {
-	className?: string;
-}
+interface Props extends React.SelectHTMLAttributes<HTMLSelectElement> {}
 
 export default function Select(props: Props) {
 	const { className, ...extraProps } = props;
@@ -14,7 +12,7 @@ export default function Select(props: Props) {
 	return (
 		<label className={finalClassName}>
 			<select {...extraProps} className={css.select}></select>
-			<img src={arrow} alt="desplegar select" className={css.arrow} />
+			<Arrow className={css.arrow} />
 		</label>
 	);
 }

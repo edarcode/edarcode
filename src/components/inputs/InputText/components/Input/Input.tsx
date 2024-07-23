@@ -1,5 +1,5 @@
 import { joinClassNames } from "../../../../../services/joinClassNames";
-import State from "../State/State";
+import State from "./components/State/State";
 import css from "./css.module.css";
 
 interface Props {
