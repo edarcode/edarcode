@@ -1,5 +1,6 @@
+import { joinClassNames } from "../../../services/joinClassNames";
 import css from "./css.module.css";
-import { joinClassNames } from "./joinClassNames";
+
 import { BTN__KIND } from "./kinds";
 import { Props } from "./types";
 

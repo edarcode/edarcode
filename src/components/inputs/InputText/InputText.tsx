@@ -1,6 +1,6 @@
 import { joinClassNames } from "../../../services/joinClassNames";
-import Input from "./components/Input/Input";
 import css from "./css.module.css";
+import Input from "./Input/Input";
 import { Props } from "./types";
 
 export default function InputText(props: Props) {
