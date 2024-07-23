@@ -10,7 +10,7 @@ export default function DesignSystem() {
 				<Btn disabled>edarcode</Btn>
 			</section>
 			<section className={css.inputs}>
-				<InputText className={css.inputText} />
+				<InputText className={css.inputText} title="Nombre" />
 			</section>
 		</div>
 	);
