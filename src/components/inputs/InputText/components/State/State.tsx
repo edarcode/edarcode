@@ -1,4 +1,7 @@
 import css from "./css.module.css";
+import err from "./icons/err.svg";
+import loading from "./icons/loading.svg";
+import success from "./icons/success.svg";
 
 type Props = {
 	async?: boolean;
@@ -21,11 +24,7 @@ export default function State(props: Props) {
 }
 
 const ICON = {
-	err: <img src="/svg/state/err.svg" alt="error" className={css.err} />,
-	loading: (
-		<img src="/svg/state/loading.svg" alt="cargando" className={css.loading} />
-	),
-	success: (
-		<img src="/svg/state/success.svg" alt="cargando" className={css.success} />
-	)
+	err: <img src={err} alt="error" className={css.icon} />,
+	loading: <img src={loading} alt="cargando" className={css.icon} />,
+	success: <img src={success} alt="está ok" className={css.icon} />
 };
