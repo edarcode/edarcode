@@ -2,8 +2,8 @@
 	--c-black: hsl(0, 0%, 14%);
 	--c-darkblack: hsl(0, 0%, 7%);
 	--c-lightblack: hsl(0, 0%, 20%);
-	--c-red: hsl(2, 75%, 46%);
-	--c-green: hsl(65, 100%, 30%);
+	--c-red: #cd231d;
+	--c-green: #8c9900;
 	--c-yellow: hsl(50, 100%, 50%);
 	--c-blue: hsl(210, 100%, 40%);
 	--c-gray: #6e6e73;

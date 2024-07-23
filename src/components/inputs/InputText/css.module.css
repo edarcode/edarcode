@@ -5,26 +5,6 @@
 	width: 300px;
 }
 
-.input {
-	border: none;
-	outline: transparent;
-	box-shadow: var(--s-sm);
-	border-radius: var(--r-sm);
-	padding: var(--p-sm) var(--p-md);
-}
-
-.input:focus {
-	box-shadow: var(--s-md);
-}
-
-.input::placeholder {
-	color: var(--c-lightgray);
-}
-
-.input__err {
-	border: 1px solid var(--c-red);
-}
-
 .title {
 	font-weight: bold;
 }

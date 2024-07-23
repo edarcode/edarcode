@@ -1,22 +1,26 @@
 import { joinClassNames } from "../../../services/joinClassNames";
+import Input from "./components/Input/Input";
 import css from "./css.module.css";
 import { Props } from "./types";
 
 export default function InputText(props: Props) {
-	const { className, title, err, ...extraProps } = props;
+	const { className, title, err, loading, success, async, ...extraProps } =
+		props;
 
 	const finalClassName = joinClassNames([css.label, className]);
-	const finalClassInput = joinClassNames([css.input, err && css.input__err]);
 
 	return (
 		<label className={finalClassName}>
 			{title && <span className={css.title}>{title}</span>}
-			<input
-				placeholder="edarcode"
+
+			<Input
 				{...extraProps}
-				type="text"
-				className={finalClassInput}
-			></input>
+				err={err}
+				async={async}
+				loading={loading}
+				success={success}
+			/>
+
 			{err && <p className={css.err}>{err}</p>}
 		</label>
 	);
