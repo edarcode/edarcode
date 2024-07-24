@@ -49,3 +49,8 @@ h6 {
 p {
 	text-wrap: pretty;
 }
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}

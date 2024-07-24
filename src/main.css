@@ -12,11 +12,6 @@ body {
 	color: var(--c-darkblack);
 }
 
-a {
-	color: currentColor;
-	text-decoration: none;
-}
-
 p {
 	color: var(--c-gray);
 }
