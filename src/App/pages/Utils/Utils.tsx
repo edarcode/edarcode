@@ -15,6 +15,9 @@ export default function Utils() {
 				<Hyperlink href="https://cursos.doriandesings.com/course/css-intermedio">
 					CSS intermedio dorian
 				</Hyperlink>
+				<Hyperlink href="https://pagespeed.web.dev/analysis/https-edarcode-vercel-app/jub5ipnzv3?form_factor=mobile">
+					Lighthouse
+				</Hyperlink>
 			</nav>
 		</div>
 	);

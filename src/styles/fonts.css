@@ -1,13 +1,11 @@
 @font-face {
 	font-family: "Nunito";
 	src: url("/fonts/Nunito-Sans.woff");
-	font-display: swap;
 }
 
 @font-face {
 	font-family: "Poppins";
 	src: url("/fonts/Poppins-Regular.woff");
-	font-display: swap;
 }
 
 body {
