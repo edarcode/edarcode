@@ -18,7 +18,8 @@
 .fakeCheckbox {
 	box-shadow: var(--s-sm);
 	border-radius: var(--r-sm);
-	width: 30px;
+	width: 28px;
+	height: 28px;
 }
 
 .checkbox:not(:checked) + .fakeCheckbox > .icon {
