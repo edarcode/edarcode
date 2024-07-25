@@ -1,6 +1,7 @@
 import AboutMe from "../pages/AboutMe/AboutMe";
 import DesignSystem from "../pages/DesignSystem/DesignSystem";
 import Education from "../pages/Education/Education";
+import Login from "../pages/Login/Login";
 import Utils from "../pages/Utils/Utils";
 
 export const PAGES = [
@@ -27,5 +28,11 @@ export const PAGES = [
 		name: "Design System",
 		path: "/design-system",
 		element: <DesignSystem />
+	},
+	{
+		id: crypto.randomUUID(),
+		name: "Login",
+		path: "/login",
+		element: <Login />
 	}
 ];
