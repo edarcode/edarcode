@@ -1,4 +1,5 @@
 import Btn from "../../../components/buttons/Btn/Btn";
+import InputCheckbox from "../../../components/inputs/InputCheckbox/InputCheckbox";
 import InputText from "../../../components/inputs/InputText/InputText";
 import Select from "../../../components/inputs/Select/Select";
 import css from "./css.module.css";
@@ -17,6 +18,7 @@ export default function DesignSystem() {
 					<option value="css">CSS</option>
 					<option value="js">JavaScript</option>
 				</Select>
+				<InputCheckbox title="¿Activo?" />
 			</section>
 		</div>
 	);
