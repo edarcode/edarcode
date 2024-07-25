@@ -3,24 +3,14 @@ import css from "./css.module.css";
 import Input from "./Input/Input";
 import { Props } from "./types";
 
-export default function InputText(props: Props) {
-	const { className, title, err, loading, success, async, ...extraProps } =
-		props;
+export default function InputPassword(props: Props) {
+	const { className, err, ...extraProps } = props;
 
 	const finalClassName = joinClassNames([css.label, className]);
 
 	return (
 		<label className={finalClassName}>
-			{title && <span className={css.title}>{title}</span>}
-
-			<Input
-				{...extraProps}
-				err={err}
-				async={async}
-				loading={loading}
-				success={success}
-			/>
-
+			<Input {...extraProps} err={err} />
 			{err && <span className={css.err}>{err}</span>}
 		</label>
 	);

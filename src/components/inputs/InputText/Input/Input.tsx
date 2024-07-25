@@ -12,7 +12,7 @@ interface Props {
 export default function Input(props: Props) {
 	const { err, async, loading, success, ...extraProps } = props;
 
-	const finalClassInput = joinClassNames([css.input, err && css.err]);
+	const finalClassInput = joinClassNames([css.input, err && css.input__err]);
 
 	return (
 		<label className={css.label}>
