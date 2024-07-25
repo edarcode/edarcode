@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { joinClassNames } from "../../../../services/joinClassNames";
 import css from "./css.module.css";
 import EyeIcon from "./EyeIcon/EyeIcon";
@@ -8,21 +9,23 @@ interface Props {
 
 export default function Input(props: Props) {
 	const { err, ...extraProps } = props;
+	const [isVisiblePass, setIsVisiblePass] = useState(false);
 
 	const finalClassNameInput = joinClassNames([
 		css.input,
 		err && css.input__err
 	]);
 
+	const hVisiblePass = () => setIsVisiblePass(!isVisiblePass);
 	return (
 		<label className={css.label}>
 			<input
 				placeholder="password"
 				{...extraProps}
-				type="password"
+				type={!isVisiblePass ? "password" : "text"}
 				className={finalClassNameInput}
 			></input>
-			<EyeIcon />
+			<EyeIcon isVisiblePass={isVisiblePass} hVisiblePass={hVisiblePass} />
 		</label>
 	);
 }

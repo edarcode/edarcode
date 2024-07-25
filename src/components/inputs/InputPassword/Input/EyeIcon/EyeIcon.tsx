@@ -1,14 +1,15 @@
-import { useState } from "react";
 import css from "./css.module.css";
 import ClosedEye from "./icons/ClosedEye";
 import OpenEye from "./icons/OpenEye";
 
-export default function EyeIcon() {
-	const [isVisiblePass, setIsVisiblePass] = useState(false);
+type Props = {
+	isVisiblePass: boolean;
+	hVisiblePass: () => void;
+};
 
-	const hVisibleEye = () => setIsVisiblePass(!isVisiblePass);
-
-	if (isVisiblePass)
-		return <OpenEye className={css.eye} onClick={hVisibleEye} />;
-	return <ClosedEye className={css.eye} onClick={hVisibleEye} />;
+export default function EyeIcon(props: Props) {
+	const { isVisiblePass, hVisiblePass } = props;
+	if (!isVisiblePass)
+		return <ClosedEye className={css.eye} onClick={hVisiblePass} />;
+	return <OpenEye className={css.eye} onClick={hVisiblePass} />;
 }
