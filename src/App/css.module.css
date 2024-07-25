@@ -14,4 +14,6 @@
 	max-width: var(--max-w-main);
 	padding: var(--p-md);
 	margin-inline: auto;
+	display: grid;
+	place-items: start;
 }

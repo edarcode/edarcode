@@ -1,5 +1,5 @@
 .login {
 	display: grid;
 	gap: var(--g-md);
-	width: 300px;
+	place-self: center;
 }
