@@ -19,6 +19,7 @@ export default function Utils() {
 					Lighthouse
 				</Hyperlink>
 				<Hyperlink href="https://www.freepik.es/">Img gratis</Hyperlink>
+				<Hyperlink href="https://www.drawdb.app/">Diagramas db</Hyperlink>
 			</nav>
 		</div>
 	);
