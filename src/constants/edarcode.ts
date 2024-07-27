@@ -69,7 +69,7 @@ export const EDARCODE = {
 	projects: [
 		{
 			title: "Gestor de usuarios",
-			deploy: "https://user-list-peach.vercel.app/",
+			deploy: "",
 			description:
 				"Crea, busca, actualiza y elimina usuarios. Cuenta con filtrado y ordenado. Además, almacena los datos de forma persistente en una base de datos.",
 			tools:
