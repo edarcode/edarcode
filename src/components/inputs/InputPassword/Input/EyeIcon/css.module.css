@@ -6,4 +6,5 @@
 	transform: translateY(-50%);
 	right: calc(var(--p-md) / 2);
 	color: var(--c-darkgray);
+	cursor: pointer;
 }

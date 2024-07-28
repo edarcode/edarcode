@@ -3,19 +3,21 @@ import InputPassword from "../../../components/inputs/InputPassword/InputPasswor
 import InputText from "../../../components/inputs/InputText/InputText";
 import Hyperlink from "../../../components/links/Hyperlink/Hyperlink";
 import css from "./css.module.css";
-import { useLoginForm } from "./hooks/useLoginForm";
+import { useLoginForm } from "./hooks/useLoginForm/useLoginForm";
 
 export default function Login() {
 	const { get, set } = useLoginForm();
 	return (
 		<form className={css.login}>
 			<InputText
-				placeholder="Correo"
-				value={get.email}
+				placeholder="email"
+				value={get.email.value}
+				err={get.email.err}
 				onChange={e => set.email(e.target.value)}
 			/>
 			<InputPassword
-				value={get.password}
+				value={get.password.value}
+				err={get.password.err}
 				onChange={e => set.password(e.target.value)}
 			/>
 			<Hyperlink href="#">Ir a registro</Hyperlink>
