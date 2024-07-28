@@ -1,4 +1,4 @@
-import { joinClassNames } from "../../../services/joinClassNames.js";
+import { joinClassNames } from "../../../utils/joinClassNames.js";
 import css from "./css.module.css";
 import Check from "./icons/Check.js";
 

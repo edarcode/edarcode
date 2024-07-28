@@ -1,4 +1,4 @@
-import { joinClassNames } from "../../../../services/joinClassNames";
+import { joinClassNames } from "../../../../utils/joinClassNames";
 import State from "./State/State";
 import css from "./css.module.css";
 

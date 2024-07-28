@@ -1,6 +1,6 @@
 import LinkTo from "../../../../../components/links/LinkTo/LinkTo";
 import { EDARCODE } from "../../../../../constants/edarcode";
-import { joinClassNames } from "../../../../../services/joinClassNames";
+import { joinClassNames } from "../../../../../utils/joinClassNames";
 
 import css from "./css.module.css";
 

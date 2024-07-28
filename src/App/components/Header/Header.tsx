@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { joinClassNames } from "../../../services/joinClassNames";
+import { joinClassNames } from "../../../utils/joinClassNames";
 import BtnNav from "./components/BtnNav/BtnNav";
 import Nav from "./components/Nav/Nav";
 import Networks from "./components/Networks/Networks";

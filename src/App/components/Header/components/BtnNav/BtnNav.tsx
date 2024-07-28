@@ -1,4 +1,4 @@
-import { joinClassNames } from "../../../../../services/joinClassNames";
+import { joinClassNames } from "../../../../../utils/joinClassNames";
 import css from "./css.module.css";
 import { Props } from "./types";
 

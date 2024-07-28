@@ -1,5 +1,5 @@
 import LinkTo from "../../../../../components/links/LinkTo/LinkTo";
-import { joinClassNames } from "../../../../../services/joinClassNames";
+import { joinClassNames } from "../../../../../utils/joinClassNames";
 import { PAGES } from "../../../../router/pages";
 
 import css from "./css.module.css";

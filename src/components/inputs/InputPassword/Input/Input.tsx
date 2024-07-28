@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { joinClassNames } from "../../../../services/joinClassNames";
+import { joinClassNames } from "../../../../utils/joinClassNames";
 import css from "./css.module.css";
 import EyeIcon from "./EyeIcon/EyeIcon";
 
