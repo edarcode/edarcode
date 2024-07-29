@@ -23,6 +23,7 @@ export default function Input(props: Props) {
 				placeholder="password"
 				{...extraProps}
 				type={!isVisiblePass ? "password" : "text"}
+				name="password"
 				className={finalClassNameInput}
 			></input>
 			<EyeIcon isVisiblePass={isVisiblePass} hVisiblePass={hVisiblePass} />

@@ -20,6 +20,7 @@ export default function Input(props: Props) {
 				placeholder="edarcode"
 				{...extraProps}
 				type="text"
+				name="email"
 				className={finalClassInput}
 			></input>
 			<State async={async} err={err} loading={loading} success={success} />

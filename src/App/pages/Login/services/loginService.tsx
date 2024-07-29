@@ -1,6 +1,6 @@
 import { BASE_URL } from "../../../../edarcode-api/urls";
 
-export const login = async (params: Params) => {
+export const loginService = async (params: Params) => {
 	const res = await fetch(URL, {
 		method: "POST",
 		body: JSON.stringify(params)

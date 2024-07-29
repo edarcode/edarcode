@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { LoginForm } from "./types";
-import { hEmail } from "./utils/hEmail";
-import { hPassword } from "./utils/hPassword";
+import { hEmail } from "../../../../handlers/hEmail";
+import { hPassword } from "../../../../handlers/hPassword";
 
-const initialLoginForm: LoginForm = {
+const initialLoginForm = {
 	email: { value: "", err: "" },
 	password: { value: "", err: "" }
 };
@@ -18,11 +17,13 @@ export const useLoginForm = () => {
 		!!form.password.value;
 
 	const setEmail = (newEmail: string) => {
-		hEmail({ newEmail, form, setForm });
+		const newForm = hEmail({ newEmail, form });
+		setForm(newForm);
 	};
 
 	const setPassword = (newPassword: string) => {
-		hPassword({ newPassword, form, setForm });
+		const newForm = hPassword({ newPassword, form });
+		setForm(newForm);
 	};
 
 	return {
