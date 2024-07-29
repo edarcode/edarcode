@@ -7,10 +7,11 @@ import css from "./css.module.css";
 import { useLoginForm } from "./hooks/useLoginForm";
 
 export default function Login() {
-	const { get, set, isValid } = useLoginForm();
+	const { get, set, isValid, send } = useLoginForm();
 
 	const hSubmit = (e: Event) => {
 		e.preventDefault();
+		send();
 	};
 
 	return (
