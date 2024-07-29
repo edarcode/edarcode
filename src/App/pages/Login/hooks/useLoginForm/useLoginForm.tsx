@@ -11,6 +11,12 @@ const initialLoginForm: LoginForm = {
 export const useLoginForm = () => {
 	const [form, setForm] = useState(initialLoginForm);
 
+	const isValidLoginForm =
+		!form.email.err &&
+		!!form.email.value &&
+		!form.password.err &&
+		!!form.password.value;
+
 	const setEmail = (newEmail: string) => {
 		hEmail({ newEmail, form, setForm });
 	};
@@ -24,6 +30,7 @@ export const useLoginForm = () => {
 			email: form.email,
 			password: form.password
 		},
-		set: { email: setEmail, password: setPassword }
+		set: { email: setEmail, password: setPassword },
+		isValid: isValidLoginForm
 	};
 };

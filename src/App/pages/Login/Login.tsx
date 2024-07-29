@@ -6,7 +6,7 @@ import css from "./css.module.css";
 import { useLoginForm } from "./hooks/useLoginForm/useLoginForm";
 
 export default function Login() {
-	const { get, set } = useLoginForm();
+	const { get, set, isValid } = useLoginForm();
 	return (
 		<form className={css.login}>
 			<InputText
@@ -21,7 +21,7 @@ export default function Login() {
 				onChange={e => set.password(e.target.value)}
 			/>
 			<Hyperlink href="#">Ir a registro</Hyperlink>
-			<Btn disabled>Login</Btn>
+			<Btn disabled={!isValid}>Login</Btn>
 		</form>
 	);
 }
