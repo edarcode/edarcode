@@ -8,6 +8,7 @@ import { useLogin } from "./hooks/useLogin";
 
 export default function Login() {
 	const { form, state, set, isValid, reqToken } = useLogin();
+	console.log(form, state);
 
 	const hSubmit = (e: Event) => {
 		e.preventDefault();

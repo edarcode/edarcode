@@ -1,14 +1,14 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { hEmail } from "../../../../form-handlers/hEmail";
 import { hPassword } from "../../../../form-handlers/hPassword";
-import { loginService } from "../services/loginService";
+import { useLoginService } from "./useLoginService";
 
-const initLogin = {
+const initLogin: Login = {
 	form: {
 		email: { value: "", err: "" },
 		password: { value: "", err: "" }
 	},
-	state: { loading: false, success: false, err: "" }
+	state: { loading: false, err: false }
 };
 
 export const useLogin = () => {
@@ -16,30 +16,7 @@ export const useLogin = () => {
 	const form = login.form;
 	const state = login.state;
 
-	useEffect(() => {
-		if (!login.state.loading) return;
-		const controller = new AbortController();
-
-		loginService(controller.signal, {
-			email: form.email.value,
-			password: form.password.value
-		})
-			.then(res => {
-				localStorage.setItem("login", res.token);
-				setLogin({ ...login, state: { ...initLogin.state, success: true } });
-			})
-			.catch(() => {
-				setLogin({ ...login, state: { ...initLogin.state, err: "Err login" } });
-			})
-			.finally(() => {
-				setLogin(login => ({
-					...login,
-					state: { ...login.state, loading: false }
-				}));
-			});
-
-		return () => controller.abort();
-	}, [state.loading]);
+	useLoginService({ login, setLogin });
 
 	const isValidLogin =
 		!form.email.err &&
@@ -56,14 +33,16 @@ export const useLogin = () => {
 	};
 
 	const setPassword = (newValue: string) => {
-		const newEmail = hPassword(newValue, form.password);
+		const newPassword = hPassword(newValue, form.password);
 		const newLogin = { ...login };
-		newLogin.form.password = newEmail;
+		newLogin.form.password = newPassword;
 		setLogin(newLogin);
 	};
 
 	const reqToken = () => {
-		setLogin({ ...login, state: { loading: true, err: "", success: false } });
+		const newLogin = { ...login };
+		newLogin.state = { loading: true, err: false };
+		setLogin(newLogin);
 	};
 
 	return {
@@ -72,8 +51,27 @@ export const useLogin = () => {
 			password: form.password
 		},
 		set: { email: setEmail, password: setPassword },
-		state: { loading: state.loading, success: state.success, err: state.err },
+		state: { loading: state.loading, err: state.err },
 		isValid: isValidLogin,
 		reqToken
 	};
 };
+
+export type Login = {
+	form: {
+		email: {
+			value: string;
+			err: string;
+		};
+		password: {
+			value: string;
+			err: string;
+		};
+	};
+	state: {
+		loading: boolean;
+		err: boolean;
+	};
+};
+
+export type SetLogin = React.Dispatch<React.SetStateAction<Login>>;

@@ -5,5 +5,5 @@ export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 	kind?: keyof typeof BTN__KIND;
 	isVisible?: boolean;
 	loading?: boolean;
-	err?: string;
+	err?: boolean;
 }
