@@ -24,7 +24,8 @@ export const useLogin = () => {
 			email: form.email.value,
 			password: form.password.value
 		})
-			.then(() => {
+			.then(res => {
+				localStorage.setItem("login", res.token);
 				setLogin({ ...login, state: { ...initLogin.state, success: true } });
 			})
 			.catch(() => {
