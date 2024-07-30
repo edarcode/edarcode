@@ -1,10 +1,11 @@
 import { BASE_URL } from "../../../../edarcode-api/urls";
 
 export const loginService = async (signal: AbortSignal, params: Params) => {
+	console.log(params);
 	const res = await fetch(URL, {
+		signal,
 		method: "POST",
-		body: JSON.stringify(params),
-		signal
+		body: JSON.stringify(params)
 	});
 	return await res.json();
 };

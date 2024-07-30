@@ -19,7 +19,6 @@ export const hPassword = <T extends BaseForm>(params: Params<T>) => {
 
 type BaseForm = { password: { value: string; err: string } };
 type Form<T extends BaseForm> = T;
-
 type Params<T extends BaseForm> = {
 	newPassword: string;
 	form: Form<T>;

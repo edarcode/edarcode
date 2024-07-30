@@ -1,20 +1,16 @@
 import { useEffect, useState } from "react";
-import { hEmail } from "../../../../handlers/hEmail";
-import { hPassword } from "../../../../handlers/hPassword";
+import { hEmail } from "../../../../form-handlers/hEmail";
+import { hPassword } from "../../../../form-handlers/hPassword";
 import { loginService } from "../services/loginService";
 
-const initialLoginForm = {
+const initialForm = {
 	email: { value: "", err: "" },
 	password: { value: "", err: "" },
-	state: {
-		loading: false,
-		success: false,
-		err: false
-	}
+	state: { loading: false, success: false, err: "" }
 };
 
 export const useLoginForm = () => {
-	const [form, setForm] = useState(initialLoginForm);
+	const [form, setForm] = useState(initialForm);
 
 	useEffect(() => {
 		if (!form.state.loading) return;
@@ -24,9 +20,17 @@ export const useLoginForm = () => {
 			email: form.email.value,
 			password: form.password.value
 		})
-			.then(() => {})
-			.catch(() => {})
-			.finally(() => {});
+			.then(res => {
+				console.log(res);
+				setForm({ ...form, state: { ...initialForm.state, success: true } });
+			})
+			.catch(err => {
+				console.log(err);
+				setForm({ ...form, state: { ...initialForm.state, err: "err login" } });
+			})
+			.finally(() => {
+				setForm({ ...form, state: { ...form.state, loading: false } });
+			});
 
 		return () => controller.abort();
 	}, [form.state.loading]);
@@ -47,8 +51,9 @@ export const useLoginForm = () => {
 		setForm(newForm);
 	};
 
-	const send = () =>
-		setForm({ ...form, state: { loading: true, err: false, success: false } });
+	const reqToken = () => {
+		setForm({ ...form, state: { loading: true, err: "", success: false } });
+	};
 
 	return {
 		get: {
@@ -57,6 +62,6 @@ export const useLoginForm = () => {
 		},
 		set: { email: setEmail, password: setPassword },
 		isValid: isValidLoginForm,
-		send
+		reqToken
 	};
 };

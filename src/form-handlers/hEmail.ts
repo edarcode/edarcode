@@ -19,7 +19,6 @@ export const hEmail = <T extends BaseForm>(params: Params<T>) => {
 
 type BaseForm = { email: { value: string; err: string } };
 type Form<T extends BaseForm> = T;
-
 type Params<T extends BaseForm> = {
 	newEmail: string;
 	form: Form<T>;
