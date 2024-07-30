@@ -29,8 +29,9 @@ export default function Login() {
 				onChange={e => set.password(e.target.value)}
 			/>
 			<Hyperlink href="#">Ir a registro</Hyperlink>
-			<Btn disabled={!isValid}>{state.loading ? "Cargando..." : "Login"}</Btn>
-			{state.err && <span>{state.err}</span>}
+			<Btn disabled={!isValid} loading={state.loading} err={state.err}>
+				Login
+			</Btn>
 		</form>
 	);
 }

@@ -1,7 +1,7 @@
 import css from "./css.module.css";
-import Err from "./icons/Err";
-import Loading from "./icons/Loading";
-import Success from "./icons/Success";
+import Err from "../../../../../icons/Err";
+import Loading from "../../../../../icons/Loading";
+import Success from "../../../../../icons/Success";
 
 type Props = {
 	async?: boolean;

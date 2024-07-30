@@ -1,6 +1,6 @@
 export class EdarErr extends Error {
-	msg: string;
 	status: number;
+	msg: string;
 	constructor({ status, msg }: Constructor) {
 		super();
 		this.name = "EdarErr";
