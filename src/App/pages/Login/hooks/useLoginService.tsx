@@ -17,8 +17,8 @@ export function useLoginService(params: UseLoginService) {
 		const body = { email: form.email.value, password: form.password.value };
 		loginService(controller.signal, body)
 			.then(res => {
-				const { token } = res as { token: string };
-				updateToken(token);
+				const auth = res as { token: string; name: string };
+				updateToken(auth);
 				navigate("/");
 			})
 			.catch(() => {

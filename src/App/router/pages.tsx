@@ -1,3 +1,4 @@
+import RouteProtector from "../../components/RouteProtector/RouteProtector";
 import AboutMe from "../pages/AboutMe/AboutMe";
 import DesignSystem from "../pages/DesignSystem/DesignSystem";
 import Education from "../pages/Education/Education";
@@ -15,19 +16,31 @@ export const PAGES = [
 		id: crypto.randomUUID(),
 		name: "Educación",
 		path: "/education",
-		element: <Education />
+		element: (
+			<RouteProtector>
+				<Education />
+			</RouteProtector>
+		)
 	},
 	{
 		id: crypto.randomUUID(),
 		name: "Utilidades",
 		path: "/utils",
-		element: <Utils />
+		element: (
+			<RouteProtector>
+				<Utils />
+			</RouteProtector>
+		)
 	},
 	{
 		id: crypto.randomUUID(),
 		name: "Design System",
 		path: "/design-system",
-		element: <DesignSystem />
+		element: (
+			<RouteProtector>
+				<DesignSystem />
+			</RouteProtector>
+		)
 	},
 	{
 		id: crypto.randomUUID(),

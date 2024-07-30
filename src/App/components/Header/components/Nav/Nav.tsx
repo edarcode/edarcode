@@ -1,4 +1,5 @@
 import LinkTo from "../../../../../components/links/LinkTo/LinkTo";
+import { useAuth } from "../../../../../state/auth/useAuth";
 import { joinClassNames } from "../../../../../utils/joinClassNames";
 import { PAGES } from "../../../../router/pages";
 
@@ -7,6 +8,8 @@ import { Props } from "./types";
 
 export default function Nav(props: Props) {
 	const { className, isVisible, id, role, onClickLinks } = props;
+	const authName = useAuth(auth => auth.name);
+	const logout = useAuth(auth => auth.removeToken);
 
 	const finalClassName = joinClassNames([
 		css.nav,
@@ -14,11 +17,20 @@ export default function Nav(props: Props) {
 		className
 	]);
 
-	const links = PAGES.map(page => (
-		<LinkTo key={page.id} to={page.path} onClick={onClickLinks}>
-			{page.name}
-		</LinkTo>
-	));
+	const links = PAGES.map(page => {
+		if (page.name === "Login" && authName) {
+			return (
+				<LinkTo key={page.id} to={page.path} onClick={logout}>
+					Logout
+				</LinkTo>
+			);
+		}
+		return (
+			<LinkTo key={page.id} to={page.path} onClick={onClickLinks}>
+				{page.name}
+			</LinkTo>
+		);
+	});
 
 	return (
 		<nav id={id} role={role} className={finalClassName}>
