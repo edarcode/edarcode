@@ -26,21 +26,13 @@ export const PAGES = [
 		id: crypto.randomUUID(),
 		name: "Utilidades",
 		path: "/utils",
-		element: (
-			<RouteProtector>
-				<Utils />
-			</RouteProtector>
-		)
+		element: <Utils />
 	},
 	{
 		id: crypto.randomUUID(),
 		name: "Design System",
 		path: "/design-system",
-		element: (
-			<RouteProtector>
-				<DesignSystem />
-			</RouteProtector>
-		)
+		element: <DesignSystem />
 	},
 	{
 		id: crypto.randomUUID(),
