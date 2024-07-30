@@ -1,25 +1,21 @@
 import { passwordSchema } from "../zod-schemas/passwordSchema";
 
-export const hPassword = <T extends BaseForm>(params: Params<T>) => {
-	const { newPassword, form } = params;
+export const hPassword = (newValue: string, password: Password) => {
+	let newPassword = { ...password };
+	newPassword = { value: newValue, err: "" };
 
-	const newForm = { ...form };
-	newForm.password = { value: newPassword, err: "" };
+	if (!newValue) return newPassword;
 
-	if (!newPassword) return newForm;
-
-	const { success, error } = passwordSchema.safeParse(newPassword);
+	const { success, error } = passwordSchema.safeParse(newValue);
 	if (!success) {
 		const msgErr = error.errors[0].message;
-		newForm.password.err = msgErr;
-	} else newForm.password.err = "";
+		newPassword.err = msgErr;
+	}
 
-	return newForm;
+	return newPassword;
 };
 
-type BaseForm = { password: { value: string; err: string } };
-type Form<T extends BaseForm> = T;
-type Params<T extends BaseForm> = {
-	newPassword: string;
-	form: Form<T>;
+type Password = {
+	value: string;
+	err: string;
 };

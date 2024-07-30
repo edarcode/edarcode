@@ -1,7 +1,7 @@
 import { BASE_URL } from "../../../../edarcode-api/urls";
+import { EdarErr } from "../../../../error/EdarErr";
 
 export const loginService = async (signal: AbortSignal, params: Params) => {
-	console.log(params);
 	const res = await fetch(URL, {
 		signal,
 		method: "POST",
@@ -10,6 +10,9 @@ export const loginService = async (signal: AbortSignal, params: Params) => {
 		},
 		body: JSON.stringify(params)
 	});
+
+	if (!res.ok) throw new EdarErr({ status: res.status, msg: "Err login" });
+
 	return await res.json();
 };
 

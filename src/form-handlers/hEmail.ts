@@ -1,25 +1,21 @@
 import { emailSchema } from "../zod-schemas/emailSchema";
 
-export const hEmail = <T extends BaseForm>(params: Params<T>) => {
-	const { newEmail, form } = params;
+export const hEmail = (newValue: string, email: Email) => {
+	let newEmail = { ...email };
+	newEmail = { value: newValue, err: "" };
 
-	const newForm = { ...form };
-	newForm.email = { value: newEmail, err: "" };
+	if (!newValue) return newEmail;
 
-	if (!newEmail) return newForm;
-
-	const { success, error } = emailSchema.safeParse(newEmail);
+	const { success, error } = emailSchema.safeParse(newValue);
 	if (!success) {
 		const msgErr = error.errors[0].message;
-		newForm.email.err = msgErr;
-	} else newForm.email.err = "";
+		newEmail.err = msgErr;
+	}
 
-	return newForm;
+	return newEmail;
 };
 
-type BaseForm = { email: { value: string; err: string } };
-type Form<T extends BaseForm> = T;
-type Params<T extends BaseForm> = {
-	newEmail: string;
-	form: Form<T>;
+type Email = {
+	value: string;
+	err: string;
 };

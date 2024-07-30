@@ -4,10 +4,10 @@ import InputText from "../../../components/inputs/InputText/InputText";
 import Hyperlink from "../../../components/links/Hyperlink/Hyperlink";
 import { Event } from "../../../types";
 import css from "./css.module.css";
-import { useLoginForm } from "./hooks/useLoginForm";
+import { useLogin } from "./hooks/useLogin";
 
 export default function Login() {
-	const { get, set, isValid, reqToken } = useLoginForm();
+	const { form, state, set, isValid, reqToken } = useLogin();
 
 	const hSubmit = (e: Event) => {
 		e.preventDefault();
@@ -19,17 +19,18 @@ export default function Login() {
 		<form className={css.login} onSubmit={hSubmit}>
 			<InputText
 				placeholder="email"
-				value={get.email.value}
-				err={get.email.err}
+				value={form.email.value}
+				err={form.email.err}
 				onChange={e => set.email(e.target.value)}
 			/>
 			<InputPassword
-				value={get.password.value}
-				err={get.password.err}
+				value={form.password.value}
+				err={form.password.err}
 				onChange={e => set.password(e.target.value)}
 			/>
 			<Hyperlink href="#">Ir a registro</Hyperlink>
-			<Btn disabled={!isValid}>Login</Btn>
+			<Btn disabled={!isValid}>{state.loading ? "Cargando..." : "Login"}</Btn>
+			{state.err && <span>{state.err}</span>}
 		</form>
 	);
 }
