@@ -39,7 +39,7 @@ export const useLogin = () => {
 		setLogin(newLogin);
 	};
 
-	const reqToken = () => {
+	const auth = () => {
 		const newLogin = { ...login };
 		newLogin.state = { loading: true, err: false };
 		setLogin(newLogin);
@@ -53,7 +53,7 @@ export const useLogin = () => {
 		set: { email: setEmail, password: setPassword },
 		state: { loading: state.loading, err: state.err },
 		isValid: isValidLogin,
-		reqToken
+		auth
 	};
 };
 

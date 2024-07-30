@@ -7,13 +7,12 @@ import css from "./css.module.css";
 import { useLogin } from "./hooks/useLogin";
 
 export default function Login() {
-	const { form, state, set, isValid, reqToken } = useLogin();
-	console.log(form, state);
+	const { form, state, set, isValid, auth } = useLogin();
 
 	const hSubmit = (e: Event) => {
 		e.preventDefault();
 		if (!isValid) return;
-		reqToken();
+		auth();
 	};
 
 	return (
