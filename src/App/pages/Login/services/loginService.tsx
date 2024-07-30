@@ -5,6 +5,9 @@ export const loginService = async (signal: AbortSignal, params: Params) => {
 	const res = await fetch(URL, {
 		signal,
 		method: "POST",
+		headers: {
+			"Content-Type": "application/json"
+		},
 		body: JSON.stringify(params)
 	});
 	return await res.json();
