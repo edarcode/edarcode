@@ -1,9 +1,9 @@
-import RouteProtector from "../../components/RouteProtector/RouteProtector";
 import AboutMe from "../pages/AboutMe/AboutMe";
 import DesignSystem from "../pages/DesignSystem/DesignSystem";
 import Education from "../pages/Education/Education";
 import Login from "../pages/Login/Login";
 import Utils from "../pages/Utils/Utils";
+import RouteProtector from "./RouteProtector/RouteProtector";
 
 export const PAGES = [
 	{
