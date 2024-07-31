@@ -4,9 +4,9 @@ import { Login, SetLogin } from "./useLogin";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../../../state/auth/useAuth";
 
-export function useLoginService(params: UseLoginService) {
+export function useLoginService(params: Params) {
 	const { login, setLogin } = params;
-	const updateToken = useAuth(auth => auth.updateToken);
+	const updateToken = useAuth(auth => auth.updateAuth);
 	const { form, state } = login;
 	const navigate = useNavigate();
 
@@ -17,8 +17,8 @@ export function useLoginService(params: UseLoginService) {
 		const body = { email: form.email.value, password: form.password.value };
 		loginService(controller.signal, body)
 			.then(res => {
-				const auth = res as { token: string; name: string };
-				updateToken(auth);
+				const token = res.token as string;
+				updateToken(token);
 				navigate("/");
 			})
 			.catch(() => {
@@ -29,7 +29,7 @@ export function useLoginService(params: UseLoginService) {
 	}, [state.loading]);
 }
 
-type UseLoginService = {
+type Params = {
 	login: Login;
 	setLogin: SetLogin;
 };

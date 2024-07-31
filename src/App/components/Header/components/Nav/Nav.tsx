@@ -9,7 +9,7 @@ import { Props } from "./types";
 export default function Nav(props: Props) {
 	const { className, isVisible, id, role, onClickLinks } = props;
 	const authName = useAuth(auth => auth.name);
-	const logout = useAuth(auth => auth.removeToken);
+	const logout = useAuth(auth => auth.removeAuth);
 
 	const finalClassName = joinClassNames([
 		css.nav,

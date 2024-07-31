@@ -1,11 +1,13 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
+import { jwtDecode } from "jwt-decode";
 
 type Auth = {
 	token: null | string;
 	name: null | string;
-	removeToken: () => void;
-	updateToken: (auth: { token: string; name: string }) => void;
+	role: null | Role;
+	removeAuth: () => void;
+	updateAuth: (token: string) => void;
 };
 
 export const useAuth = create<Auth>()(
@@ -13,17 +15,21 @@ export const useAuth = create<Auth>()(
 		set => ({
 			token: null,
 			name: null,
-			removeToken: () => {
-				set({ token: null, name: null });
-				localStorage.removeItem("auth");
+			role: null,
+			removeAuth: () => {
+				set({ token: null, name: null, role: null });
+				localStorage.removeItem("token");
 			},
-			updateToken: auth => {
-				set({ token: auth.token, name: auth.name });
-				const newAuth = JSON.stringify(auth);
-				console.log(newAuth);
-				localStorage.setItem("auth", newAuth);
+			updateAuth: token => {
+				const infoToken = jwtDecode(token) as InfoToken;
+				console.log(infoToken);
+				set({ token, name: infoToken.name, role: infoToken.role });
+				localStorage.setItem("token", token);
 			}
 		}),
 		{ name: "auth" }
 	)
 );
+
+type InfoToken = { name: string; role: Role };
+type Role = "ADMIN" | "BOSS" | "CLIENT";
