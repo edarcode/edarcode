@@ -1,6 +1,7 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { jwtDecode } from "jwt-decode";
+import { refreshTokenService } from "./services/refreshTokenService";
 
 type Auth = {
 	token: null | string;
@@ -8,11 +9,12 @@ type Auth = {
 	role: null | Role;
 	removeAuth: () => void;
 	updateAuth: (token: string) => void;
+	refreshAuth: () => void;
 };
 
 export const useAuth = create<Auth>()(
 	devtools(
-		set => ({
+		(set, get) => ({
 			token: null,
 			name: null,
 			role: null,
@@ -22,9 +24,16 @@ export const useAuth = create<Auth>()(
 			},
 			updateAuth: token => {
 				const infoToken = jwtDecode(token) as InfoToken;
-				console.log(infoToken);
 				set({ token, name: infoToken.name, role: infoToken.role });
 				localStorage.setItem("token", token);
+			},
+			refreshAuth: async () => {
+				const { updateAuth } = get();
+				const token = localStorage.getItem("token");
+				if (!token) return;
+				const res = await refreshTokenService(token);
+				const newToken = res.token as string;
+				updateAuth(newToken);
 			}
 		}),
 		{ name: "auth" }
