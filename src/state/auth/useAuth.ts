@@ -31,14 +31,28 @@ export const useAuth = create<Auth>()(
 				const { updateAuth } = get();
 				const token = localStorage.getItem("token");
 				if (!token) return;
-				const res = await refreshTokenService(token);
-				const newToken = res.token as string;
-				updateAuth(newToken);
+
+				const infoToken = jwtDecode(token) as InfoToken;
+				const iat = infoToken.iat;
+				const currentTime = Math.floor(Date.now() / 1000);
+				const oneDaysInSeconds = 2 * 24 * 60 * 60;
+				const isTimeToRefresh = currentTime - iat > oneDaysInSeconds;
+
+				if (!isTimeToRefresh) return updateAuth(token);
+
+				try {
+					const res = await refreshTokenService(token);
+					const newToken = res.token as string;
+					updateAuth(newToken);
+				} catch (error) {
+					const { removeAuth } = get();
+					removeAuth();
+				}
 			}
 		}),
 		{ name: "auth" }
 	)
 );
 
-type InfoToken = { name: string; role: Role };
+type InfoToken = { name: string; role: Role; iat: number };
 type Role = "ADMIN" | "BOSS" | "CLIENT";
