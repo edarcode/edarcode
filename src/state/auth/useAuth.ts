@@ -35,15 +35,15 @@ export const useAuth = create<Auth>()(
 
 				const infoToken = jwtDecode(token) as InfoToken;
 				const currentTime = Math.floor(Date.now() / 1000);
-				const twoDaysInSeconds = 2 * 24 * 60 * 60;
-				const isTimeToRefresh = currentTime - infoToken.iat > twoDaysInSeconds;
+				const daysInSeconds = 3 * 24 * 60 * 60;
+				const isTimeToRefresh = currentTime - infoToken.iat > daysInSeconds;
 
-				if (!isTimeToRefresh) return;
+				const { updateToken } = get();
+				if (!isTimeToRefresh) return updateToken(token);
 
 				try {
 					const res = await refreshTokenService(token);
 					const newToken = res.token as string;
-					const { updateToken } = get();
 					updateToken(newToken);
 				} catch (error) {
 					const { removeToken } = get();
