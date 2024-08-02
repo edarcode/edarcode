@@ -8,12 +8,11 @@ type Props = {
 
 export default function RouteProtector({ children }: Props) {
 	const token = useAuth(auth => auth.token);
-	const role = useAuth(auth => auth.role);
+	const role = useAuth(auth => auth.getInfoToken()?.role);
+
 	const isAuth = token && role && role === ROLE.BOSS;
 
-	if (!isAuth) {
-		return <Navigate to="/login" replace />;
-	}
+	if (!isAuth) return <Navigate to="/login" replace />;
 
 	return children;
 }

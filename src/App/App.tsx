@@ -6,6 +6,7 @@ import { useRefreshToken } from "../state/auth/hooks/useRefreshToken";
 
 export default function App() {
 	useRefreshToken();
+
 	return (
 		<div className={css.app}>
 			<Header className={css.header} />

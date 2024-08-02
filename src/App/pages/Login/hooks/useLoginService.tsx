@@ -6,7 +6,7 @@ import { useAuth } from "../../../../state/auth/useAuth";
 
 export function useLoginService(params: Params) {
 	const { login, setLogin } = params;
-	const updateToken = useAuth(auth => auth.updateAuth);
+	const updateToken = useAuth(auth => auth.updateToken);
 	const { form, state } = login;
 	const navigate = useNavigate();
 

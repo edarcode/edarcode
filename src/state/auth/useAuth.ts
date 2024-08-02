@@ -5,48 +5,49 @@ import { refreshTokenService } from "./services/refreshTokenService";
 
 type Auth = {
 	token: null | string;
-	name: null | string;
-	role: null | Role;
-	removeAuth: () => void;
-	updateAuth: (token: string) => void;
-	refreshAuth: () => void;
+	getInfoToken: () => InfoToken | void;
+	removeToken: () => void;
+	updateToken: (token: string) => void;
+	refreshToken: () => void;
 };
 
 export const useAuth = create<Auth>()(
 	devtools(
 		(set, get) => ({
 			token: null,
-			name: null,
-			role: null,
-			removeAuth: () => {
-				set({ token: null, name: null, role: null });
+			removeToken: () => {
+				set({ token: null });
 				localStorage.removeItem("token");
 			},
-			updateAuth: token => {
-				const infoToken = jwtDecode(token) as InfoToken;
-				set({ token, name: infoToken.name, role: infoToken.role });
+			updateToken: token => {
+				set({ token });
 				localStorage.setItem("token", token);
 			},
-			refreshAuth: async () => {
-				const { updateAuth } = get();
+			getInfoToken() {
+				const { token } = get();
+				if (!token) return;
+				const infoToken = jwtDecode(token) as InfoToken;
+				return infoToken;
+			},
+			refreshToken: async () => {
 				const token = localStorage.getItem("token");
 				if (!token) return;
 
 				const infoToken = jwtDecode(token) as InfoToken;
-				const iat = infoToken.iat;
 				const currentTime = Math.floor(Date.now() / 1000);
-				const oneDaysInSeconds = 2 * 24 * 60 * 60;
-				const isTimeToRefresh = currentTime - iat > oneDaysInSeconds;
+				const twoDaysInSeconds = 2 * 24 * 60 * 60;
+				const isTimeToRefresh = currentTime - infoToken.iat > twoDaysInSeconds;
 
-				if (!isTimeToRefresh) return updateAuth(token);
+				if (!isTimeToRefresh) return;
 
 				try {
 					const res = await refreshTokenService(token);
 					const newToken = res.token as string;
-					updateAuth(newToken);
+					const { updateToken } = get();
+					updateToken(newToken);
 				} catch (error) {
-					const { removeAuth } = get();
-					removeAuth();
+					const { removeToken } = get();
+					removeToken();
 				}
 			}
 		}),

@@ -8,8 +8,8 @@ import { Props } from "./types";
 
 export default function Nav(props: Props) {
 	const { className, isVisible, id, role, onClickLinks } = props;
-	const authName = useAuth(auth => auth.name);
-	const logout = useAuth(auth => auth.removeAuth);
+	const infoToken = useAuth(auth => auth.getInfoToken());
+	const logout = useAuth(auth => auth.removeToken);
 
 	const finalClassName = joinClassNames([
 		css.nav,
@@ -18,7 +18,7 @@ export default function Nav(props: Props) {
 	]);
 
 	const links = PAGES.map(page => {
-		if (page.name === "Login" && authName) {
+		if (page.name === "Login" && infoToken && infoToken.name) {
 			return (
 				<LinkTo key={page.id} to={page.path} onClick={logout}>
 					Logout
