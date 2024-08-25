@@ -2,7 +2,7 @@ import { EDARCODE } from "../../../../../constants/edarcode";
 import css from "./css.module.css";
 
 export default function Skills() {
-	const logos = EDARCODE.Skills.map(skill => (
+	const logos = EDARCODE.skills.map(skill => (
 		<img
 			width="28"
 			height="28"

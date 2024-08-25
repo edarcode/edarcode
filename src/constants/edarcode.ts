@@ -1,7 +1,7 @@
 export const EDARCODE = {
 	name: "edwin ortiz",
 	img: "",
-	Skills: [
+	skills: [
 		{
 			name: "HTML",
 			logo: "/svg/tech/html.svg"

@@ -21,6 +21,9 @@ export default function Utils() {
 				<Hyperlink href="https://drizzle.run/visualizer">
 					Diagramas db drizzle
 				</Hyperlink>
+				<Hyperlink href="https://number-conversion-tau.vercel.app/">
+					Conversor de números (edarcode)
+				</Hyperlink>
 			</nav>
 		</div>
 	);
