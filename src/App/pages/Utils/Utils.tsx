@@ -15,9 +15,7 @@ export default function Utils() {
 				<Hyperlink href="https://cursos.doriandesings.com/course/css-intermedio">
 					CSS intermedio dorian
 				</Hyperlink>
-				<Hyperlink href="https://pagespeed.web.dev/analysis">
-					Lighthouse
-				</Hyperlink>
+				<Hyperlink href="https://pagespeed.web.dev">Lighthouse</Hyperlink>
 				<Hyperlink href="https://www.freepik.es/">Img gratis</Hyperlink>
 				<Hyperlink href="https://www.drawdb.app/">Diagramas db</Hyperlink>
 				<Hyperlink href="https://drizzle.run/visualizer">
