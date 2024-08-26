@@ -24,6 +24,9 @@ export default function Utils() {
 				<Hyperlink href="https://number-conversion-tau.vercel.app/">
 					Conversor de números (edarcode)
 				</Hyperlink>
+				<Hyperlink href="https://calculator-ten-khaki-94.vercel.app/">
+					Calculadora (edarcode)
+				</Hyperlink>
 			</nav>
 		</div>
 	);
