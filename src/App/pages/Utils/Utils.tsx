@@ -27,6 +27,7 @@ export default function Utils() {
 				<Hyperlink href="https://calculator-ten-khaki-94.vercel.app/">
 					Calculadora (edarcode)
 				</Hyperlink>
+				<Hyperlink href="https://kitsu.io/api/edge">Kitsu API</Hyperlink>
 			</nav>
 		</div>
 	);
