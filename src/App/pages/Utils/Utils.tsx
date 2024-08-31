@@ -28,6 +28,7 @@ export default function Utils() {
 					Calculadora (edarcode)
 				</Hyperlink>
 				<Hyperlink href="https://kitsu.io/api/edge">Kitsu API</Hyperlink>
+				<Hyperlink href="https://animanga.es/">Animanga</Hyperlink>
 			</nav>
 		</div>
 	);
