@@ -29,6 +29,7 @@ export default function Utils() {
 				</Hyperlink>
 				<Hyperlink href="https://kitsu.io/api/edge">Kitsu API</Hyperlink>
 				<Hyperlink href="https://animanga.es/">Animanga</Hyperlink>
+				<Hyperlink href="https://ideogram.ai/">Gerador de img (IA)</Hyperlink>
 			</nav>
 		</div>
 	);
