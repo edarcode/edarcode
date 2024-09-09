@@ -30,6 +30,9 @@ export default function Utils() {
 				<Hyperlink href="https://kitsu.io/api/edge">Kitsu API</Hyperlink>
 				<Hyperlink href="https://animanga.es/">Animanga</Hyperlink>
 				<Hyperlink href="https://ideogram.ai/">Gerador de img (IA)</Hyperlink>
+				<Hyperlink href="https://notaku.vercel.app/">
+					Sitio web de animes (edarcode)
+				</Hyperlink>
 			</nav>
 		</div>
 	);
