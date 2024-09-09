@@ -84,7 +84,7 @@ export const EDARCODE = {
 			title: "Notaku",
 			deploy: "https://notaku.vercel.app/",
 			description:
-				"Encontrarás las últimas noticias y novedades del mundo del anime, junto con una herramienta de búsqueda que permite filtrar animes por título, género, popularidad y mucho más.",
+				"Encontrarás las últimas noticias, novedades del mundo del anime, junto con una herramienta de búsqueda que permite filtrar animes por título, género, popularidad y mucho más. Los datos son consultados en la API de kitsu.",
 			tools: "Vite, React, TanStack Query, React Hook Form",
 			imgs: {
 				mobile: "",
