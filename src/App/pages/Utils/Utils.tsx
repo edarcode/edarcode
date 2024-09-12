@@ -33,6 +33,9 @@ export default function Utils() {
 				<Hyperlink href="https://notaku.vercel.app/">
 					Sitio web de animes (edarcode)
 				</Hyperlink>
+				<Hyperlink href="https://www.befunky.com/es/crear/editor-de-fotos/">
+					Editor de fotos
+				</Hyperlink>
 			</nav>
 		</div>
 	);
