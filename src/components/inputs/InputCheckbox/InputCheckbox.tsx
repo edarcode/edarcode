@@ -1,6 +1,6 @@
-import { joinClassNames } from "../../../utils/joinClassNames.js";
 import css from "./css.module.css";
 import Check from "./icons/Check.js";
+import { joinClass } from "./utils/joinClass.js";
 
 interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 	className?: string;
@@ -9,7 +9,7 @@ interface Props extends React.InputHTMLAttributes<HTMLInputElement> {
 
 export default function InputCheckbox(props: Props) {
 	const { className, title, ...extraProps } = props;
-	const finalClassName = joinClassNames([css.label, className]);
+	const finalClassName = joinClass([css.label, className]);
 	return (
 		<label className={finalClassName}>
 			<input {...extraProps} type="checkbox" className={css.checkbox} />
