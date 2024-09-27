@@ -1,33 +1,35 @@
-import { joinClassNames } from "../../../utils/joinClassNames";
+import { joinClass } from "../../../utils/joinClass";
 import css from "./css.module.css";
 
-type Props = {
-	className?: string;
-	href: string;
-	children: string;
-	target?: string;
-	rel?: string;
-};
+export default function Hyperlink(props: Props) {
+  const {
+    className,
+    href,
+    children,
+    target = "_blank",
+    rel = "noopener noreferrer",
+    ...extraProps
+  } = props;
 
-export default function Hyperlink({
-	className,
-	href,
-	children,
-	target = "_blank",
-	rel = "noopener noreferrer",
-	...props
-}: Props) {
-	const finalClassName = joinClassNames([css.link, className]);
+  const finalClass = joinClass([css.link, className]);
 
-	return (
-		<a
-			{...props}
-			href={href}
-			className={finalClassName}
-			target={target}
-			rel={rel}
-		>
-			{children}
-		</a>
-	);
+  return (
+    <a
+      {...extraProps}
+      href={href}
+      className={finalClass}
+      target={target}
+      rel={rel}
+    >
+      {children}
+    </a>
+  );
 }
+
+type Props = {
+  className?: string;
+  href: string;
+  children: string;
+  target?: string;
+  rel?: string;
+};

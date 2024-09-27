@@ -1,0 +1,13 @@
+.skills {
+  display: grid;
+  gap: var(--sm);
+}
+
+.logos {
+  display: flex;
+  gap: var(--md);
+}
+
+.logo {
+  width: 28px;
+}

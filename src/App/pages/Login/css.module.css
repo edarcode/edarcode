@@ -1,7 +1,0 @@
-.login {
-	width: 300px;
-	display: grid;
-	gap: var(--g-md);
-	margin-left: auto;
-	margin-right: auto;
-}

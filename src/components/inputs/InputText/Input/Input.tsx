@@ -1,29 +1,35 @@
-import { joinClassNames } from "../../../../utils/joinClassNames";
-import State from "./State/State";
+import { joinClass } from "../utils/joinClass";
+import State from "../State/State";
 import css from "./css.module.css";
-
-interface Props {
-	err?: string;
-	async?: boolean;
-	loading?: boolean;
-	success?: boolean;
-}
+import { KINDS } from "./kinds";
 
 export default function Input(props: Props) {
-	const { err, async, loading, success, ...extraProps } = props;
+	const { async, err, loading, success, kind, ...extraProps } = props;
 
-	const finalClassInput = joinClassNames([css.input, err && css.input__err]);
+	const finalClassInput = joinClass([
+		css.input,
+		err && css.input__err,
+		async && (err || loading || success) && css.input__state,
+		css[kind ?? "primary"]
+	]);
 
 	return (
 		<label className={css.label}>
 			<input
-				placeholder="edarcode"
+				placeholder="✏️"
 				{...extraProps}
 				type="text"
-				name="email"
 				className={finalClassInput}
 			></input>
 			<State async={async} err={err} loading={loading} success={success} />
 		</label>
 	);
+}
+
+interface Props {
+	async?: boolean;
+	err?: string;
+	loading?: boolean;
+	success?: boolean;
+	kind?: keyof typeof KINDS;
 }

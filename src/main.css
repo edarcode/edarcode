@@ -1,22 +1,24 @@
 @import "./styles/reset.css";
+@import "./styles/scroll.css";
+@import "./styles/scales.css";
 @import "./styles/colors.css";
 @import "./styles/shadow.css";
-@import "./styles/radius.css";
 @import "./styles/fonts.css";
-@import "./styles/padding.css";
-@import "./styles/gap.css";
-@import "./styles/scroll.css";
 
 body {
-	background-color: var(--c-white);
-	color: var(--c-darkblack);
+  background-color: var(--bg-main);
+  color: var(--t-sec);
 }
 
-p {
-	color: var(--c-gray);
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--l-bg-main);
+    color: var(--l-t-sec);
+  }
 }
 
-svg {
-	width: 28px;
-	height: 28px;
+#main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }

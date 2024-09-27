@@ -1,0 +1,4 @@
+.education {
+  display: grid;
+  gap: var(--sm);
+}

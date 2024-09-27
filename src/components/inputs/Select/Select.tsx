@@ -1,18 +1,33 @@
-import { joinClassNames } from "../../../utils/joinClassNames.js";
 import css from "./css.module.css";
 import Arrow from "./icons/Arrow.js";
-
-interface Props extends React.SelectHTMLAttributes<HTMLSelectElement> {}
+import { KINDS } from "./kinds.js";
+import { joinClass } from "./utils/joinClass.js";
 
 export default function Select(props: Props) {
-	const { className, ...extraProps } = props;
+	const { className, opt, kind, title, ...extraProps } = props;
 
-	const finalClassName = joinClassNames([css.wrapper_select, className]);
+	const finalClass = joinClass([css.label, className]);
+	const finalClassSelect = joinClass([css.select, KINDS[kind ?? "primary"]]);
 
 	return (
-		<div className={finalClassName}>
-			<select {...extraProps} className={css.select}></select>
-			<Arrow className={css.arrow} />
-		</div>
+		<label className={finalClass}>
+			{title && <span className={css.title}>{title}</span>}
+			<label className={css.wrapper_select}>
+				<select {...extraProps} className={finalClassSelect}>
+					{opt.map(item => (
+						<option key={item.value} value={item.value}>
+							{item.display}
+						</option>
+					))}
+				</select>
+				<Arrow className={css.arrow} />
+			</label>
+		</label>
 	);
+}
+
+interface Props extends React.SelectHTMLAttributes<HTMLSelectElement> {
+	opt: { value: any; display: string }[];
+	kind?: keyof typeof KINDS;
+	title?: string;
 }
