@@ -1,27 +1,28 @@
 .banner {
-  display: grid;
-  gap: var(--md);
-  grid-template-columns: 1fr auto;
+	display: grid;
+	gap: var(--md);
+	grid-template-columns: 1fr auto;
 
-  .description {
-    display: grid;
-    align-content: center;
-    gap: var(--sm);
+	.description {
+		display: grid;
+		align-content: center;
+		gap: var(--sm);
 
-    p {
-      max-width: 340px;
-    }
-  }
+		p {
+			max-width: 340px;
+		}
+	}
 
-  .photo {
-    width: 256px;
-    height: 256px;
-    border-radius: 50%;
-  }
+	.photo {
+		width: 256px;
+		height: 256px;
+		aspect-ratio: 1 / 1;
+		border-radius: 50%;
+	}
 }
 
 @media (max-width: 444px) {
-  .banner {
-    grid-template-columns: 1fr;
-  }
+	.banner {
+		grid-template-columns: 1fr;
+	}
 }
