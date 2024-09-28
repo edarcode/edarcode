@@ -1,10 +1,13 @@
 .home {
-  display: grid;
-  gap: var(--lg);
-  padding: var(--lg);
-  justify-content: center;
+	display: grid;
+	gap: var(--lg);
+	padding: var(--lg);
+	justify-content: center;
 
-  .titles {
-    padding: 0 var(--lg);
-  }
+	.titles {
+		padding: 0 var(--lg);
+	}
+	.cv {
+		justify-self: start;
+	}
 }
