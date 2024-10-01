@@ -9,11 +9,10 @@ import css from "./css.module.css";
 export default function Lib() {
 	return (
 		<div className={css.lib}>
+			<InputCheckbox defaultChecked={true} title="Title" />
 			<IconBtn />
-			<Btn>Enviar</Btn>
 			<InputText title="Title" />
 			<InputNumber />
-			<InputCheckbox />
 			<Select
 				opt={[
 					{ display: "HTML", value: "html" },
@@ -21,6 +20,7 @@ export default function Lib() {
 					{ display: "JavaScipt", value: "js" }
 				]}
 			/>
+			<Btn>Enviar</Btn>
 		</div>
 	);
 }
