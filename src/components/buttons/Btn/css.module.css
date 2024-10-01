@@ -5,7 +5,7 @@
 	padding: var(--sm) var(--md);
 	cursor: pointer;
 	min-width: 125px;
-	min-height: 36px;
+	min-height: 38px;
 	border-radius: var(--md);
 	display: grid;
 	place-items: center;
@@ -17,10 +17,10 @@
 		color: var(--grey);
 		border: 1px solid var(--grey);
 	}
+}
 
-	.err {
-		padding-right: calc(var(--size-err) + var(--md));
-	}
+.btn__err {
+	padding-right: calc(var(--size-err) + var(--md));
 }
 
 .primary {

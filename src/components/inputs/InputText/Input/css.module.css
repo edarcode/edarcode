@@ -4,34 +4,39 @@
 
 .input {
 	width: 100%;
-	border: 2px solid transparent;
+	border: 1px solid transparent;
 	border-radius: var(--sm);
 	padding: var(--sm) var(--md);
-	min-height: 32px;
+	min-height: 38px;
 	outline: transparent;
+	background-color: var(--bg-surf);
+	color: var(--t-sec);
 }
 
 .input:focus {
-	box-shadow: var(--s-sm);
+	outline: 1px solid var(--pri);
+	border: 1px solid transparent;
 }
 
 .input::placeholder {
-	color: gray;
-	font-size: 0.9em;
+	color: var(--grey);
+	text-align: end;
 }
 
 .input__err {
-	border: 2px solid red;
+	border: 1px solid var(--red);
 }
 
 .input__state {
 	padding-right: calc(var(--md) + 20px);
 }
-.primary {
-	background-color: #2c2c2e;
-	color: whitesmoke;
-}
 
-.secondary {
-	color: black;
+@media (prefers-color-scheme: light) {
+	.input {
+		background-color: var(--l-bg-surf);
+		color: var(--l-t-sec);
+	}
+	.input:focus {
+		outline: 1px solid var(--l-pri);
+	}
 }

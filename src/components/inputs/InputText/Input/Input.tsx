@@ -16,7 +16,7 @@ export default function Input(props: Props) {
 	return (
 		<label className={css.label}>
 			<input
-				placeholder="✏️"
+				placeholder="🔍"
 				{...extraProps}
 				type="text"
 				className={finalClassInput}
