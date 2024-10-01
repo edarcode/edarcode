@@ -1,1 +1,1 @@
-export interface SVGProps extends React.SVGProps<SVGSVGElement> {}
+export type SVGProps = React.SVGProps<SVGSVGElement>;

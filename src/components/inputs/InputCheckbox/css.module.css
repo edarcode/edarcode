@@ -16,10 +16,19 @@
 }
 
 .fakeCheckbox {
-	box-shadow: var(--s-sm);
-	border-radius: var(--r-sm);
-	width: 28px;
-	height: 28px;
+	border-radius: var(--sm);
+	background-color: var(--bg-surf);
+	color: var(--t-sec);
+
+	.icon {
+		width: 28px;
+		height: 28px;
+	}
+}
+
+.checkbox:focus + .fakeCheckbox,
+.checkbox:active + .fakeCheckbox {
+	outline: 1px solid var(--pri);
 }
 
 .checkbox:not(:checked) + .fakeCheckbox > .icon {
@@ -27,5 +36,17 @@
 }
 
 .checkbox:focus + .fakeCheckbox {
-	box-shadow: var(--s-md);
+	box-shadow: var(--md);
+}
+
+@media (prefers-color-scheme: light) {
+	.fakeCheckbox {
+		background-color: var(--l-bg-surf);
+		color: var(--l-t-sec);
+	}
+
+	.checkbox:focus + .fakeCheckbox,
+	.checkbox:active + .fakeCheckbox {
+		outline: 1px solid var(--l-pri);
+	}
 }

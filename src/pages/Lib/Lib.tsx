@@ -1,5 +1,6 @@
 import Btn from "../../components/buttons/Btn/Btn";
 import IconBtn from "../../components/buttons/IconBtn/IconBtn";
+import InputCheckbox from "../../components/inputs/InputCheckbox/InputCheckbox";
 import InputNumber from "../../components/inputs/InputNumber/InputNumber";
 import InputText from "../../components/inputs/InputText/InputText";
 import Select from "../../components/inputs/Select/Select";
@@ -11,6 +12,8 @@ export default function Lib() {
 			<IconBtn />
 			<Btn>Enviar</Btn>
 			<InputText title="Title" />
+			<InputNumber />
+			<InputCheckbox />
 			<Select
 				opt={[
 					{ display: "HTML", value: "html" },
@@ -18,7 +21,6 @@ export default function Lib() {
 					{ display: "JavaScipt", value: "js" }
 				]}
 			/>
-			<InputNumber />
 		</div>
 	);
 }
