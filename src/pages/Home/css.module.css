@@ -2,7 +2,9 @@
 	display: grid;
 	gap: var(--lg);
 	padding: var(--lg);
-	justify-content: center;
+	max-width: var(--mw-pages);
+	margin-left: auto;
+	margin-right: auto;
 
 	.titles {
 		padding: 0 var(--lg);
