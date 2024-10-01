@@ -19,7 +19,7 @@ export default function Btn(props: Props) {
 	const finalClass = joinClass([
 		className,
 		css.btn,
-		err && css.btn__err,
+		err && css.err,
 		BTN_KIND[kind ?? "primary"]
 	]);
 

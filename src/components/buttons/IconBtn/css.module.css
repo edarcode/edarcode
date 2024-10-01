@@ -9,13 +9,13 @@
 	padding: 0;
 	color: var(--t-main);
 	background-color: transparent;
-}
 
-.btn:disabled {
-	cursor: initial;
-	background-color: transparent;
-	color: gray;
-	border: 2px solid gray;
+	&:disabled {
+		cursor: initial;
+		background-color: transparent;
+		color: var(--grey);
+		border: 2px solid var(--grey);
+	}
 }
 
 .icon {
