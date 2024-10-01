@@ -20,7 +20,6 @@
 
 .input::placeholder {
 	color: var(--grey);
-	text-align: end;
 }
 
 .input__err {
