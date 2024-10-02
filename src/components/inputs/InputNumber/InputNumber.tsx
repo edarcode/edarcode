@@ -16,7 +16,7 @@ export default function InputNumber(props: Props) {
 		<label className={finalClass}>
 			{title && <span className={css.title}>{title}</span>}
 			<input
-				placeholder="Núm"
+				placeholder="Número"
 				{...extraProps}
 				type="number"
 				className={finalClassInput}

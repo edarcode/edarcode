@@ -12,9 +12,9 @@ export default function Lib() {
 		<div className={css.lib}>
 			<InputCheckbox defaultChecked={true} title="Title" />
 			<IconBtn />
-			<InputText title="Title" err="err" />
-			<InputPassword err="err" />
-			<InputNumber />
+			<InputText title="Título" />
+			<InputNumber title="Título" />
+			<InputPassword />
 			<Select
 				opt={[
 					{ display: "HTML", value: "html" },
