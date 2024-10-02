@@ -18,10 +18,6 @@
 	border: 1px solid transparent;
 }
 
-.input::placeholder {
-	color: var(--grey);
-}
-
 .input__err {
 	border: 1px solid var(--red);
 }
