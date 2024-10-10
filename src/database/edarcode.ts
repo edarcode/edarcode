@@ -83,9 +83,9 @@ export const EDARCODE = {
 			title: "Contacts",
 			deploy: "https://contacts-virid.vercel.app/",
 			description:
-				"Diseñada para ayudar a las personas a gestionar sus contactos. Permite listar, agregar, editar y eliminar contactos.",
+				"Diseñada para ayudar a las personas a gestionar sus contactos. Permite listar, agregar, editar y eliminar contactos. Los datos persisten en Turso.",
 			tools:
-				"Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, Turso-SQLite",
+				"Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite",
 			imgs: {
 				mobile:
 					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/contacts_mobile.png",
