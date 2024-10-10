@@ -6,6 +6,23 @@
 	max-width: 600px;
 	border-radius: var(--sm);
 
+	.pcImg,
+	.mobileImg {
+		position: absolute;
+		max-width: 100%;
+		max-height: calc(100% - 35px);
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.mobileImg {
+		aspect-ratio: 75/152;
+	}
+	.pcImg {
+		aspect-ratio: 40/23;
+	}
+
 	.wrapperMobilePc {
 		position: absolute;
 		top: 0;
@@ -13,8 +30,8 @@
 		display: flex;
 		gap: var(--md);
 
-		.mobile,
-		.pc {
+		.mobileLink,
+		.pcLink {
 			color: var(--blue);
 			padding: var(--sm);
 			min-width: 70px;
