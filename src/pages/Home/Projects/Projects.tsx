@@ -7,8 +7,9 @@ export default function Projects() {
 		<section className={css.projects}>
 			<h3>Proyectos</h3>
 			<div className={css.cards}>
-				<ProjectCard project={EDARCODE.projects[0]} />
-				<ProjectCard project={EDARCODE.projects[1]} />
+				{EDARCODE.projects.map(project => (
+					<ProjectCard key={project.title} project={project} />
+				))}
 			</div>
 		</section>
 	);

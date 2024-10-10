@@ -6,15 +6,30 @@
 	max-width: 600px;
 	border-radius: var(--sm);
 
-	.mobile,
-	.pc {
-		min-width: 90px;
+	.wrapperMobilePc {
 		position: absolute;
 		top: 0;
 		right: 0;
-	}
+		display: flex;
+		gap: var(--md);
 
-	.pc {
-		right: calc(90px + 5px);
+		.mobile,
+		.pc {
+			color: var(--blue);
+			padding: var(--sm);
+			min-width: 70px;
+			text-align: center;
+			border-radius: var(--md);
+
+			&:hover {
+				background-color: var(--bg-surf);
+			}
+
+			@media (prefers-color-scheme: light) {
+				&:hover {
+					background-color: var(--l-bg-surf);
+				}
+			}
+		}
 	}
 }
