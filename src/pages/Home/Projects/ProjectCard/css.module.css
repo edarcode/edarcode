@@ -1,7 +1,20 @@
 .project {
-  display: grid;
-  gap: var(--md);
-  justify-items: start;
-  max-width: 600px;
-  border-radius: var(--sm);
+	position: relative;
+	display: grid;
+	gap: var(--md);
+	justify-items: start;
+	max-width: 600px;
+	border-radius: var(--sm);
+
+	.mobile,
+	.pc {
+		min-width: 90px;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.pc {
+		right: calc(90px + 5px);
+	}
 }

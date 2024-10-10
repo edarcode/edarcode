@@ -1,9 +1,10 @@
 .projects {
-  display: grid;
-  gap: var(--sm);
+	display: grid;
+	gap: var(--sm);
 
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		gap: var(--lg);
+	}
 }
