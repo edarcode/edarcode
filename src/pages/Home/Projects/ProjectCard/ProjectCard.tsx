@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: Props) {
 			<div className={css.wrapperMobilePc}>
 				<a
 					className={css.mobileLink}
-					href={imgs.pc}
+					href={imgs.mobile}
 					target="_blank"
 					onMouseOver={() => setIsMobile(true)}
 					onMouseLeave={() => setIsMobile(false)}
@@ -41,6 +41,8 @@ export default function ProjectCard({ project }: Props) {
 			<p>{description}</p>
 			<p>Tecnologías: {tools}</p>
 			<Hyperlink href={project.deploy}>Deploy</Hyperlink>
+
+			<span className={css.dev}>{project.dev}</span>
 		</article>
 	);
 }

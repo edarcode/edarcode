@@ -8,6 +8,7 @@ type Project = {
 	description: string;
 	tools: string;
 	imgs: Imgs;
+	dev: string;
 };
 
 type Imgs = {

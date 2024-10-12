@@ -49,4 +49,19 @@
 			}
 		}
 	}
+
+	.dev {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background-color: var(--bg-surf);
+		padding: var(--sm) var(--md);
+		border-radius: var(--md);
+	}
+
+	@media (prefers-color-scheme: light) {
+		.dev {
+			background-color: var(--l-bg-surf);
+		}
+	}
 }

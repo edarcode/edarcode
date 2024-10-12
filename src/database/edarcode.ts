@@ -69,6 +69,7 @@ export const EDARCODE = {
 	projects: [
 		{
 			title: "Notaku",
+			dev: "Front-end",
 			deploy: "https://notaku.vercel.app/",
 			description:
 				"Encontrarás las últimas noticias, novedades del mundo del anime, junto con una herramienta de búsqueda que permite filtrar animes por título, género, popularidad y mucho más. Los datos son consultados en la API de kitsu.",
@@ -81,9 +82,10 @@ export const EDARCODE = {
 		},
 		{
 			title: "Contacts",
+			dev: "Full-stack",
 			deploy: "https://contacts-virid.vercel.app/",
 			description:
-				"Diseñada para ayudar a las personas a gestionar sus contactos. Permite listar, agregar, editar y eliminar contactos. Los datos persisten en Turso.",
+				"Diseñada para ayudar a las personas a gestionar sus contactos. Permite listar, agregar, editar y eliminar contactos. Los datos persisten en una base de datos alojada en Turso.",
 			tools:
 				"Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite",
 			imgs: {
