@@ -15,6 +15,14 @@ export const EDARCODE = {
 			logo: "/tech/js.svg"
 		},
 		{
+			name: "Git",
+			logo: "/tech/git.svg"
+		},
+		{
+			name: "Github",
+			logo: "/tech/github.svg"
+		},
+		{
 			name: "TypeScript",
 			logo: "/tech/typescript.svg"
 		},
