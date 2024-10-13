@@ -5,14 +5,14 @@ import { KINDS } from "./kinds";
 import Arrow from "./icons/Arrow";
 
 export default function IconBtn(props: Props) {
-  const { isVisible = true, kind, className, Icon, ...extraProps } = props;
+	const { isVisible = true, kind, className, Icon, ...extraProps } = props;
 
-  const finalClass = joinClass([css.btn, className, KINDS[kind ?? "primary"]]);
+	const finalClass = joinClass([css.btn, className, kind && KINDS[kind]]);
 
-  if (!isVisible) return null;
-  return (
-    <button {...extraProps} className={finalClass}>
-      {Icon ? <Icon className={css.icon} /> : <Arrow className={css.icon} />}
-    </button>
-  );
+	if (!isVisible) return null;
+	return (
+		<button {...extraProps} className={finalClass}>
+			{Icon ? <Icon className={css.icon} /> : <Arrow className={css.icon} />}
+		</button>
+	);
 }
