@@ -7,7 +7,7 @@ export default function Select(props: Props) {
 	const { className, opt, kind, title, ...extraProps } = props;
 
 	const finalClass = joinClass([css.label, className]);
-	const finalClassSelect = joinClass([css.select, KINDS[kind ?? "primary"]]);
+	const finalClassSelect = joinClass([css.select, kind && KINDS[kind]]);
 
 	return (
 		<label className={finalClass}>
