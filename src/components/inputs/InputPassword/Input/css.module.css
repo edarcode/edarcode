@@ -15,11 +15,10 @@
 
 	.input:focus {
 		outline: 1px solid var(--pri);
-		border: 1px solid transparent;
 	}
 
 	.input__err {
-		border: 1px solid var(--red);
+		outline: 1px solid var(--red);
 	}
 
 	@media (prefers-color-scheme: light) {
