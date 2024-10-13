@@ -4,12 +4,13 @@ import { Props } from "./types";
 import { joinClass } from "./utils/joinClass";
 
 export default function InputNumber(props: Props) {
-	const { className, title, kind, ...extraProps } = props;
+	const { className, title, kind, err, ...extraProps } = props;
 
 	const finalClass = joinClass([css.label, className]);
 	const finalClassInput = joinClass([
 		css.input,
-		kind ? KINDS[kind] : KINDS["primary"]
+		err && css.input__err,
+		kind && KINDS[kind]
 	]);
 
 	return (
@@ -21,6 +22,7 @@ export default function InputNumber(props: Props) {
 				type="number"
 				className={finalClassInput}
 			/>
+			{err && <span className={css.err}>{err}</span>}
 		</label>
 	);
 }

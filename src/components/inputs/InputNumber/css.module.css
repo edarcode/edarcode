@@ -15,42 +15,49 @@ input[type="number"] {
 	display: grid;
 	gap: var(--xs);
 	cursor: text;
-}
-
-.title {
-	font-weight: bold;
-	margin-left: 5px;
-}
-
-.input {
-	width: 100%;
-	border: 1px solid transparent;
-	border-radius: var(--sm);
-	padding: var(--sm) var(--md);
-	min-height: 38px;
-	outline: transparent;
-}
-
-.input:focus {
-	outline: 1px solid var(--pri);
-}
-
-.input::placeholder {
-	color: var(--grey);
-}
-
-.primary {
-	background-color: var(--bg-surf);
-	color: var(--t-sec);
-}
-
-@media (prefers-color-scheme: light) {
-	.input:focus {
-		outline: 1px solid var(--l-pri);
+	.title {
+		font-weight: bold;
+		margin-left: 5px;
 	}
 
-	.primary {
-		background-color: var(--l-bg-surf);
-		color: var(--l-t-sec);
+	.title,
+	.err {
+		margin-left: 5px;
+	}
+
+	.err {
+		color: var(--red);
+	}
+
+	.input {
+		width: 100%;
+		border: none;
+		border-radius: var(--sm);
+		padding: var(--sm) var(--md);
+		background-color: var(--bg-surf);
+		color: var(--t-sec);
+	}
+
+	.input__err {
+		outline: 1px solid var(--red);
+	}
+
+	.input:focus {
+		outline: 1px solid var(--pri);
+	}
+
+	.input::placeholder {
+		color: var(--grey);
+	}
+
+	@media (prefers-color-scheme: light) {
+		.input:focus {
+			outline: 1px solid var(--l-pri);
+		}
+
+		.input {
+			background-color: var(--l-bg-surf);
+			color: var(--l-t-sec);
+		}
 	}
 }

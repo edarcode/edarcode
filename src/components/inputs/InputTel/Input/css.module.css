@@ -10,10 +10,10 @@
 	outline: transparent;
 	background-color: var(--bg-surf);
 	color: var(--t-sec);
-}
 
-.input:focus {
-	outline: 1px solid var(--pri);
+	&:focus {
+		outline: 1px solid var(--pri);
+	}
 }
 
 .input__err {

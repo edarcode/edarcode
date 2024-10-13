@@ -3,6 +3,7 @@ import IconBtn from "../../components/buttons/IconBtn/IconBtn";
 import InputCheckbox from "../../components/inputs/InputCheckbox/InputCheckbox";
 import InputNumber from "../../components/inputs/InputNumber/InputNumber";
 import InputPassword from "../../components/inputs/InputPassword/InputPassword";
+import InputTel from "../../components/inputs/InputTel/InputTel";
 import InputText from "../../components/inputs/InputText/InputText";
 import Select from "../../components/inputs/Select/Select";
 import css from "./css.module.css";
@@ -15,6 +16,7 @@ export default function Lib() {
 			<InputText title="Título" />
 			<InputNumber title="Título" />
 			<InputPassword />
+			<InputTel title="Tel" />
 			<Select
 				opt={[
 					{ display: "HTML", value: "html" },
