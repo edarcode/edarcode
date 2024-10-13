@@ -1,7 +1,7 @@
 import css from "./css.module.css";
 
-export default function Err({ err, ...extraProps }: Props) {
-	if (!err) return null;
+export default function Err({ isVisible, ...extraProps }: Props) {
+	if (!isVisible) return null;
 	return (
 		<svg
 			className={css.err}
@@ -24,5 +24,5 @@ export default function Err({ err, ...extraProps }: Props) {
 }
 
 interface Props extends React.SVGProps<SVGSVGElement> {
-	err?: boolean;
+	isVisible?: boolean;
 }

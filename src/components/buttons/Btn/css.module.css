@@ -1,15 +1,14 @@
 .btn {
 	--size-err: 20px;
 	position: relative;
-	border: 1px solid transparent;
+	border: none;
 	padding: var(--sm) var(--md);
 	cursor: pointer;
-	min-width: 125px;
-	min-height: 38px;
 	border-radius: var(--md);
 	display: grid;
 	place-items: center;
 	color: var(--t-main);
+	background-color: var(--pri);
 
 	&:disabled {
 		cursor: initial;
@@ -28,16 +27,12 @@
 	padding-right: calc(var(--size-err) + var(--md));
 }
 
-.primary {
-	background-color: var(--pri);
-}
-
 .secondary {
 	background-color: var(--sec);
 }
 
 @media (prefers-color-scheme: light) {
-	.primary {
+	.btn {
 		background-color: var(--l-pri);
 	}
 

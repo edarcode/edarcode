@@ -20,15 +20,15 @@ export default function Btn(props: Props) {
 		css.btn,
 		className,
 		err && css.btn__err,
-		BTN_KIND[kind ?? "primary"]
+		kind && BTN_KIND[kind]
 	]);
 
 	if (!isVisible) return null;
 	return (
 		<button {...extraProps} className={finalClass}>
 			{!loading && children}
-			<Spinner loading={loading} />
-			<Err err={err} />
+			<Spinner isVisible={loading} />
+			<Err isVisible={err} />
 		</button>
 	);
 }
