@@ -7,6 +7,7 @@ import InputTel from "../../components/inputs/InputTel/InputTel";
 import InputText from "../../components/inputs/InputText/InputText";
 import Select from "../../components/inputs/Select/Select";
 import Paged from "../../components/paginations/Paged/Paged";
+import Slider from "../../components/sliders/Slider/Slider";
 import css from "./css.module.css";
 
 export default function Lib() {
@@ -27,6 +28,13 @@ export default function Lib() {
 			/>
 			<Btn>Enviar</Btn>
 			<Paged page={1} totalPage={2} action={console.log} />
+			<Slider
+				images={[
+					"https://via.placeholder.com/600x300?text=Image+1",
+					"https://via.placeholder.com/600x300?text=Image+2",
+					"https://via.placeholder.com/600x300?text=Image+3"
+				]}
+			/>
 		</div>
 	);
 }
