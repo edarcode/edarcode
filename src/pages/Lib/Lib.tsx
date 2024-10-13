@@ -15,7 +15,7 @@ export default function Lib() {
 			<IconBtn />
 			<InputText title="Título" />
 			<InputNumber title="Título" />
-			<InputPassword />
+			<InputPassword title="Contraseña" />
 			<InputTel title="Tel" />
 			<Select
 				opt={[

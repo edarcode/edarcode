@@ -2,9 +2,16 @@
 	display: grid;
 	gap: var(--xs);
 	cursor: text;
-}
+	.title {
+		font-weight: bold;
+	}
 
-.err {
-	margin-left: 5px;
-	color: var(--red);
+	.title,
+	.err {
+		margin-left: 5px;
+	}
+
+	.err {
+		color: var(--red);
+	}
 }
