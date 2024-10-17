@@ -97,7 +97,7 @@ export const EDARCODE = {
 			description:
 				"Diseñada para ayudar a las personas a gestionar sus contactos. Permite listar, agregar, editar y eliminar contactos. Los datos persisten en una base de datos alojada en Turso.",
 			tools:
-				"Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite",
+				"Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite.",
 			imgs: {
 				mobile:
 					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/contacts_mobile.png",
@@ -110,7 +110,7 @@ export const EDARCODE = {
 			deploy: "https://notaku.vercel.app/",
 			description:
 				"Encontrarás las últimas noticias, novedades del mundo del anime, junto con una herramienta de búsqueda que permite filtrar animes por título, género, popularidad y mucho más. Los datos son consultados en la API de kitsu.",
-			tools: "Vite, React, TS, TanStack Query, React Hook Form",
+			tools: "Vite, React, TS, TanStack Query, React Hook Form.",
 			imgs: {
 				mobile:
 					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/notaku_mobile.png",
