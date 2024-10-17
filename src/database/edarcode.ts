@@ -80,9 +80,9 @@ export const EDARCODE = {
 			dev: "Full-stack",
 			deploy: "https://chat-beta-umber.vercel.app",
 			description:
-				"Chat online. Envía mensajes, ya sea con tus amigos, familia o compañeros de trabajo, todo desde una sola aplicación. Los datos persisten en una base de datos alojada en Turso.",
+				"Chat online. Envía mensajes, ya sea con tus amigos, familia o compañeros de trabajo, todo desde una sola aplicación. Los datos persisten en una base de datos.",
 			tools:
-				"Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite",
+				"Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite, WebSockets.",
 			imgs: {
 				mobile:
 					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1729197397/edarcode/tk3oadwm7k3ctyc9tey8.png",
