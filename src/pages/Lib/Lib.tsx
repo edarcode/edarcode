@@ -30,9 +30,9 @@ export default function Lib() {
 			<Paged page={1} totalPage={2} action={console.log} />
 			<Slider
 				images={[
-					"https://via.placeholder.com/600x300?text=Image+1",
-					"https://via.placeholder.com/600x300?text=Image+2",
-					"https://via.placeholder.com/600x300?text=Image+3"
+					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1729197397/edarcode/ui4gal77ioq3cmrvf7bw.png",
+					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/notaku_desktop.png",
+					"https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/contacts_desktop.png"
 				]}
 			/>
 		</div>
