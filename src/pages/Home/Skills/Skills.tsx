@@ -2,22 +2,14 @@ import { EDARCODE } from "../../../database/edarcode";
 import css from "./css.module.css";
 
 export default function Skills() {
-  const logos = EDARCODE.skills.map((skill) => (
-    <img
-      width="28"
-      height="28"
-      key={skill.name}
-      className={css.logo}
-      src={skill.logo}
-      alt={skill.name}
-      title={skill.name}
-    />
-  ));
+	const logos = EDARCODE.skills.map(skill => (
+		<li key={skill.name}>{skill.name}</li>
+	));
 
-  return (
-    <article className={css.skills}>
-      <h3>Habilidades</h3>
-      <div className={css.logos}>{logos}</div>
-    </article>
-  );
+	return (
+		<article className={css.skills}>
+			<h3>Habilidades</h3>
+			<ul className={css.logos}>{logos}</ul>
+		</article>
+	);
 }

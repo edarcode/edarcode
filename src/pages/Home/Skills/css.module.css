@@ -1,13 +1,10 @@
 .skills {
-  display: grid;
-  gap: var(--sm);
-}
+	display: grid;
+	gap: var(--sm);
 
-.logos {
-  display: flex;
-  gap: var(--md);
-}
-
-.logo {
-  width: 28px;
+	.logos {
+		padding-left: 20px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	}
 }

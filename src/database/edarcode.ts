@@ -43,8 +43,16 @@ export const EDARCODE = {
 			logo: "/tech/prisma.svg"
 		},
 		{
+			name: "DrizzleORM",
+			logo: ""
+		},
+		{
 			name: "PostgreSQL",
 			logo: "/tech/postgresql.svg"
+		},
+		{
+			name: "SQLite",
+			logo: "/tech/sqlite.svg"
 		}
 	],
 	networks: [

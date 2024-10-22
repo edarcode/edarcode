@@ -1,11 +1,15 @@
+import Autodidact from "./Autodidact/Autodidact";
 import css from "./css.module.css";
 import Henry from "./Henry/Henry";
+import NoCountry from "./NoCountry/NoCountry";
 
 export default function Education() {
-  return (
-    <section className={css.education}>
-      <h3>Educación</h3>
-      <Henry />
-    </section>
-  );
+	return (
+		<section className={css.education}>
+			<h3>Educación</h3>
+			<Henry />
+			<NoCountry />
+			<Autodidact />
+		</section>
+	);
 }
