@@ -11,7 +11,8 @@ export const USEFUL_LINKS = [
 		display: "CSS intermedio dorian"
 	},
 	{ href: "https://pagespeed.web.dev", display: "Lighthouse" },
-	{ href: "https://www.freepik.es/", display: "Img gratis" },
+	{ href: "https://www.freepik.es/", display: "Freepik (IMGS)" },
+	{ href: "https://www.pexels.com/es-es/", display: "Pexel (IMGS)" },
 	{ href: "https://www.drawdb.app/", display: "Diagramas db" },
 	{ href: "https://drizzle.run/visualizer", display: "Diagramas db drizzle" },
 	{
@@ -22,8 +23,6 @@ export const USEFUL_LINKS = [
 		href: "https://calculator-ten-khaki-94.vercel.app/",
 		display: "Calculadora (edarcode)"
 	},
-	{ href: "https://kitsu.io/api/edge", display: "Kitsu API" },
-	{ href: "https://animanga.es/", display: "Animanga" },
 	{ href: "https://ideogram.ai/", display: "Gerador de img (IA)" },
 	{
 		href: "https://notaku.vercel.app/",
