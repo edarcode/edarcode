@@ -31,6 +31,10 @@ export const EDARCODE = {
 			logo: "/tech/react.svg"
 		},
 		{
+			name: "Astro",
+			logo: ""
+		},
+		{
 			name: "Node.js",
 			logo: "/tech/nodejs.svg"
 		},
