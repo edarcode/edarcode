@@ -3,7 +3,14 @@ import css from "./css.module.css";
 
 export default function Skills() {
 	const logos = EDARCODE.skills.map(skill => (
-		<li key={skill.name}>{skill.name}</li>
+		<a
+			key={skill.name}
+			href={skill.doc}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			<li>{skill.name}</li>
+		</a>
 	));
 
 	return (

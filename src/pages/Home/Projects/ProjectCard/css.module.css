@@ -4,7 +4,9 @@
 	gap: var(--md);
 	justify-items: start;
 	max-width: 600px;
-	border-radius: var(--sm);
+	border-radius: var(--md);
+	border: 1px solid var(--border);
+	padding: var(--md) var(--lg);
 
 	.pcImg,
 	.mobileImg {
@@ -32,7 +34,7 @@
 
 		.mobileLink,
 		.pcLink {
-			color: var(--blue);
+			color: inherit;
 			padding: var(--sm);
 			min-width: 70px;
 			text-align: center;
@@ -51,9 +53,6 @@
 	}
 
 	.dev {
-		position: absolute;
-		bottom: 0;
-		right: 0;
 		background-color: var(--bg-surf);
 		padding: var(--sm) var(--md);
 		border-radius: var(--md);

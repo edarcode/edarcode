@@ -38,11 +38,10 @@ export default function ProjectCard({ project }: Props) {
 			{isPc && <img className={css.pcImg} src={imgs.pc} alt={title} />}
 
 			<h4 className={css.title}>{title}</h4>
+			<h5 className={css.dev}>{project.dev}</h5>
 			<p>{description}</p>
 			<p>Tecnologías: {tools}</p>
 			<Hyperlink href={project.deploy}>Sitio web</Hyperlink>
-
-			<span className={css.dev}>{project.dev}</span>
 		</article>
 	);
 }

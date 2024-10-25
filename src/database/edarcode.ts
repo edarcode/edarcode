@@ -4,59 +4,73 @@ export const EDARCODE = {
 	skills: [
 		{
 			name: "HTML",
-			logo: "/tech/html.svg"
+			logo: "/tech/html.svg",
+			doc: "https://lenguajehtml.com/"
 		},
 		{
 			name: "CSS",
-			logo: "/tech/css.svg"
+			logo: "/tech/css.svg",
+			doc: "https://lenguajecss.com/"
 		},
 		{
 			name: "JavaScript",
-			logo: "/tech/js.svg"
+			logo: "/tech/js.svg",
+			doc: "https://lenguajejs.com/"
 		},
 		{
 			name: "Git",
-			logo: "/tech/git.svg"
+			logo: "/tech/git.svg",
+			doc: "https://git-scm.com/doc"
 		},
 		{
 			name: "Github",
-			logo: "/tech/github.svg"
+			logo: "/tech/github.svg",
+			doc: "https://github.com/"
 		},
 		{
 			name: "TypeScript",
-			logo: "/tech/typescript.svg"
+			logo: "/tech/typescript.svg",
+			doc: "https://www.typescriptlang.org/"
 		},
 		{
 			name: "React",
-			logo: "/tech/react.svg"
+			logo: "/tech/react.svg",
+			doc: "https://es.react.dev/learn"
 		},
 		{
 			name: "Astro",
-			logo: ""
+			logo: "",
+			doc: "https://docs.astro.build/es/getting-started"
 		},
 		{
 			name: "Node.js",
-			logo: "/tech/nodejs.svg"
+			logo: "/tech/nodejs.svg",
+			doc: "https://nodejs.org/docs/latest/api/"
 		},
 		{
 			name: "Express",
-			logo: "/tech/express.svg"
+			logo: "/tech/express.svg",
+			doc: "https://expressjs.com/es/"
 		},
 		{
 			name: "Prisma",
-			logo: "/tech/prisma.svg"
+			logo: "/tech/prisma.svg",
+			doc: "https://www.prisma.io/docs/orm"
 		},
 		{
 			name: "DrizzleORM",
-			logo: ""
+			logo: "",
+			doc: "https://orm.drizzle.team/docs/overview"
 		},
 		{
 			name: "PostgreSQL",
-			logo: "/tech/postgresql.svg"
+			logo: "/tech/postgresql.svg",
+			doc: "https://www.postgresql.org/docs/"
 		},
 		{
 			name: "SQLite",
-			logo: "/tech/sqlite.svg"
+			logo: "/tech/sqlite.svg",
+			doc: "https://www.sqlite.org/docs.html"
 		}
 	],
 	networks: [

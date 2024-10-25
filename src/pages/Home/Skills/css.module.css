@@ -3,8 +3,33 @@
 	gap: var(--sm);
 
 	.logos {
-		padding-left: 20px;
+		padding-left: 0px;
 		display: grid;
+		gap: var(--sm);
+
 		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+
+		a {
+			background-color: var(--bg-surf);
+			color: inherit;
+			border-radius: var(--sm);
+
+			&:hover {
+				background-color: var(--bg-main);
+			}
+
+			@media (prefers-color-scheme: light) {
+				&:hover {
+					background-color: var(--l-pri);
+					color: var(--l-t-main);
+				}
+				background-color: var(--l-bg-surf);
+			}
+
+			li {
+				list-style: none;
+				text-align: center;
+			}
+		}
 	}
 }
