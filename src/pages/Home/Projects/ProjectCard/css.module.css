@@ -27,8 +27,8 @@
 
 	.wrapperMobilePc {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: var(--md);
+		right: var(--md);
 		display: flex;
 		gap: var(--md);
 
