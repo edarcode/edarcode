@@ -3,7 +3,7 @@
 	display: grid;
 	gap: var(--md);
 	justify-items: start;
-	max-width: 600px;
+	max-width: 650px;
 	border-radius: var(--md);
 	border: 1px solid var(--border);
 	padding: var(--md) var(--lg);

@@ -3,32 +3,30 @@
 	gap: var(--sm);
 
 	.logos {
-		padding-left: 0px;
 		display: grid;
 		gap: var(--sm);
+		padding: 0;
+		justify-items: start;
 
 		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 
 		a {
-			background-color: var(--bg-surf);
 			color: inherit;
 			border-radius: var(--sm);
+			padding: 0 var(--md);
 
 			&:hover {
-				background-color: var(--bg-main);
+				background-color: var(--bg-surf);
 			}
 
 			@media (prefers-color-scheme: light) {
 				&:hover {
-					background-color: var(--l-pri);
-					color: var(--l-t-main);
+					background-color: var(--l-bg-surf);
 				}
-				background-color: var(--l-bg-surf);
 			}
 
 			li {
 				list-style: none;
-				text-align: center;
 			}
 		}
 	}
