@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: Props) {
 			<h5 className={css.dev}>{project.dev}</h5>
 			<p>{description}</p>
 			<p>Tecnologías: {tools}</p>
-			<Hyperlink href={project.deploy}>Sitio web</Hyperlink>
+			{project.deploy && <Hyperlink href={project.deploy}>Sitio web</Hyperlink>}
 		</article>
 	);
 }

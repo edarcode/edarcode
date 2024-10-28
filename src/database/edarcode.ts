@@ -104,7 +104,7 @@ export const EDARCODE = {
 		{
 			title: "Chat",
 			dev: "Full-stack",
-			deploy: "https://chat-beta-umber.vercel.app",
+			deploy: "",
 			description:
 				"Chat online. Envía mensajes, ya sea con tus amigos, familia o compañeros de trabajo, todo desde una sola aplicación. Los datos persisten en una base de datos.",
 			tools:
@@ -119,7 +119,7 @@ export const EDARCODE = {
 		{
 			title: "Contacts",
 			dev: "Full-stack",
-			deploy: "https://contacts-virid.vercel.app/",
+			deploy: "",
 			description:
 				"Diseñada para ayudar a las personas a gestionar sus contactos. Permite listar, agregar, editar y eliminar contactos. Los datos persisten en una base de datos alojada en Turso.",
 			tools:
