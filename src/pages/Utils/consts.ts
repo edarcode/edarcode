@@ -34,4 +34,5 @@ export const USEFUL_LINKS = [
 	},
 	{ href: "https://neumorphism.io", display: "Neumorphism" },
 	{ href: "https://icon-sets.iconify.design/", display: "Iconify" }
+	{ href: "https://jakearchibald.github.io/svgomg/", display: "Optimizar svg" }
 ];
