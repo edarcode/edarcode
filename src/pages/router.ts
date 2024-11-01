@@ -1,7 +1,7 @@
 export const ROUTER = {
   index: {
     href: "/",
-    display: "Inicio",
+    display: "Edar",
   },
   look: {
     href: "/look/",

@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout/Layout.astro";
+import { ROUTER } from "../router";
 import Banner from "./Banner/Banner.astro";
 import Education from "./Education/Education.astro";
 import Experience from "./Experience/Experience.astro";
@@ -7,7 +8,7 @@ import Projects from "./Projects/Projects.astro";
 import Skills from "./Skills/Skills.astro";
 ---
 
-<Layout title="edarcode">
+<Layout title={ROUTER.index.display}>
   <main>
     <Banner />
     <Experience />
