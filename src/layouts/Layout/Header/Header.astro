@@ -1,0 +1,39 @@
+---
+import Anchor from "../../../components/hyperlinks/Anchor/Anchor.astro";
+import Logo from "../../../components/logos/Logo/Logo.astro";
+import { ROUTER } from "../../../pages/router";
+---
+
+<header>
+  <nav>
+    <Anchor cls={["logo"]} href={ROUTER.index.href}><Logo /></Anchor>
+    <Anchor href={ROUTER.index.href}>{ROUTER.index.display}</Anchor>
+    <Anchor href={ROUTER.utils.href}>{ROUTER.utils.display}</Anchor>
+    <Anchor href={ROUTER.look.href}>{ROUTER.look.display}</Anchor>
+  </nav>
+</header>
+
+<style>
+  header {
+    background-color: var(--bg-surf);
+    padding: var(--lg);
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+      gap: var(--md);
+      display: flex;
+
+      a {
+        min-height: 64px;
+        display: flex;
+        align-items: center;
+      }
+
+      .logo {
+        margin-right: auto;
+      }
+    }
+  }
+</style>

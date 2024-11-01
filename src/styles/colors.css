@@ -1,0 +1,21 @@
+:root {
+  --bg-main: #f5f5f5; /* Fondo Principal */
+  --bg-surf: #e0e0e0; /* Superficie */
+  --primary: #9d2f6b; /* Primario */
+  --secondary: #0cb2e8; /* Secundario */
+  --titles: #212121; /* Texto Principal */
+  --paras: #636363; /* Texto Secundario */
+  --hl: #ffbc42; /* Resaltado */
+  --border: #cccccc; /* Borde */
+  --accent: #dd4ea5; /* Acento */
+  --hover: #3c91e6; /* Hover */
+
+  /* Common */
+  --blue: #0066cc;
+  --red: #cd231d;
+  --green: #8c9900;
+  --grey: grey;
+  --soft-grey: #9d9d9d;
+  --black: #24242c;
+  --white: whitesmoke;
+}

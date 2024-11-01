@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout/Layout.astro";
+import Banner from "./Banner/Banner.astro";
+import Education from "./Education/Education.astro";
+import Experience from "./Experience/Experience.astro";
+import Projects from "./Projects/Projects.astro";
+import Skills from "./Skills/Skills.astro";
+---
+
+<Layout title="edarcode">
+  <main>
+    <Banner />
+    <Experience />
+    <Projects />
+    <Skills />
+    <Education />
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: var(--lg);
+    max-width: var(--mw-page);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    place-content: start;
+    gap: var(--xl);
+  }
+</style>

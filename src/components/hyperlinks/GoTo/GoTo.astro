@@ -1,0 +1,40 @@
+---
+interface Props {
+  href: string;
+  cls?: string[];
+  title?: string;
+}
+
+const { href, title } = Astro.props;
+const { href: currentRoute } = Astro.url;
+const { cls } = Astro.props;
+
+const isActive = currentRoute === href;
+---
+
+<a
+  href={href}
+  class:list={[cls, { isActive }]}
+  target="_blank"
+  rel="noopener noreferrer"
+  title={title}
+  aria-label={title}
+>
+  <slot />
+</a>
+
+<style>
+  a {
+    color: inherit;
+    padding: 0 var(--sm);
+    border-radius: var(--sm);
+
+    &:hover {
+      color: var(--hover);
+    }
+  }
+
+  .isActive {
+    color: var(--primary);
+  }
+</style>

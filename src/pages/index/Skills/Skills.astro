@@ -1,0 +1,55 @@
+---
+import GoTo from "../../../components/hyperlinks/GoTo/GoTo.astro";
+import { SKILLS } from "./skills";
+---
+
+<article>
+  <h2>Habilidades</h2>
+  <ul>
+    {
+      SKILLS.map(({ name, Icon, doc }) => (
+        <li>
+          <GoTo href={doc}>
+            <span>{name}</span>
+            <Icon />
+          </GoTo>
+        </li>
+      ))
+    }
+  </ul>
+</article>
+
+<style>
+  article {
+    ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--sm);
+
+      li {
+        list-style: none;
+
+        a {
+          padding: var(--sm) var(--md);
+          &:hover {
+            background-color: var(--bg-surf);
+          }
+
+          height: 32px;
+          display: flex;
+          align-items: center;
+          gap: var(--md);
+
+          span {
+            width: 90px;
+          }
+
+          svg {
+            width: 64px;
+            height: 64px;
+          }
+        }
+      }
+    }
+  }
+</style>

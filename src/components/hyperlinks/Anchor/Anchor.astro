@@ -1,0 +1,31 @@
+---
+interface Props {
+  href: string;
+  cls?: string[];
+}
+
+const { href, cls } = Astro.props;
+const { pathname: currentRoute } = Astro.url;
+
+const isActive = currentRoute === href;
+---
+
+<a href={href} class:list={[cls, { isActive }]}>
+  <slot />
+</a>
+
+<style>
+  a {
+    color: inherit;
+    padding: 0 var(--sm);
+    border-radius: var(--sm);
+
+    &:hover {
+      color: var(--hover);
+    }
+  }
+
+  .isActive {
+    color: var(--primary);
+  }
+</style>

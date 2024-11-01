@@ -1,0 +1,31 @@
+---
+interface Props {
+  href: string;
+  download: string;
+  title?: string;
+}
+
+const { href, download, title } = Astro.props;
+---
+
+<a download={download} href={href} title={title}>
+  <slot />
+</a>
+
+<style>
+  a {
+    color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: var(--md);
+    background-color: var(--secondary);
+    cursor: pointer;
+    padding: var(--sm) var(--md);
+    white-space: nowrap; /* Evita que el texto haga varias líneas */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Muestra los "..." cuando el texto se corta */
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+</style>

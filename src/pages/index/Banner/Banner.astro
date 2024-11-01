@@ -1,0 +1,60 @@
+---
+import Download from "../../../components/hyperlinks/Download/Download.astro";
+import Network from "../../../components/navs/Network/Network.astro";
+---
+
+<article>
+  <div class="me">
+    <h1>Edwin Ortiz</h1>
+    <h2>Full Stack Developer</h2>
+    <p>
+      Creo en el trabajo duro y el compromiso. Siempre dispuesto a compartir
+      conocimientos, aprender continuamente y crecer profesional y
+      personalmente.
+    </p>
+  </div>
+  <img src="/edarcode.avif" alt="edarcode" width="200" height="200" />
+  <div class="wrapper">
+    <Download title="Currículum" download="cv_edarcode" href="/cv.pdf"
+      >Currículum</Download
+    >
+    <Network />
+  </div>
+</article>
+
+<style>
+  article {
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    gap: var(--xl);
+    grid-template-columns: 1fr auto;
+
+    .me {
+      h1 {
+        color: var(--primary);
+      }
+    }
+
+    img {
+      width: 200px;
+      border-radius: 50%;
+      grid-row: span 2;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      gap: var(--md);
+
+      article {
+        margin-left: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

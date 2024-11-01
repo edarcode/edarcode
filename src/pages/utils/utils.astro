@@ -1,0 +1,34 @@
+---
+import GoTo from "../../components/hyperlinks/GoTo/GoTo.astro";
+import Layout from "../../layouts/Layout/Layout.astro";
+import { USEFUL_LINKS } from "./useful";
+---
+
+<Layout title="Utilidades">
+  <main>
+    <h1>Utilidades</h1>
+
+    <div>
+      {USEFUL_LINKS.map((item) => <GoTo href={item.href}>{item.display}</GoTo>)}
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: var(--lg);
+
+    h1,
+    div {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      max-width: var(--mw-page);
+    }
+
+    div {
+      display: grid;
+      justify-items: start;
+    }
+  }
+</style>
