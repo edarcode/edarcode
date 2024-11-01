@@ -1,11 +1,12 @@
 ---
 import Layout from "../../layouts/Layout/Layout.astro";
+import { ROUTER } from "../router";
 ---
 
-<Layout title="Componentes">
+<Layout title={ROUTER.look.display}>
   <main>
     <div>
-      <h1>Componentes</h1>
+      <h1>{ROUTER.look.display}</h1>
       <p>Estamos trabajando en esta vista.</p>
     </div>
   </main>

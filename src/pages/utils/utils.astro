@@ -1,12 +1,13 @@
 ---
 import GoTo from "../../components/hyperlinks/GoTo/GoTo.astro";
 import Layout from "../../layouts/Layout/Layout.astro";
+import { ROUTER } from "../router";
 import { USEFUL_LINKS } from "./useful";
 ---
 
-<Layout title="Utilidades">
+<Layout title={ROUTER.utils.display}>
   <main>
-    <h1>Utilidades</h1>
+    <h1>{ROUTER.utils.display}</h1>
 
     <div>
       {USEFUL_LINKS.map((item) => <GoTo href={item.href}>{item.display}</GoTo>)}
