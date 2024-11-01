@@ -9,6 +9,6 @@ export const ROUTER = {
   },
   utils: {
     href: "/utils/",
-    display: "Utilidades",
+    display: "Utils",
   },
 };
