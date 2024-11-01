@@ -35,4 +35,15 @@ export const USEFUL_LINKS = [
   { href: "https://neumorphism.io", display: "Neumorphism" },
   { href: "https://icon-sets.iconify.design/", display: "Iconify" },
   { href: "https://jakearchibald.github.io/svgomg/", display: "Optimizar svg" },
+  { href: "https://xsgames.co/animatiss/", display: "Animatis (Animaciones)" },
+  { href: "https://animista.net/", display: "Animista (Animaciones)" },
+  { href: "https://www.cattocss.com/", display: "Cattocss (Animaciones)" },
+  {
+    href: "https://ianlunn.github.io/Hover/",
+    display: "Hovercss (Animaciones BTN)",
+  },
+  {
+    href: "https://sarthology.github.io/Animatopy/",
+    display: "Animatopy (Animaciones)",
+  },
 ];
