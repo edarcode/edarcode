@@ -1,9 +1,0 @@
-.nav {
-	display: grid;
-	place-items: start;
-	margin-left: auto;
-	margin-right: auto;
-	gap: var(--sm);
-	padding: var(--lg);
-	max-width: var(--mw-pages);
-}

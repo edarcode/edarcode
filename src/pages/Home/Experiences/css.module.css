@@ -1,9 +1,0 @@
-.experience {
-	display: grid;
-	gap: var(--sm);
-	article {
-		display: grid;
-		gap: var(--sm);
-		max-width: 600px;
-	}
-}

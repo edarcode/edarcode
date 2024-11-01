@@ -1,9 +1,0 @@
-.lib {
-	max-width: var(--mw-pages);
-	margin-left: auto;
-	margin-right: auto;
-	padding: var(--lg);
-	display: grid;
-	justify-items: start;
-	gap: var(--md);
-}
