@@ -46,4 +46,8 @@ export const USEFUL_LINKS = [
     href: "https://sarthology.github.io/Animatopy/",
     display: "Animatopy (Animaciones)",
   },
+  {
+    href: "https://caniuse.com/",
+    display: "Canise (Soporte Navegadores)",
+  },
 ];
