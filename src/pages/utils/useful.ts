@@ -50,4 +50,8 @@ export const USEFUL_LINKS = [
     href: "https://caniuse.com/",
     display: "Canise (Soporte Navegadores)",
   },
+  {
+    href: "https://michalsnik.github.io/aos/",
+    display: "Animaciones con scroll (AOS)",
+  },
 ];
