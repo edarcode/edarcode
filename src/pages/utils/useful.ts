@@ -58,4 +58,8 @@ export const USEFUL_LINKS = [
     href: "https://gsap.com/",
     display: "Animaciones PRO(GSAP)",
   },
+  {
+    href: "https://www.npmjs.com/package/@justinribeiro/lite-youtube",
+    display: "lite-youtube (NPM)",
+  },
 ];
