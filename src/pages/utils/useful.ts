@@ -11,6 +11,10 @@ export const USEFUL_LINKS = [
     display: "CSS intermedio dorian",
   },
   { href: "https://pagespeed.web.dev", display: "Lighthouse" },
+  {
+    href: "https://cruxvis.withgoogle.com/#/",
+    display: "Lighthouse (CrUX Vis)",
+  },
   { href: "https://www.freepik.es/", display: "Freepik (IMGS)" },
   { href: "https://www.pexels.com/es-es/", display: "Pexel (IMGS)" },
   { href: "https://www.drawdb.app/", display: "Diagramas db" },
