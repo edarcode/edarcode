@@ -66,4 +66,8 @@ export const USEFUL_LINKS = [
     href: "https://www.npmjs.com/package/@justinribeiro/lite-youtube",
     display: "lite-youtube (NPM)",
   },
+  {
+    href: "https://splidejs.com/guides/options/",
+    display: "Splide (Carruseles)",
+  },
 ];
