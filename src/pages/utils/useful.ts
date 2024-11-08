@@ -55,8 +55,8 @@ export const USEFUL_LINKS = [
     display: "Canise (Soporte Navegadores)",
   },
   {
-    href: "https://michalsnik.github.io/aos/",
-    display: "Animaciones con scroll (AOS)",
+    href: "https://scrollrevealjs.org/api/sync.html",
+    display: "Animaciones con scroll (ScrollReveal)",
   },
   {
     href: "https://gsap.com/",
