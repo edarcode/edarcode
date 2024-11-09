@@ -59,6 +59,10 @@ export const USEFUL_LINKS = [
     display: "Animaciones con scroll (ScrollReveal)",
   },
   {
+    href: "https://michalsnik.github.io/aos/",
+    display: "Animaciones con scroll (AOS)",
+  },
+  {
     href: "https://gsap.com/",
     display: "Animaciones PRO(GSAP)",
   },
@@ -68,6 +72,6 @@ export const USEFUL_LINKS = [
   },
   {
     href: "https://splidejs.com/guides/options/",
-    display: "Splide (Carruseles)",
+    display: "Carruseles (Splide)",
   },
 ];
