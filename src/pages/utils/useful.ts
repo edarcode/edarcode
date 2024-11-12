@@ -1,4 +1,16 @@
 export const USEFUL_LINKS = [
+  {
+    href: "https://cursos.devtalles.com/collections",
+    display: "Devtalles (Cursos)",
+  },
+  {
+    href: "https://chatgpt.com/",
+    display: "chatGPT (IA)",
+  },
+  {
+    href: "https://excalidraw.com/",
+    display: "Excalidraw (Pizarra)",
+  },
   { href: "https://imgto.xyz/", display: "Optimizar archivos" },
   { href: "https://www.svgrepo.com/", display: "SVG grepo" },
   { href: "https://svgl.app/", display: "SVG de @pheralb" },
@@ -73,13 +85,5 @@ export const USEFUL_LINKS = [
   {
     href: "https://splidejs.com/guides/options/",
     display: "Carruseles (Splide)",
-  },
-  {
-    href: "https://excalidraw.com/",
-    display: "Excalidraw (Pizarra)",
-  },
-  {
-    href: "https://cursos.devtalles.com/collections",
-    display: "Devtaller (Cursos)",
   },
 ];
