@@ -74,4 +74,12 @@ export const USEFUL_LINKS = [
     href: "https://splidejs.com/guides/options/",
     display: "Carruseles (Splide)",
   },
+  {
+    href: "https://excalidraw.com/",
+    display: "Excalidraw (Pizarra)",
+  },
+  {
+    href: "https://cursos.devtalles.com/collections",
+    display: "Devtaller (Cursos)",
+  },
 ];
