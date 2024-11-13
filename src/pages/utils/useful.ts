@@ -8,6 +8,14 @@ export const USEFUL_LINKS = [
     display: "chatGPT (IA)",
   },
   {
+    href: "https://app.slack.com/client/T02KS88FB0E/C080U8J8GUQ",
+    display: "Slack",
+  },
+  {
+    href: "https://web.whatsapp.com/",
+    display: "Whatsapp",
+  },
+  {
     href: "https://excalidraw.com/",
     display: "Excalidraw (Pizarra)",
   },
