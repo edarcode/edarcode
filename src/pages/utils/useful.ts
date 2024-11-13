@@ -1,11 +1,7 @@
 export const USEFUL_LINKS = [
   {
-    href: "https://cursos.devtalles.com/collections",
-    display: "Devtalles (Cursos)",
-  },
-  {
-    href: "https://chatgpt.com/",
-    display: "chatGPT (IA)",
+    href: "https://discord.com/channels/@me",
+    display: "Discord",
   },
   {
     href: "https://app.slack.com/client/T02KS88FB0E/C080U8J8GUQ",
@@ -14,6 +10,14 @@ export const USEFUL_LINKS = [
   {
     href: "https://web.whatsapp.com/",
     display: "Whatsapp",
+  },
+  {
+    href: "https://cursos.devtalles.com/collections",
+    display: "Devtalles (Cursos)",
+  },
+  {
+    href: "https://chatgpt.com/",
+    display: "chatGPT (IA)",
   },
   {
     href: "https://excalidraw.com/",
