@@ -1,16 +1,16 @@
-import AstroF from "../../../components/icons/AstroF.astro";
-import CSS from "../../../components/icons/CSS.astro";
-import Express from "../../../components/icons/Express.astro";
-import Git from "../../../components/icons/Git.astro";
-import Github from "../../../components/icons/Github.astro";
-import HTML from "../../../components/icons/HTML.astro";
-import JS from "../../../components/icons/JS.astro";
-import Node from "../../../components/icons/Node.astro";
-import Postgres from "../../../components/icons/Postgres.astro";
-import Prisma from "../../../components/icons/Prisma.astro";
-import React from "../../../components/icons/React.astro";
-import SQLite from "../../../components/icons/SQLite.astro";
-import TS from "../../../components/icons/TS.astro";
+import AstroF from "../../../icons/AstroF.astro";
+import CSS from "../../../icons/CSS.astro";
+import Express from "../../../icons/Express.astro";
+import Git from "../../../icons/Git.astro";
+import Github from "../../../icons/Github.astro";
+import HTML from "../../../icons/HTML.astro";
+import JS from "../../../icons/JS.astro";
+import Node from "../../../icons/Node.astro";
+import Postgres from "../../../icons/Postgres.astro";
+import Prisma from "../../../icons/Prisma.astro";
+import React from "../../../icons/React.astro";
+import SQLite from "../../../icons/SQLite.astro";
+import TS from "../../../icons/TS.astro";
 
 export const SKILLS = [
   {
