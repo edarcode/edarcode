@@ -24,6 +24,7 @@ export const USEFUL_LINKS = [
     display: "Excalidraw (Pizarra)",
   },
   { href: "https://imgto.xyz/", display: "Optimizar archivos" },
+  { href: "https://shots.so/", display: "Shots (IMGS)" },
   { href: "https://publicapi.dev/", display: "APIS free" },
   { href: "https://www.svgrepo.com/", display: "SVG grepo" },
   { href: "https://svgl.app/", display: "SVG de @pheralb" },
