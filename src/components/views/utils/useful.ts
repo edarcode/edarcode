@@ -58,9 +58,10 @@ export const USEFUL_LINKS = [
     href: "https://notaku.vercel.app/",
     display: "Sitio web de animes (edarcode)",
   },
+  { href: "https://www.photopea.com/", display: "Photopea (Editor de fotos)" },
   {
     href: "https://www.befunky.com/es/crear/editor-de-fotos/",
-    display: "Editor de fotos",
+    display: "Befunky (Editor de fotos)",
   },
   { href: "https://neumorphism.io", display: "Neumorphism" },
   { href: "https://icon-sets.iconify.design/", display: "Iconify" },
@@ -86,11 +87,11 @@ export const USEFUL_LINKS = [
   },
   {
     href: "https://michalsnik.github.io/aos/",
-    display: "Animaciones con scroll (AOS)",
+    display: "AOS (Animaciones con scroll)",
   },
   {
     href: "https://gsap.com/",
-    display: "Animaciones PRO(GSAP)",
+    display: "GSAP (Animaciones PRO)",
   },
   {
     href: "https://www.npmjs.com/package/@justinribeiro/lite-youtube",
@@ -98,6 +99,6 @@ export const USEFUL_LINKS = [
   },
   {
     href: "https://splidejs.com/guides/options/",
-    display: "Carruseles (Splide)",
+    display: "Splide (Carruseles)",
   },
 ];
