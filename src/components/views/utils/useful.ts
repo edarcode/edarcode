@@ -20,6 +20,10 @@ export const USEFUL_LINKS = [
     display: "chatGPT (IA)",
   },
   {
+    href: "https://docs.astro.build/es/getting-started/",
+    display: "Astro (doc)",
+  },
+  {
     href: "https://excalidraw.com/",
     display: "Excalidraw (Pizarra)",
   },
