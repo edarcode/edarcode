@@ -27,6 +27,27 @@ export const USEFUL_LINKS = [
     href: "https://excalidraw.com/",
     display: "Excalidraw (Pizarra)",
   },
+  {
+    href: "https://co.pinterest.com/search/pins/?q=paginas%20web&rs=typed",
+    display: "Pinterest (Diseño)",
+  },
+  {
+    href: "https://www.lapa.ninja/search/",
+    display: "Lapa (Diseño)",
+  },
+  {
+    href: "https://www.behance.net/search/projects/",
+    display: "Behance (Diseño)",
+  },
+  {
+    href: "https://land-book.com/",
+    display: "Landbook Landinds (Diseño)",
+  },
+  { href: "https://dribbble.com/search/", display: "Dribbble (Diseño)" },
+  {
+    href: "https://www.figma.com/community/design-inspirations/",
+    display: "Figma (Diseño)",
+  },
   { href: "https://imgto.xyz/", display: "Optimizar archivos" },
   { href: "https://shots.so/", display: "Shots (IMGS)" },
   { href: "https://publicapi.dev/", display: "APIS free" },
