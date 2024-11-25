@@ -36,6 +36,7 @@ export const USEFUL_LINKS = [
   { href: "https://www.prisma.io/docs/orm", display: "Prisma ORM" },
   { href: "https://manz.dev/", display: "manzdev" },
   { href: "https://midu.dev/", display: "midudev" },
+  { href: "https://anchoreum.com/#es", display: "Aprende tooltip <a> (Juego)" },
   {
     href: "https://cursos.doriandesings.com/course/css-intermedio",
     display: "CSS intermedio dorian",
