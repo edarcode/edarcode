@@ -48,7 +48,11 @@ export const USEFUL_LINKS = [
     href: "https://www.figma.com/community/design-inspirations/",
     display: "Figma (Diseño)",
   },
-  { href: "https://imgto.xyz/", display: "Optimizar archivos" },
+  { href: "https://imgto.xyz/", display: "Imgto (Compresor)" },
+  {
+    href: "https://imagecompressor.11zon.com/es/image-compressor/",
+    display: "11zon (Compresor)",
+  },
   { href: "https://shots.so/", display: "Shots (IMGS)" },
   { href: "https://www.freepik.es/", display: "Freepik (IMGS)" },
   { href: "https://alphacoders.com/", display: "Alphacoders (IMGS)" },
