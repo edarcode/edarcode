@@ -4,19 +4,34 @@ export const PROJECTS = [
     dev: "Front-End",
     deploy: "https://krekeet.vercel.app/",
     description:
-      "Krekeet es una agencia de comunicación digital especializada en diseño de experiencia del usuario con base en la república dominicana y socios estratégicos en Latinoamérica, USA, Europa y Asia.",
+      "Agencia de comunicación digital especializada en diseño de experiencias de usuario, con sede en la República Dominicana y socios estratégicos en Latinoamérica, Estados Unidos, Europa y Asia.",
     tools: "Astro",
     imgs: {
       mobile: "",
       pc: "",
     },
   },
+
+  {
+    title: "Dragon",
+    dev: "Front-End",
+    deploy: "https://dragon-rosy.vercel.app/",
+    description:
+      "Conecta con el fascinante mundo del cine. Explora nuestra colección de casi 1 millón de películas, clásicos, últimos estrenos y mucho más.",
+    tools:
+      "Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite.",
+    imgs: {
+      mobile: "",
+      pc: "",
+    },
+  },
+
   {
     title: "Chat",
     dev: "Full-Stack",
     deploy: "",
     description:
-      "Chat online. Envía mensajes, ya sea con tus amigos, familia o compañeros de trabajo, todo desde una sola aplicación. Los datos persisten en una base de datos.",
+      "Envía mensajes, ya sea con tus amigos, familia o compañeros de trabajo, todo desde una sola aplicación.",
     tools:
       "Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite, WebSockets.",
     imgs: {
@@ -26,31 +41,17 @@ export const PROJECTS = [
     },
   },
 
-  {
-    title: "Contacts",
-    dev: "Full-Stack",
-    deploy: "",
-    description:
-      "Diseñada para ayudar a las personas a gestionar sus contactos. Permite listar, agregar, editar y eliminar contactos. Los datos persisten en una base de datos alojada en Turso.",
-    tools:
-      "Vite, React, TS, TanStack Query, React Hook Form, Node.js, Express, DrizzleORM, SQLite.",
-    imgs: {
-      mobile:
-        "https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/contacts_mobile.png",
-      pc: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/contacts_desktop.png",
-    },
-  },
-  {
-    title: "Notaku",
-    dev: "Front-End",
-    deploy: "https://notaku.vercel.app/",
-    description:
-      "Encontrarás las últimas noticias, novedades del mundo del anime, junto con una herramienta de búsqueda que permite filtrar animes por título, género, popularidad y mucho más. Los datos son consultados en la API de kitsu.",
-    tools: "Vite, React, TS, TanStack Query, React Hook Form.",
-    imgs: {
-      mobile:
-        "https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/notaku_mobile.png",
-      pc: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/notaku_desktop.png",
-    },
-  },
+  // {
+  //   title: "Notaku",
+  //   dev: "Front-End",
+  //   deploy: "https://notaku.vercel.app/",
+  //   description:
+  //     "Encontrarás las últimas noticias, novedades del mundo del anime, junto con una herramienta de búsqueda que permite filtrar animes por título, género, popularidad y mucho más. Los datos son consultados en la API de kitsu.",
+  //   tools: "Vite, React, TS, TanStack Query, React Hook Form.",
+  //   imgs: {
+  //     mobile:
+  //       "https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/notaku_mobile.png",
+  //     pc: "https://res.cloudinary.com/dvmsllkkg/image/upload/v1728562121/edarcode/notaku_desktop.png",
+  //   },
+  // },
 ];

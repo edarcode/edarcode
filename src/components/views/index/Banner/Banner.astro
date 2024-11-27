@@ -17,12 +17,10 @@ import Network from "../../../navs/Network/Network.astro";
     </p>
   </div>
   <img src="/edarcode.avif" alt="edarcode" width="200" height="200" />
-  <div class="wrapper">
-    <Download title="Currículum" download="cv_edarcode" href="/cv.pdf"
-      >Currículum</Download
-    >
-    <Network />
-  </div>
+  <Network />
+  <Download title="Currículum" download="cv_edarcode" href="/cv.pdf"
+    >Currículum</Download
+  >
 </article>
 
 <style>
@@ -30,8 +28,12 @@ import Network from "../../../navs/Network/Network.astro";
     display: grid;
     justify-items: start;
     align-items: center;
-    gap: var(--xl);
+    gap: var(--md);
     grid-template-columns: 1fr auto;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
 
     .me {
       h1 {
@@ -42,22 +44,12 @@ import Network from "../../../navs/Network/Network.astro";
     img {
       width: 200px;
       border-radius: 50%;
-      grid-row: span 2;
-    }
+      grid-row: span 3;
 
-    .wrapper {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      gap: var(--md);
-
-      article {
-        margin-left: auto;
+      @media (min-width: 375px) and (max-width: 1023px) {
+        justify-self: center;
+        order: -1;
       }
-    }
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
     }
   }
 </style>
