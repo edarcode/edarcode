@@ -7,6 +7,7 @@ import "../../styles/scales.css";
 import { ViewTransitions } from "astro:transitions";
 import Header from "../../components/shared/Header/Header.astro";
 import Footer from "../../components/shared/Footer/Footer.astro";
+import { SEO } from "./seo";
 
 interface Props {
   title: string;
@@ -19,10 +20,30 @@ const { title } = Astro.props;
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Portafolio edarcode" />
+    <meta name="description" content="Portafolio de edarcode" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO -->
+    <meta name="description" content={SEO.description} />
+    <meta name="author" content={SEO.author} />
+    <meta
+      name="keywords"
+      content="portafolio, desarrollador web, edarcode, proyectos, programación, diseño web"
+    />
+    <meta name="language" content="es" />
+    <meta name="robots" content="index, follow" />
+
+    <!--OG Metatags -->
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={SEO.description} />
+    <meta property="og:image" content={SEO.img} />
+
+    <meta name="theme-color" content="#fff" />
+
     <title>{title}</title>
     <ViewTransitions />
   </head>
